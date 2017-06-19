@@ -1,0 +1,136 @@
+$breakpoint: span( 8, rem );
+$background: rgba( 0, 0, 0, 0.7 );
+
+.nav {
+  @media ( min-width: $breakpoint ) {
+    height: lines( 5 );
+    margin-top: lines( -5 );
+    position: relative;
+    z-index: 99;
+  }
+}
+
+.nav-links {
+  background: $background;
+  z-index: 99;
+
+  .nav--open & {
+    bottom: 0;
+    transition: bottom 300ms ease-out;
+  }
+
+  @media ( max-width: $breakpoint ) {
+    bottom: 100%;
+    height: 100vh;
+    position: fixed;
+    text-align: center;
+    transition: bottom 600ms ease-in;
+    width: 100vw;
+  }
+
+  @media ( min-width: $breakpoint ) {
+    height: lines( 5 );
+
+    .nav--fixed & {
+      position: fixed;
+      top: 0;
+      width: 100%;
+    }
+  }
+}
+
+.nav-links ul {
+  width: 100%;
+
+  @media ( max-width: $breakpoint ) {
+    height: lines( 18 );
+    margin-top: lines( -9 );
+    position: absolute;
+    top: 50%;
+  }
+
+  @media( min-width: $breakpoint ) {
+    margin: 0 auto;
+    width: span( 12, rem );
+  }
+}
+
+.nav-links ul li {
+  @media ( max-width: $breakpoint ) {
+    transform: translate( 0, -1000px );
+    transition: transform 0ms ease-in 600ms;
+
+    .nav--open & { transform: translate( 0, 0 ); }
+    .nav--open &:nth-child(1) { transition: transform 500ms ease-out; }
+    .nav--open &:nth-child(2) { transition: transform 450ms ease-out; }
+    .nav--open &:nth-child(3) { transition: transform 400ms ease-out; }
+  }
+
+  @media ( min-width: $breakpoint ) {
+    display: inline-block;
+  }
+}
+
+.nav-links ul li a {
+  color: #fff;
+  display: block;
+  padding: lines( 0.75 ) 0;
+  font-family: 'Source Sans Pro', serif;
+  font-size: font-size( 63px );
+  font-weight: 400;
+  text-decoration: none;
+
+  &.nav-logo {
+    font-weight: 200;
+    span { font-weight: 900; }
+  }
+
+  @media ( min-width: $breakpoint ) {
+    font-size: font-size( 21px );
+    line-height: lines( 5 );
+    padding: 0 lines( 2 );
+  }
+}
+
+.nav-button {
+  background: $background;
+  width: lines( 2.5 );
+  height: lines( 2.5 );
+  position: fixed;
+  top: lines( 1 );
+  right: lines( 1 );
+  z-index: 100;
+  cursor: pointer;
+
+  @media ( min-width: $breakpoint ) {
+    display: none;
+  }
+}
+
+.nav-button span {
+  background: #fff;
+  display: block;
+  height: 12.5%;
+  left: 12.5%;
+  opacity: 1;
+  position: absolute;
+  transition: all 250ms cubic-bezier( 0.175, 0.885, 0.32, 1.275 );
+  width: 75%;
+
+  &:nth-child(1) { top: 17.5%; }
+  &:nth-child(2) { top: 42.5%; }
+  &:nth-child(3) { top: 67.5%; }
+
+  .nav--open &:nth-child(1) {
+    transform: translate( 20%, 0 ) rotate( 45deg );
+    transform-origin: left top;
+  }
+  .nav--open &:nth-child(2) {
+    opacity: 0;
+    width: 0;
+  }
+  .nav--open &:nth-child(3) {
+    transform: translate( 20%, 0 ) rotate( -45deg );
+    transform-origin: left bottom;
+  }
+}

@@ -1,0 +1,78 @@
+.banner {
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+  width: 100vw;
+}
+
+.banner-background {
+  bottom: 0;
+  height: 200%;
+  left: -50%;
+  position: absolute;
+  right: 0;
+  top: -50%;
+  width: 200%;
+  z-index: 1;
+
+  img {
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    min-height: 50%;
+    min-width: 50%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transition: transform 50ms ease-in-out;
+    width: 1024px;
+    z-index: 1;
+  }
+}
+
+.banner-overlay {
+  /* background: #000; */
+  background: #F14631;
+  bottom: 0;
+  left: 0;
+  opacity: 0.9;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 2;
+}
+
+.banner-text {
+  bottom: 0;
+  color: #fff;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: font-size( 72px );
+  line-height: 1;
+  font-weight: 900;
+  padding: lines( 2 );
+  /* padding: lines( 2 ) lines( 2 ) lines( 6 ); */
+  position: absolute;
+  white-space: pre-wrap;
+  z-index: 3;
+
+  &::after {
+    background-color: #fff;
+    content: "";
+    display: inline-block;
+    height: lines( 3 );
+    margin: 0 0 -2px 1px;
+    width: 1px;
+  }
+
+  .banner--resting &::after {
+    animation: blink 2s infinite;
+  }
+}
+
+@keyframes blink {
+  0%   { opacity: 1; }
+  25%  { opacity: 0; }
+  50%  { opacity: 1; }
+  75%  { opacity: 0; }
+  100% { opacity: 1; }
+}
