@@ -16,7 +16,7 @@ const Home = () => (
 
   <div>
     <Nav />
-    <Banner image="/src/assets/images/banner.jpg" staticText={ staticText } dynamicText={ dynamicText } />
+    <Banner image="source/assets/images/banner.jpg" staticText={ staticText } dynamicText={ dynamicText } />
 
     <Row>
       <p id="about">

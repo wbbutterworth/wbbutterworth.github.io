@@ -11993,7 +11993,7 @@ var Home = function Home() {
     'div',
     null,
     _react2.default.createElement(_Nav2.default, null),
-    _react2.default.createElement(_Banner2.default, { image: '/src/assets/images/banner.jpg', staticText: staticText, dynamicText: dynamicText }),
+    _react2.default.createElement(_Banner2.default, { image: 'source/assets/images/banner.jpg', staticText: staticText, dynamicText: dynamicText }),
     _react2.default.createElement(
       _Grid.Row,
       null,

@@ -3,7 +3,7 @@ const path              = require( 'path' );
 
 module.exports = {
 
-  context: `${ __dirname }/src/`,
+  context: `${ __dirname }/source/`,
   entry:   './index.js',
 
   output: {
@@ -15,7 +15,7 @@ module.exports = {
     extensions: [ '.js', '.jsx', '.json' ],
 
     modules: [
-      path.resolve( './src' ),
+      path.resolve( './source' ),
       path.resolve( './node_modules' ),
     ],
   },
