@@ -1,5 +1,5 @@
 import React from 'react';
-import { Router, Route, browserHistory } from 'react-router';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
 import Home from 'containers/Home';
 import NotFound from 'containers/NotFound';
 
@@ -11,9 +11,11 @@ import NotFound from 'containers/NotFound';
 
 const Routes = () => (
 
-  <Router history={ browserHistory }>
-    <Route path="/" component={ Home } />
-    <Route path="*" component={ NotFound } />
+  <Router>
+    <div>
+      <Route path="/" component={ Home } />
+      <Route path="*" component={ NotFound } />
+    </div>
   </Router>
 
 );

@@ -2,10 +2,9 @@ import React from 'react';
 import Banner from 'components/Banner';
 import { Row } from 'components/Grid';
 import Nav from 'components/Nav';
-import bannerImage from 'assets/images/banner.jpg';
 
-const bannerText = "Hi, I'm Liam\nand I";
-const bannerWords = [ 'make things.', 'create websites.', 'play loud music.' ];
+const staticText  = "Hi, I'm Liam\nand I";
+const dynamicText = [ 'make things.', 'create websites.', 'play loud music.' ];
 
 /**
  * home page container
@@ -17,7 +16,7 @@ const Home = () => (
 
   <div>
     <Nav />
-    <Banner image={ bannerImage } text={ bannerText } words={ bannerWords } />
+    <Banner image="/src/assets/images/banner.jpg" staticText={ staticText } dynamicText={ dynamicText } />
 
     <Row>
       <p id="about">

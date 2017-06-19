@@ -15,10 +15,10 @@ class Banner extends React.Component {
   /**
    * setup component
    *
-   * @param { object } props       component properties
-   * @param { string } props.image path to image source
-   * @param { string } props.text  static banner text
-   * @param { array }  props.words array of words to animate at the end of text
+   * @param { object } props             component properties
+   * @param { string } props.image       path to image source
+   * @param { string } props.staticText  static banner text
+   * @param { array }  props.dynamicText array of text to animate at the end of text
    */
 
   constructor( props ) {
@@ -40,7 +40,7 @@ class Banner extends React.Component {
 
     this.animate();
     setInterval( this.animate.bind( this ), 50 );
-    this.type( this.props.text, this.addWord.bind( this ) );
+    this.type( this.props.staticText, this.addDynamicText.bind( this ) );
 
   }
 
@@ -127,27 +127,27 @@ class Banner extends React.Component {
   }
 
   /**
-   * add word to end of inner text
+   * add dynamic text to end of inner text
    */
 
-  addWord() {
+  addDynamicText() {
 
-    let index = this.word ? this.props.words.indexOf( this.word ) + 1 : 0;
-    if ( index > this.props.words.length - 1 ) index = 0;
-    this.word = this.props.words[index];
-    this.type( ` ${ this.word }`, this.removeWord.bind( this ) );
+    let index = this.dynamicText ? this.props.dynamicText.indexOf( this.dynamicText ) + 1 : 0;
+    if ( index > this.props.dynamicText.length - 1 ) index = 0;
+    this.dynamicText = this.props.dynamicText[index];
+    this.type( ` ${ this.dynamicText }`, this.removeDynamicText.bind( this ) );
 
   }
 
   /**
-   * remove word from end of inner text
+   * remove dynamic text from end of inner text
    */
 
-  removeWord() {
+  removeDynamicText() {
 
     setTimeout( () => {
 
-      this.backspace( this.word.length + 1, this.addWord.bind( this ) );
+      this.backspace( this.dynamicText.length + 1, this.addDynamicText.bind( this ) );
 
     }, 3000 );
 
@@ -188,9 +188,9 @@ class Banner extends React.Component {
 }
 
 Banner.propTypes = {
-  image: PropTypes.node.isRequired,
-  text:  PropTypes.string,
-  words: PropTypes.arrayOf( PropTypes.string ),
+  image:       PropTypes.node.isRequired,
+  staticText:  PropTypes.string,
+  dynamicText: PropTypes.arrayOf( PropTypes.string ),
 };
 
 export default Banner;
