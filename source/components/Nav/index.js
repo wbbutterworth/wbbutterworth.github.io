@@ -20,11 +20,14 @@ class Nav extends React.Component {
 
     super( props );
 
-    this.toggleOpen = this.toggleOpen.bind( this );
+    this.toggleScrolled = this.toggleScrolled.bind( this );
+    this.toggleOpen     = this.toggleOpen.bind( this );
+    this.open           = this.open.bind( this );
+    this.close          = this.close.bind( this );
 
     this.state = {
-      isFixed: false,
-      isOpen:  false,
+      isScrolled: false,
+      isOpen:     false,
     };
 
   }
@@ -35,10 +38,10 @@ class Nav extends React.Component {
 
   componentDidMount() {
 
-    setInterval( this.toggleFixed.bind( this ), 25 );
+    setInterval( this.toggleScrolled.bind( this ), 200 );
 
     smoothScroll.init({
-      before:   this.toggleOpen.bind( this ),
+      before:   this.close.bind( this ),
       easing:   'easeInOutQuad',
       selector: '.nav a',
       speed:    800,
@@ -46,33 +49,40 @@ class Nav extends React.Component {
 
   }
 
-  /**
-   * toggle sticky state
-   */
+  toggleScrolled() {
 
-  toggleFixed() {
 
-    const rect = this.container.getBoundingClientRect();
-
-    if ( rect.top > 0 && this.state.isFixed ) {
-
-      this.setState({ isFixed: false });
-
-    } else if ( rect.top <= 0 && !this.state.isFixed ) {
-
-      this.setState({ isFixed: true });
-
-    }
+    this.setState({ isScrolled: window.scrollY > 0 ? true : false });
 
   }
 
   /**
-   * toggle open state on mobile
+   * toggle nav state
    */
 
   toggleOpen() {
 
     this.setState({ isOpen: !this.state.isOpen });
+
+  }
+
+  /**
+   * open nav
+   */
+
+  open() {
+
+    if ( !this.state.isOpen ) this.setState({ isOpen: true });
+
+  }
+
+  /**
+   * close nav
+   */
+
+  close() {
+
+    if ( this.state.isOpen ) this.setState({ isOpen: false });
 
   }
 
@@ -85,22 +95,23 @@ class Nav extends React.Component {
   render() {
 
     const classes = classNames({
-      'nav':        true,
-      'nav--open':  this.state.isOpen,
-      'nav--fixed': this.state.isFixed,
+      'nav':           true,
+      'nav--open':     this.state.isOpen,
+      'nav--scrolled': this.state.isScrolled,
     });
 
-    // <li><a className="nav-logo" href="#app">Liam<span>Butterworth</span></a></li>
     return (
 
       <div className={ classes } ref={ container => this.container = container }>
-        <a className="nav-logo">Liam<span>Butterworth</span></a>
+        <div className="nav-interface">
+          <a href="#app" className="nav-logo">Liam<span>Butterworth</span></a>
 
-        <button className="nav-button" onClick={ this.toggleOpen }>
-          <span />
-          <span />
-          <span />
-        </button>
+          <button className="nav-button" onClick={ this.toggleOpen }>
+            <span />
+            <span />
+            <span />
+          </button>
+        </div>
 
         <nav className="nav-links">
           <ul>

@@ -169,6 +169,8 @@ class Banner extends React.Component {
     return (
 
       <div className={ classes }>
+        <div className="banner-overlay" />
+
         <div className="banner-background">
           <img
             alt="Banner background"
@@ -177,8 +179,10 @@ class Banner extends React.Component {
           />
         </div>
 
-        <div className="banner-overlay" />
-        <p className="banner-text">{ this.state.text }</p>
+        <div className="banner-text">
+          <h1>Front-End Developer</h1>
+          <p>{ this.state.text }</p>
+        </div>
       </div>
 
     );

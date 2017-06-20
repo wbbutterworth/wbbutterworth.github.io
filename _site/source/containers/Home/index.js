@@ -17,7 +17,7 @@ const Home = () => (
 
     <Banner
       image={ background }
-      staticText={ "Hi, I'm Liam\nand I" }
+      staticText="Hi, I'm Liam and I"
       dynamicText={ [ 'make things.', 'create websites.', 'play loud music.' ] }
     />
 

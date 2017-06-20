@@ -3,6 +3,7 @@ const variables = {
   // layout
 
   'wrapper-width': '1024px',
+  'site-width':    '1024px',
   'column-count':  '12',
 
   // palette
