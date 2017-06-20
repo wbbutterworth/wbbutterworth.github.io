@@ -8,7 +8,7 @@ module.exports = {
 
   output: {
     path:       `${ __dirname }/build`,
-    filename:   '[name].js',
+    filename:   '[name].[hash].js',
     publicPath: 'build/',
   },
 
@@ -34,17 +34,14 @@ module.exports = {
       exclude: /node_modules/,
 
       use: ExtractTextPlugin.extract({
-        use: [
-          'css-loader',
-          'postcss-loader',
-        ],
+        use: [ 'css-loader', 'postcss-loader' ],
       }),
 
     }, {
 
       test:    /\.(jpe?g|png|gif|svg)$/,
       exclude: /node_modules/,
-      use:     'file-loader?name=[path][name].[ext]',
+      use:     'url-loader?limit=8192&name=[path][name].[hash].[ext]',
 
     }],
   },
