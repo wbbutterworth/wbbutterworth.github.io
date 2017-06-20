@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Home from 'containers/Home';
 import NotFound from 'containers/NotFound';
 
@@ -12,10 +12,10 @@ import NotFound from 'containers/NotFound';
 const Routes = () => (
 
   <Router>
-    <div>
-      <Route path="/" component={ Home } />
-      <Route path="*" component={ NotFound } />
-    </div>
+    <Switch>
+      <Route path="/" exact component={ Home } />
+      <Route component={ NotFound } />
+    </Switch>
   </Router>
 
 );

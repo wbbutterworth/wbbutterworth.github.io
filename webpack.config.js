@@ -7,8 +7,9 @@ module.exports = {
   entry:   './index.js',
 
   output: {
-    path:     `${ __dirname }/build`,
-    filename: '[name].js',
+    path:       `${ __dirname }/build`,
+    filename:   '[name].js',
+    publicPath: 'build/',
   },
 
   resolve: {
@@ -25,7 +26,7 @@ module.exports = {
 
       test:    /\.jsx?$/,
       exclude: /node_modules/,
-      use:     [ 'babel-loader' ],
+      use:     'babel-loader',
 
     }, {
 
@@ -33,14 +34,17 @@ module.exports = {
       exclude: /node_modules/,
 
       use: ExtractTextPlugin.extract({
-        use: [ 'css-loader', 'postcss-loader' ],
+        use: [
+          'css-loader',
+          'postcss-loader',
+        ],
       }),
 
     }, {
 
       test:    /\.(jpe?g|png|gif|svg)$/,
       exclude: /node_modules/,
-      use:     'file-loader?name=[name].[ext]',
+      use:     'file-loader?name=[path][name].[ext]',
 
     }],
   },
