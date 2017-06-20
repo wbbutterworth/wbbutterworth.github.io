@@ -1,6 +1,5 @@
 .DS_Store
 .tags
+npm-debug.log
 bower_components
 node_modules
-npm-debug.log
-TODO.md
