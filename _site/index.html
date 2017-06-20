@@ -1,11 +1,10 @@
 <!DOCTYPE html>
-<html>
+
+<head lang="en">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Liam Butterworth</title>
-    <!-- <meta name="description" content=""> -->
-    <link href="build/main.css" rel="stylesheet" />
+    <meta charset="utf-u" />
+    <title>Hello, World!</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
 
     <script type="text/javascript">
 
@@ -20,13 +19,16 @@
       // When the single page app is loaded further down in this file,
       // the correct url will be waiting in the browser's history for
       // the single page app to route accordingly.
+
       (function(l) {
         if (l.search) {
           var q = {};
+
           l.search.slice(1).split('&').forEach(function(v) {
             var a = v.split('=');
             q[a[0]] = a.slice(1).join('=').replace(/~and~/g, '&');
           });
+
           if (q.p !== undefined) {
             window.history.replaceState(null, null,
               l.pathname.slice(0, -1) + (q.p || '') +
@@ -38,10 +40,9 @@
       }(window.location))
 
     </script>
-  </head>
+  <link href="build/main.885136ad77567e5db46d.css" rel="stylesheet"></head>
 
   <body>
     <div id="root"></div>
-    <script src="build/main.js"></script>
-  </body>
-</html>
+  <script type="text/javascript" src="build/main.885136ad77567e5db46d.js"></script></body>
+</head>
