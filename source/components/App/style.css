@@ -47,6 +47,7 @@ em {
 }
 
 body {
+  background: $background-color;
   color: $foreground-color;
   font-size: font-size( $base-font-size );
   line-height: line-height( $base-font-size );

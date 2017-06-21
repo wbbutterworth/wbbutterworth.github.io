@@ -9,7 +9,7 @@ const variables = {
   // palette
 
   'background-color': '#fcfcfc',
-  'foreground-color': '#1c1a19',
+  'foreground-color': '#030303',
   'highlight-color':  '#941b0c',
 
   // baseline

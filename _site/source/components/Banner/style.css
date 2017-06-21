@@ -31,7 +31,7 @@
 }
 
 .banner-overlay {
-  background: #1c1a19;
+  background: $foreground-color;
   bottom: 0;
   left: 0;
   opacity: 0.8;
@@ -70,7 +70,7 @@
     font-weight: 200;
 
     &::after {
-      background-color: #fff;
+      background-color: $background-color;
       content: "";
       display: inline-block;
       height: lines( 1.5 );
