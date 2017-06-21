@@ -31,10 +31,10 @@
 }
 
 .banner-overlay {
-  background: #000;
+  background: #1c1a19;
   bottom: 0;
   left: 0;
-  opacity: 0.9;
+  opacity: 0.8;
   position: absolute;
   right: 0;
   top: 0;
@@ -43,8 +43,8 @@
 
 .banner-text {
   top: 50%;
-  margin-top: lines( -2 );
-  color: #fff;
+  margin-top: lines( -2.5 );
+  color: $background-color;
   font-family: 'Source Sans Pro', sans-serif;
   padding: lines( 2 );
   position: absolute;
@@ -57,6 +57,12 @@
     font-size: font-size( 60px );
     font-weight: 900;
     line-height: 1;
+  }
+
+  hr {
+    border-color: #941B0C;
+    max-width: span( 6.5, rem );
+    margin: lines( 0.5 ) auto lines( 0.125, 1px );
   }
 
   p {

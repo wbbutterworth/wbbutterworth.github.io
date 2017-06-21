@@ -54,7 +54,7 @@ class Banner extends React.Component {
 
       if ( this.lastScrollY !== window.scrollY ) {
 
-        this.background.style.transform = `translate3d(0, ${ window.scrollY * 0.12 }px, 0)`;
+        this.background.style.transform = `translate3d(0, ${ window.scrollY * 0.2 }px, 0)`;
         this.lastScrollY = window.scrollY;
 
       }
@@ -181,6 +181,7 @@ class Banner extends React.Component {
 
         <div className="banner-text">
           <h1>Front-End Developer</h1>
+          <hr />
           <p>{ this.state.text }</p>
         </div>
       </div>

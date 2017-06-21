@@ -8,9 +8,9 @@ const variables = {
 
   // palette
 
-  'background-color': 'white',
-  'foreground-color': 'black',
-  'highlight-color':  'red',
+  'background-color': '#fcfcfc',
+  'foreground-color': '#1c1a19',
+  'highlight-color':  '#941b0c',
 
   // baseline
 
