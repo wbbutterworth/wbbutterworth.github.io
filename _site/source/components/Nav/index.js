@@ -26,7 +26,7 @@ class Nav extends React.Component {
     this.close          = this.close.bind( this );
 
     this.state = {
-      isScrolled: false,
+      isScrolled: window.scrollY > 0,
       isOpen:     false,
     };
 
@@ -51,8 +51,7 @@ class Nav extends React.Component {
 
   toggleScrolled() {
 
-
-    this.setState({ isScrolled: window.scrollY > 0 ? true : false });
+    this.setState({ isScrolled: window.scrollY > 0 });
 
   }
 

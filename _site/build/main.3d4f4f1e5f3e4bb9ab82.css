@@ -127,9 +127,9 @@
   z-index: 99;
   width: 100%;
   transition: height 300ms 300ms;
-
   background: url(/source/assets/images/bricks.jpg);
   background-size: cover;
+  border-bottom: 1px solid rgb(214, 214, 214);
 }
 
 .nav.nav--scrolled {
@@ -288,37 +288,32 @@
 }
 
 .nav-links {
-  z-index: 99;
-  top: 100%;
+  /* position: fixed; */
+  /* height: 100%; */
+  /* width: 100%; */
+  /* z-index: 99; */
+  /* top: 100%; */
+  pointer-events: none;
   height: calc( 100vh - 4.5rem );
   position: fixed;
-  text-align: right;
-  transition: all 300ms ease-out;
+  bottom: 0;
+  left: 0;
   width: 100vw;
-}
+  /* position: fixed; */
+  /* text-align: right; */
+  /* transition: all 300ms ease-out; */
+  /* width: 100vw; */
 
-.nav--open .nav-links {
-  top: 4.5rem;
-  transition: all 300ms ease-out 300ms;
+  /* .nav--open & { */
+  /*   top: lines( 3 ); */
+  /*   transition: all 300ms ease-out 300ms; */
+  /* } */
 }
 
 .nav-links ul {
-  width: 100%;
-  position: absolute;
-  top: 50%;
-  margin: -13.5rem 0 0;
-
-  /* @media ( max-width: $breakpoint ) { */
-  /*   height: lines( 18 ); */
-  /*   margin-top: lines( -9 ); */
-  /*   position: absolute; */
-  /*   top: 50%; */
-  /* } */
-
-  /* @media( min-width: $breakpoint ) { */
-  /*   margin: 0 auto; */
-  /*   width: span( 12, rem ); */
-  /* } */
+  /* width: 100%; */
+  /* position: absolute; */
+  /* bottom: 0; */
 }
 
 @media ( max-width: 42.666666666666664rem ) {
@@ -355,14 +350,6 @@
   }
 }
 
-@media ( min-width: 42.666666666666664rem ) {
-
-  .nav-links ul li {
-
-    /* display: inline-block; */
-  }
-}
-
 .nav-links ul li a {
   color: #030303;
   display: block;
@@ -370,6 +357,7 @@
   font-size: 7.5rem;
   font-weight: 900;
   text-decoration: none;
+  text-align: right;
   line-height: 5.625rem;
   text-transform: uppercase;
   max-width: 1024px;
