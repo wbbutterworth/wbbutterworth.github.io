@@ -1,6 +1,7 @@
-const ExtractTextPlugin = require( 'extract-text-webpack-plugin' );
-const HtmlWebpackPlugin = require( 'html-webpack-plugin' );
-const path              = require( 'path' );
+const CleanWebpackPlugin = require( 'clean-webpack-plugin' );
+const ExtractTextPlugin  = require( 'extract-text-webpack-plugin' );
+const HtmlWebpackPlugin  = require( 'html-webpack-plugin' );
+const path               = require( 'path' );
 
 module.exports = {
 
@@ -8,9 +9,9 @@ module.exports = {
   entry:   './index.js',
 
   output: {
-    path:       `${ __dirname }/build`,
+    path:       `${ __dirname }/build/`,
     filename:   '[name].[hash].js',
-    publicPath: 'build/',
+    publicPath: '/build/',
   },
 
   resolve: {
@@ -40,14 +41,21 @@ module.exports = {
 
     }, {
 
-      test:    /\.(jpe?g|png|gif|svg)$/,
+      test:    /\.(jpe?g|png|gif)$/,
       exclude: /node_modules/,
       use:     'url-loader?limit=8192&name=[path][name].[hash].[ext]',
+
+    }, {
+
+      test:    /\.svg$/,
+      exclude: /node_modules/,
+      use:     'svg-inline-loader',
 
     }],
   },
 
   plugins: [
+    new CleanWebpackPlugin( 'build' ),
     new ExtractTextPlugin( '[name].[hash].css' ),
 
     new HtmlWebpackPlugin({

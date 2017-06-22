@@ -1,6 +1,10 @@
 import React from 'react';
 import classNames from 'classnames';
 import smoothScroll from 'smooth-scroll';
+import envelopeIcon from 'assets/icons/envelope.svg';
+import fileIcon from 'assets/icons/file.svg';
+import githubIcon from 'assets/icons/github.svg';
+import twitterIcon from 'assets/icons/twitter.svg';
 
 require( './style.css' );
 
@@ -117,6 +121,15 @@ class Nav extends React.Component {
             <li><a href="#about">About</a></li>
             <li><a href="#work">Work</a></li>
             <li><a href="#contact">Contact</a></li>
+
+            <li>
+              <ul>
+                <li><a href="mailto:liambutterworth@gmail.com" dangerouslySetInnerHTML={{ __html: envelopeIcon }} /></li>
+                <li><a href="#resume" target="_blank" rel="noopener noreferrer" dangerouslySetInnerHTML={{ __html: fileIcon }} /></li>
+                <li><a href="https://github.com/liambutterworth" target="_blank" rel="noopener noreferrer" dangerouslySetInnerHTML={{ __html: githubIcon }} /></li>
+                <li><a href="http://twitter.com/wbbutterworth" target="_blank" rel="noopener noreferrer" dangerouslySetInnerHTML={{ __html: twitterIcon }} /></li>
+              </ul>
+            </li>
           </ul>
         </nav>
       </div>

@@ -1,4 +1,4 @@
-$breakpoint: span( 8, rem );
+$breakpoint: span( 6, rem );
 
 .nav {
   font-family: 'Source Sans Pro', serif;
@@ -8,7 +8,7 @@ $breakpoint: span( 8, rem );
   z-index: 99;
   width: 100%;
   transition: height 300ms 300ms;
-  background: url(/source/assets/images/bricks.jpg);
+  background: url(../../assets/images/bricks.jpg);
   background-size: cover;
   border-bottom: 1px solid color( $background-color shade( 15% ) );
 
@@ -54,16 +54,10 @@ $breakpoint: span( 8, rem );
   display: block;
   float: left;
   font-size: font-size( 20px );
-  height: lines( 2 );
   font-weight: 200;
   line-height: lines( 3 );
   text-decoration: none;
   transition: all 300ms 300ms, border-color 300ms;
-  border-bottom: 1px solid transparent;
-
-  &:hover {
-    border-bottom: 1px solid $highlight-color;
-  }
 
   span {
     font-weight: 900;
@@ -80,16 +74,14 @@ $breakpoint: span( 8, rem );
 
   @media screen and ( min-width: span( 6, rem ) ) {
     font-size: font-size( 30px );
-    height: lines( 2.5 );
 
     .nav--scrolled & {
       font-size: font-size( 20px );
-      height: lines( 2 );
     }
 
     .nav--open & {
       font-size: font-size( 40px );
-      margin-top: lines( 0.25 );
+      /* margin-top: lines( 0.25 ); */
     }
   }
 }
@@ -105,7 +97,6 @@ $breakpoint: span( 8, rem );
   height: lines( 1.5 );
   width: lines( 1.5 );
   margin-top: lines( 0.75 );
-  margin-right: lines( 0.25 );
 
   &:focus {
     outline: none;
@@ -115,7 +106,7 @@ $breakpoint: span( 8, rem );
     transition: all 300ms;
   }
 
-  @media screen and ( min-width: span( 6, rem ) ) {
+  @media ( min-width: $breakpoint ) {
     height: lines( 2 );
     width: lines( 2 );
     margin-top: lines( 0.5 );
@@ -124,13 +115,12 @@ $breakpoint: span( 8, rem );
       height: lines( 1.5 );
       width: lines( 1.5 );
       margin-top: lines( 0.75 );
-      margin-right: lines( 0.25 );
     }
 
     .nav--open & {
       height: lines( 2.5 );
       width: lines( 2.5 );
-      margin-top: lines( 0.5 );
+      margin-top: lines( 0.25 );
     }
   }
 }
@@ -185,42 +175,87 @@ $breakpoint: span( 8, rem );
   }
 }
 
-.nav-links ul {
+.nav-links > ul {
   width: 100%;
   position: absolute;
-  bottom: 0;
+  bottom: 50%;
+  margin-bottom: lines( -5 );
+  text-align: center;
+
+  @media ( min-width: $breakpoint ) {
+    text-align: right;
+    bottom: 0;
+    margin-bottom: 0;
+  }
 }
 
-.nav-links ul li {
+.nav-links > ul > li {
   transform: translate( 0, 1000px );
   transition: all 600ms ease-out;
+  max-width: $site-width;
+  box-sizing: content-box;
+  padding: 0 lines( 1 );
+  margin: 0 auto;
 
   .nav--open & { transform: translate( 0, 0 ); }
   .nav--open &:nth-child(1) { transition: all 400ms ease-out; }
   .nav--open &:nth-child(2) { transition: all 500ms ease-out; }
   .nav--open &:nth-child(3) { transition: all 600ms ease-out; }
+  .nav--open &:nth-child(4) { transition: all 700ms ease-out; }
 }
 
-.nav-links ul li a {
+.nav-links > ul > li > a {
   color: $foreground-color;
   display: block;
   font-family: 'Source Sans Pro', serif;
-  font-size: font-size( 80px );
+  font-size: font-size( 70px );
   font-weight: 900;
   text-decoration: none;
-  text-align: right;
-  line-height: lines( 3.75 );
-  padding: 0 lines( 1 ) 0 0;
+  line-height: lines( 2.25 );
+  margin-bottom: lines( 0.75 );
   text-transform: uppercase;
-  max-width: $site-width;
-  margin: 0 auto lines( 0.25 );
   transition: all 300ms;
 
   &:hover {
     color: $highlight-color;
   }
 
-  @media screen and ( min-width: span( 6, rem ) ) {
+  @media ( min-width: $breakpoint ) {
     font-size: font-size( 120px );
+    line-height: lines( 3.75 );
+  margin-bottom: lines( 0.25 );
+  }
+}
+
+.nav-links ul ul {
+  box-sizing: content-box;
+  margin: 0 auto;
+  max-width: $site-width;
+}
+
+.nav-links ul ul > li {
+  display: inline-block;
+
+  & + li {
+    margin-left: lines( 0.5 );
+  }
+}
+
+.nav-links ul ul > li > a {
+  display: block;
+  height: lines( 2 );
+
+  @media ( min-width: $breakpoint ) {
+    height: lines( 3 );
+  }
+
+  svg {
+    fill: $foreground-color;
+    height: 100%;
+    transition: fill 300ms;
+  }
+
+  &:hover svg {
+    fill: $highlight-color;
   }
 }

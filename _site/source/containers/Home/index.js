@@ -2,7 +2,9 @@ import React from 'react';
 import Banner from 'components/Banner';
 import { Row } from 'components/Grid';
 import Nav from 'components/Nav';
+import Contact from 'components/Contact';
 import background from 'assets/images/mic-stand.jpg';
+import envelope from 'assets/icons/envelope.svg';
 
 /**
  * home page container
@@ -46,6 +48,8 @@ const Home = () => (
         Praesent imperdiet arcu lectus, non semper nunc fermentum non. Donec laoreet gravida elit. Praesent pellentesque egestas metus, et dignissim justo faucibus quis. Quisque non aliquam augue. Phasellus nec lorem sapien. Maecenas id nisi quis mi sagittis auctor et eu neque. Maecenas vel accumsan ex, id imperdiet nulla. Nam id augue non ante facilisis bibendum. Nullam id tellus maximus, mattis quam nec, semper urna. Mauris at eleifend lectus. Sed id sollicitudin quam. Donec tincidunt quam in sapien laoreet blandit vel sit amet elit. Mauris urna orci, pharetra id est nec, elementum mattis elit.
       </p>
     </Row>
+
+    <Contact />
   </div>
 
 );
