@@ -1,0 +1,16 @@
+.footer {
+  height: lines( 10 );
+  position: relative;
+  overflow: hidden;
+}
+
+.footer-inner {
+  bottom: 0;
+  position: fixed;
+  text-align: center;
+  width: 100%;
+}
+
+.footer ul {
+  display: none;
+}

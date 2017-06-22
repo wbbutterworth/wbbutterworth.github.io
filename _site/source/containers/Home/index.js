@@ -1,10 +1,9 @@
 import React from 'react';
 import Banner from 'components/Banner';
 import { Row } from 'components/Grid';
-import Nav from 'components/Nav';
-import Contact from 'components/Contact';
-import background from 'assets/images/mic-stand.jpg';
-import envelope from 'assets/icons/envelope.svg';
+import Header from 'components/Header';
+import Footer from 'components/Footer';
+import backgroundIMG from 'assets/images/mic-stand.jpg';
 
 /**
  * home page container
@@ -15,12 +14,16 @@ import envelope from 'assets/icons/envelope.svg';
 const Home = () => (
 
   <div>
-    <Nav />
+    <Header />
 
     <Banner
-      image={ background }
+      image={ backgroundIMG }
       staticText="Hi, I'm Liam and I"
-      dynamicText={ [ 'make things.', 'create websites.', 'play loud music.' ] }
+      dynamicText={ [
+        'make things.',
+        'create websites.',
+        'play loud music.',
+      ] }
     />
 
     <Row>
@@ -49,7 +52,7 @@ const Home = () => (
       </p>
     </Row>
 
-    <Contact />
+    <Footer />
   </div>
 
 );
