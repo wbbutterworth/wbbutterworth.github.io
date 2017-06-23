@@ -63,7 +63,7 @@
 }
 
 .banner-text hr {
-  border-color: #941B0C;
+  border-color: #941b0c;
   max-width: 34.666666666666664rem;
   margin: 0.75rem auto 0.125rem;
 }
@@ -88,18 +88,18 @@
 }
 
 @-webkit-keyframes blink {
-  0%   { opacity: 1; }
-  25%  { opacity: 0; }
-  50%  { opacity: 1; }
-  75%  { opacity: 0; }
+  0% { opacity: 1; }
+  25% { opacity: 0; }
+  50% { opacity: 1; }
+  75% { opacity: 0; }
   100% { opacity: 1; }
 }
 
 @keyframes blink {
-  0%   { opacity: 1; }
-  25%  { opacity: 0; }
-  50%  { opacity: 1; }
-  75%  { opacity: 0; }
+  0% { opacity: 1; }
+  25% { opacity: 0; }
+  50% { opacity: 1; }
+  75% { opacity: 0; }
   100% { opacity: 1; }
 }
 .row {
@@ -118,6 +118,9 @@
   content: "";
   clear: both;
   display: table;
+}
+.section {
+
 }
 .header {
   font-family: 'Source Sans Pro', serif;

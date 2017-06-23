@@ -1,5 +1,5 @@
-import React from 'react';
-import PropTypes from 'prop-types';
+import React      from 'react';
+import PropTypes  from 'prop-types';
 import ClassNames from 'classnames';
 
 require('./style.css');
@@ -47,7 +47,7 @@ class Banner extends React.Component {
   animate() {
     window.requestAnimationFrame(() => {
       if (this.lastScrollY !== window.scrollY) {
-        this.background.style.transform = `translate3d(0, ${ window.scrollY * 0.2 }px, 0)`;
+        this.background.style.transform = `translate3d(0, ${window.scrollY * 0.2}px, 0)`;
         this.lastScrollY = window.scrollY;
       }
     });
@@ -67,7 +67,7 @@ class Banner extends React.Component {
     const letter    = textArray.shift();
 
     setTimeout(() => {
-      this.setState({ text: `${ this.state.text + letter }` });
+      this.setState({ text: `${this.state.text + letter}` });
 
       if (textArray.length > 0) {
         this.type(textArray, callback);
@@ -108,7 +108,7 @@ class Banner extends React.Component {
     let index = this.dynamicText ? this.props.dynamicText.indexOf(this.dynamicText) + 1 : 0;
     if (index > this.props.dynamicText.length - 1) index = 0;
     this.dynamicText = this.props.dynamicText[index];
-    this.type(` ${ this.dynamicText }`, this.removeDynamicText.bind(this));
+    this.type(` ${this.dynamicText}`, this.removeDynamicText.bind(this));
   }
 
   /**
@@ -134,35 +134,37 @@ class Banner extends React.Component {
     });
 
     return (
-
-      <div className={ classes }>
+      <div className={classes}>
         <div className="banner-overlay" />
 
         <div className="banner-background">
           <img
             alt="Banner background"
-            src={ this.props.image }
-            ref={ background => this.background = background }
+            src={this.props.image}
+            ref={background => (this.background = background)}
           />
         </div>
 
         <div className="banner-text">
           <h1>Front-End Developer</h1>
           <hr />
-          <p>{ this.state.text }</p>
+          <p>{this.state.text}</p>
         </div>
       </div>
-
     );
-
   }
 
 }
 
+Banner.defaultProps = {
+  staticText:  '',
+  dynamicText: [],
+};
+
 Banner.propTypes = {
   image:       PropTypes.node.isRequired,
   staticText:  PropTypes.string,
-  dynamicText: PropTypes.arrayOf( PropTypes.string ),
+  dynamicText: PropTypes.arrayOf(PropTypes.string),
 };
 
 export default Banner;
