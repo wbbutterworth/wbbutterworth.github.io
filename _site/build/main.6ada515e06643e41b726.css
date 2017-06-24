@@ -63,7 +63,7 @@
 }
 
 .banner-text hr {
-  border-color: #941B0C;
+  border-color: #941b0c;
   max-width: 34.666666666666664rem;
   margin: 0.75rem auto 0.125rem;
 }
@@ -88,18 +88,18 @@
 }
 
 @-webkit-keyframes blink {
-  0%   { opacity: 1; }
-  25%  { opacity: 0; }
-  50%  { opacity: 1; }
-  75%  { opacity: 0; }
+  0% { opacity: 1; }
+  25% { opacity: 0; }
+  50% { opacity: 1; }
+  75% { opacity: 0; }
   100% { opacity: 1; }
 }
 
 @keyframes blink {
-  0%   { opacity: 1; }
-  25%  { opacity: 0; }
-  50%  { opacity: 1; }
-  75%  { opacity: 0; }
+  0% { opacity: 1; }
+  25% { opacity: 0; }
+  50% { opacity: 1; }
+  75% { opacity: 0; }
   100% { opacity: 1; }
 }
 .row {
@@ -118,9 +118,6 @@
   content: "";
   clear: both;
   display: table;
-}
-.section {
-
 }
 .header {
   font-family: 'Source Sans Pro', serif;
@@ -195,7 +192,7 @@
   color: #030303;
 }
 
-@media screen and ( min-width: 32rem ) {
+@media screen and (min-width: 32rem) {
 
   .header-logo {
     font-size: 1.875rem;
@@ -207,7 +204,6 @@
 
   .header--open .header-logo {
     font-size: 2.5rem;
-    /* margin-top: lines( 0.25 ); */
   }
 }
 
@@ -232,7 +228,7 @@
   transition: all 300ms;
 }
 
-@media ( min-width: 32rem ) {
+@media (min-width: 32rem) {
 
   .header-button {
     height: 3rem;
@@ -260,12 +256,12 @@
   left: 10%;
   opacity: 1;
   position: absolute;
-  transition: all 300ms cubic-bezier( 0.175, 0.885, 0.32, 1.275 ), background 300ms 300ms;
+  transition: all 300ms cubic-bezier(0.175, 0.885, 0.32, 1.275), background 300ms 300ms;
   width: 80%;
 }
 
 .header--open .header-button span {
-  transition: all 300ms cubic-bezier( 0.175, 0.885, 0.32, 1.275 ), background 300ms;
+  transition: all 300ms cubic-bezier(0.175, 0.885, 0.32, 1.275), background 300ms;
 }
 
 .header--open .header-button span,
@@ -286,8 +282,8 @@
 }
 
 .header--open .header-button span:nth-child(1) {
-  -webkit-transform: translate( 20%, -80% ) rotate( 45deg );
-  transform: translate( 20%, -80% ) rotate( 45deg );
+  -webkit-transform: translate(20%, -80%) rotate(45deg);
+  transform: translate(20%, -80%) rotate(45deg);
   -webkit-transform-origin: left top;
   transform-origin: left top;
 }
@@ -298,27 +294,24 @@
 }
 
 .header--open .header-button span:nth-child(3) {
-  -webkit-transform: translate( 20%, 0 ) rotate( -45deg );
-  transform: translate( 20%, 0 ) rotate( -45deg );
+  -webkit-transform: translate(20%, 0) rotate(-45deg);
+  transform: translate(20%, 0) rotate(-45deg);
   -webkit-transform-origin: left bottom;
   transform-origin: left bottom;
 }
 
-
 .header-links {
   pointer-events: none;
-  height: calc( 100vh - 4.5rem );
+  height: calc(100vh - 4.5rem);
   position: fixed;
   bottom: 0;
   left: 0;
   width: 100vw;
 }
 
-
 .header--open .header-links {
   pointer-events: auto;
 }
-
 
 .header-links > ul {
   width: 100%;
@@ -328,8 +321,7 @@
   text-align: center;
 }
 
-
-@media ( min-width: 32rem ) {
+@media (min-width: 32rem) {
 
   .header-links > ul {
     text-align: right;
@@ -338,10 +330,9 @@
   }
 }
 
-
 .header-links > ul > li {
-  -webkit-transform: translate( 0, 1000px );
-  transform: translate( 0, 1000px );
+  -webkit-transform: translate(0, 1000px);
+  transform: translate(0, 1000px);
   transition: all 600ms ease-out;
   max-width: 1024px;
   box-sizing: content-box;
@@ -349,32 +340,26 @@
   margin: 0 auto;
 }
 
-
 .header--open .header-links > ul > li {
-  -webkit-transform: translate( 0, 0 );
-  transform: translate( 0, 0 );
+  -webkit-transform: translate(0, 0);
+  transform: translate(0, 0);
 }
-
 
 .header--open .header-links > ul > li:nth-child(1) {
   transition: all 400ms ease-out;
 }
 
-
 .header--open .header-links > ul > li:nth-child(2) {
   transition: all 500ms ease-out;
 }
-
 
 .header--open .header-links > ul > li:nth-child(3) {
   transition: all 600ms ease-out;
 }
 
-
 .header--open .header-links > ul > li:nth-child(4) {
   transition: all 700ms ease-out;
 }
-
 
 .header-links > ul > li > a {
   color: #030303;
@@ -389,13 +374,11 @@
   transition: all 300ms;
 }
 
-
 .header-links > ul > li > a:hover {
   color: #941b0c;
 }
 
-
-@media ( min-width: 32rem ) {
+@media (min-width: 32rem) {
 
   .header-links > ul > li > a {
     font-size: 7.5rem;
@@ -404,44 +387,37 @@
   }
 }
 
-
 .header-links ul ul {
   box-sizing: content-box;
   margin: 0 auto;
   max-width: 1024px;
 }
 
-
 .header-links ul ul > li {
   display: inline-block;
 }
 
-
 .header-links ul ul > li + li {
   margin-left: 0.75rem;
 }
-
 
 .header-links ul ul > li > a {
   display: block;
   height: 3rem;
 }
 
-
-@media ( min-width: 32rem ) {
+@media (min-width: 32rem) {
 
   .header-links ul ul > li > a {
     height: 4.5rem;
   }
 }
 
-
 .header-links ul ul > li > a svg {
   fill: #030303;
   height: 100%;
   transition: fill 300ms;
 }
-
 
 .header-links ul ul > li > a:hover svg {
   fill: #941b0c;

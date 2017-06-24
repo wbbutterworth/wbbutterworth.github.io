@@ -1,16 +1,10 @@
-import React      from 'react';
-import Icon       from 'components/Icon';
-import fileSVG    from 'assets/icons/file.svg';
-import githubSVG  from 'assets/icons/github.svg';
+import React from 'react';
+import Icon from 'components/Icon';
+import fileSVG from 'assets/icons/file.svg';
+import githubSVG from 'assets/icons/github.svg';
 import twitterSVG from 'assets/icons/twitter.svg';
 
 require('./style.css');
-
-/**
- * site footer
- *
- * @return { element } react element
- */
 
 const Footer = () => (
   <section className="footer">

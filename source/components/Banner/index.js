@@ -1,48 +1,24 @@
-import React      from 'react';
-import PropTypes  from 'prop-types';
+import React from 'react';
+import PropTypes from 'prop-types';
 import ClassNames from 'classnames';
 
 require('./style.css');
 
-/**
- * animated top level banner
- *
- * @extends React.Component
- */
-
 class Banner extends React.Component {
-
-  /**
-   * setup component
-   *
-   * @param { object } props             component properties
-   * @param { string } props.image       path to image source
-   * @param { string } props.staticText  static banner text
-   * @param { array }  props.dynamicText array of text to animate at the end of text
-   */
-
   constructor(props) {
     super(props);
 
     this.state = {
-      text:      '',
+      text: '',
       isResting: true,
     };
   }
-
-  /**
-   * handle component mounted event
-   */
 
   componentDidMount() {
     this.animate();
     setInterval(this.animate.bind(this), 50);
     this.type(this.props.staticText, this.addDynamicText.bind(this));
   }
-
-  /**
-   * handle parallax scroll
-   */
 
   animate() {
     window.requestAnimationFrame(() => {
@@ -53,18 +29,11 @@ class Banner extends React.Component {
     });
   }
 
-  /**
-   * simulate typing
-   *
-   * @param { string|array } text     string to be added to state text
-   * @param { function }     callback function to call after typing characters
-   */
-
   type(text, callback) {
     this.setState({ isResting: false });
 
     const textArray = Array.isArray(text) ? text : text.split('');
-    const letter    = textArray.shift();
+    const letter = textArray.shift();
 
     setTimeout(() => {
       this.setState({ text: `${this.state.text + letter}` });
@@ -77,13 +46,6 @@ class Banner extends React.Component {
       }
     }, Math.floor(Math.random() * 50) + 100);
   }
-
-  /**
-   * backspace over inner text
-   *
-   * @param { number }   count    number of characters to delete
-   * @param { function } callback function to call after deleting characters
-   */
 
   backspace(count, callback) {
     this.setState({ isResting: false });
@@ -100,10 +62,6 @@ class Banner extends React.Component {
     }, 50);
   }
 
-  /**
-   * add dynamic text to end of inner text
-   */
-
   addDynamicText() {
     let index = this.dynamicText ? this.props.dynamicText.indexOf(this.dynamicText) + 1 : 0;
     if (index > this.props.dynamicText.length - 1) index = 0;
@@ -111,25 +69,15 @@ class Banner extends React.Component {
     this.type(` ${this.dynamicText}`, this.removeDynamicText.bind(this));
   }
 
-  /**
-   * remove dynamic text from end of inner text
-   */
-
   removeDynamicText() {
     setTimeout(() => {
       this.backspace(this.dynamicText.length + 1, this.addDynamicText.bind(this));
     }, 3000);
   }
 
-  /**
-   * generate component markup
-   *
-   * @return { element } react element
-   */
-
   render() {
     const classes = ClassNames({
-      banner:            true,
+      banner: true,
       'banner--resting': this.state.isResting,
     });
 
@@ -153,17 +101,16 @@ class Banner extends React.Component {
       </div>
     );
   }
-
 }
 
 Banner.defaultProps = {
-  staticText:  '',
+  staticText: '',
   dynamicText: [],
 };
 
 Banner.propTypes = {
-  image:       PropTypes.node.isRequired,
-  staticText:  PropTypes.string,
+  image: PropTypes.node.isRequired,
+  staticText: PropTypes.string,
   dynamicText: PropTypes.arrayOf(PropTypes.string),
 };
 

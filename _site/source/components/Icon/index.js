@@ -1,16 +1,10 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-require( './style.css' );
-
-/**
- * icon component
- */
+require('./style.css');
 
 const Icon = props => (
-
   <i className="icon" dangerouslySetInnerHTML={{ __html: props.svg }} />
-
 );
 
 Icon.propTypes = {

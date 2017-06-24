@@ -43,10 +43,10 @@
 
 .banner-text {
   top: 50%;
-  margin-top: lines( -2.5 );
+  margin-top: lines(-2.5);
   color: $background-color;
   font-family: 'Source Sans Pro', sans-serif;
-  padding: lines( 2 );
+  padding: lines(2);
   position: absolute;
   white-space: pre-wrap;
   z-index: 3;
@@ -54,26 +54,26 @@
   text-align: center;
 
   h1 {
-    font-size: font-size( 60px );
+    font-size: fontsize(60px);
     font-weight: 900;
     line-height: 1;
   }
 
   hr {
-    border-color: #941B0C;
-    max-width: span( 6.5, rem );
-    margin: lines( 0.5 ) auto lines( 0.125, 1px );
+    border-color: $highlight-color;
+    max-width: span(6.5, rem);
+    margin: lines(0.5) auto lines(0.125, 1px);
   }
 
   p {
-    font-size: font-size( 40px );
+    font-size: fontsize(40px);
     font-weight: 200;
 
     &::after {
       background-color: $background-color;
       content: "";
       display: inline-block;
-      height: lines( 1.5 );
+      height: lines(1.5);
       margin: 0 0 -2px 1px;
       width: 1px;
       .banner--resting & { animation: blink 2s infinite; }
@@ -82,9 +82,9 @@
 }
 
 @keyframes blink {
-  0%   { opacity: 1; }
-  25%  { opacity: 0; }
-  50%  { opacity: 1; }
-  75%  { opacity: 0; }
+  0% { opacity: 1; }
+  25% { opacity: 0; }
+  50% { opacity: 1; }
+  75% { opacity: 0; }
   100% { opacity: 1; }
 }

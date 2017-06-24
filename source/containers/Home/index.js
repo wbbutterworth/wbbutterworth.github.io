@@ -5,25 +5,18 @@ import Header from 'components/Header';
 import Footer from 'components/Footer';
 import backgroundIMG from 'assets/images/mic-stand.jpg';
 
-/**
- * home page container
- *
- * @return { element } react element
- */
-
 const Home = () => (
-
   <div>
     <Header />
 
     <Banner
-      image={ backgroundIMG }
+      image={backgroundIMG}
       staticText="Hi, I'm Liam and I"
-      dynamicText={ [
+      dynamicText={[
         'make things.',
         'create websites.',
         'play loud music.',
-      ] }
+      ]}
     />
 
     <Row>
@@ -54,7 +47,6 @@ const Home = () => (
 
     <Footer />
   </div>
-
 );
 
 export default Home;

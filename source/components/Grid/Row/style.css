@@ -1,7 +1,7 @@
 .row {
   margin-left: auto;
   margin-right: auto;
-  max-width: span( 12, rem );
+  max-width: span(12, rem);
 }
 
 .row .row {

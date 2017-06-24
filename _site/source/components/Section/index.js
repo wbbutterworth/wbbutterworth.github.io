@@ -1,22 +1,14 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-require( './style.css' );
-
-/**
- * site content section
- */
+require('./style.css');
 
 const Section = props => (
-
-  <section className="section">
-    { props.children }
-  </section>
-
+  <section className="section">{ props.children }</section>
 );
 
 Section.propTypes = {
-  children: PropTypes.node,
+  children: PropTypes.node.isRequired,
 };
 
 export default Section;

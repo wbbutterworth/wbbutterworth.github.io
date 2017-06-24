@@ -1,7 +1,7 @@
 const CleanWebpackPlugin = require('clean-webpack-plugin');
-const ExtractTextPlugin  = require('extract-text-webpack-plugin');
-const HtmlWebpackPlugin  = require('html-webpack-plugin');
-const path               = require('path');
+const ExtractTextPlugin = require('extract-text-webpack-plugin');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+const path = require('path');
 
 module.exports = {
   context: `${__dirname}/source/`,
@@ -12,8 +12,8 @@ module.exports = {
   ],
 
   output: {
-    path:       `${__dirname}/build/`,
-    filename:   '[name].[hash].js',
+    path: `${__dirname}/build/`,
+    filename: '[name].[hash].js',
     publicPath: '/build/',
   },
 
@@ -28,24 +28,24 @@ module.exports = {
 
   module: {
     loaders: [{
-      test:    /\.js$/,
+      test: /\.js$/,
       exclude: /node_modules/,
-      use:     'babel-loader',
+      use: 'babel-loader',
     }, {
-      test:    /\.css$/,
+      test: /\.css$/,
       exclude: /node_modules/,
 
       use: ExtractTextPlugin.extract({
         use: ['css-loader', 'postcss-loader'],
       }),
     }, {
-      test:    /\.(jpe?g|png|gif)$/,
+      test: /\.(jpe?g|png|gif)$/,
       exclude: /node_modules/,
-      use:     'url-loader?limit=8192&name=[path][name].[hash].[ext]',
+      use: 'url-loader?limit=8192&name=[path][name].[hash].[ext]',
     }, {
-      test:    /\.svg$/,
+      test: /\.svg$/,
       exclude: /node_modules/,
-      use:     'svg-inline-loader',
+      use: 'svg-inline-loader',
     }],
   },
 
