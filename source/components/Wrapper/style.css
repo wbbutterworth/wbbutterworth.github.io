@@ -1,0 +1,10 @@
+.wrapper {
+  margin: 0 auto;
+  max-width: span(12, rem);
+
+  &::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+}

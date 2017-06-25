@@ -24,7 +24,6 @@
     position: absolute;
     right: 0;
     top: 0;
-    transition: transform 50ms ease-in-out;
     width: 1024px;
     z-index: 1;
   }

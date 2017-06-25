@@ -8,6 +8,10 @@ class Banner extends React.Component {
   constructor(props) {
     super(props);
 
+    this.animate = this.animate.bind(this);
+    this.addDynamicText = this.addDynamicText.bind(this);
+    this.removeDynamicText = this.removeDynamicText.bind(this);
+
     this.state = {
       text: '',
       isResting: true,
@@ -16,14 +20,14 @@ class Banner extends React.Component {
 
   componentDidMount() {
     this.animate();
-    setInterval(this.animate.bind(this), 50);
-    this.type(this.props.staticText, this.addDynamicText.bind(this));
+    setInterval(this.animate, 50);
+    this.type(this.props.staticText, this.addDynamicText);
   }
 
   animate() {
     window.requestAnimationFrame(() => {
       if (this.lastScrollY !== window.scrollY) {
-        this.background.style.transform = `translate3d(0, ${window.scrollY * 0.2}px, 0)`;
+        this.background.style.transform = `translate3d(0, ${window.scrollY * 0.25}px, 0)`;
         this.lastScrollY = window.scrollY;
       }
     });
@@ -66,12 +70,12 @@ class Banner extends React.Component {
     let index = this.dynamicText ? this.props.dynamicText.indexOf(this.dynamicText) + 1 : 0;
     if (index > this.props.dynamicText.length - 1) index = 0;
     this.dynamicText = this.props.dynamicText[index];
-    this.type(` ${this.dynamicText}`, this.removeDynamicText.bind(this));
+    this.type(` ${this.dynamicText}`, this.removeDynamicText);
   }
 
   removeDynamicText() {
     setTimeout(() => {
-      this.backspace(this.dynamicText.length + 1, this.addDynamicText.bind(this));
+      this.backspace(this.dynamicText.length + 1, this.addDynamicText);
     }, 3000);
   }
 

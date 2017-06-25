@@ -2,10 +2,10 @@ import React from 'react';
 import classNames from 'classnames';
 import smoothScroll from 'smooth-scroll';
 import Icon from 'components/Icon';
-import envelopeSVG from 'assets/icons/envelope.svg';
-import fileSVG from 'assets/icons/file.svg';
-import githubSVG from 'assets/icons/github.svg';
-import twitterSVG from 'assets/icons/twitter.svg';
+import envelopeSvg from 'assets/icons/envelope.svg';
+import fileSvg from 'assets/icons/file.svg';
+import githubSvg from 'assets/icons/github.svg';
+import twitterSvg from 'assets/icons/twitter.svg';
 
 require('./style.css');
 
@@ -19,16 +19,16 @@ class Header extends React.Component {
     this.close = this.close.bind(this);
 
     this.state = {
-      isScrolled: window.scrollY > 0,
+      isScrolled: false,
       isOpen: false,
     };
   }
 
   componentDidMount() {
-    setInterval(this.toggleScrolled.bind(this), 200);
+    setInterval(this.toggleScrolled, 200);
 
     smoothScroll.init({
-      before: this.close.bind(this),
+      before: this.close,
       easing: 'easeInOutQuad',
       selector: '.header a',
       speed: 800,
@@ -59,7 +59,7 @@ class Header extends React.Component {
     });
 
     return (
-      <header className={classes} ref={container => (this.container = container)}>
+      <header className={classes}>
         <div className="header-interface">
           <a href="#top" className="header-logo">Liam<span>Butterworth</span></a>
 
@@ -78,10 +78,10 @@ class Header extends React.Component {
 
             <li>
               <ul>
-                <li><a href="mailto:liambutterworth@gmail.com"><Icon svg={envelopeSVG} /></a></li>
-                <li><a href="#resume" target="_blank" rel="noopener noreferrer"><Icon svg={fileSVG} /></a></li>
-                <li><a href="https://github.com/liambutterworth" target="_blank" rel="noopener noreferrer"><Icon svg={githubSVG} /></a></li>
-                <li><a href="http://twitter.com/wbbutterworth" target="_blank" rel="noopener noreferrer"><Icon svg={twitterSVG} /></a></li>
+                <li><a href="mailto:liambutterworth@gmail.com"><Icon svg={envelopeSvg} /></a></li>
+                <li><a href="#resume" target="_blank" rel="noopener noreferrer"><Icon svg={fileSvg} /></a></li>
+                <li><a href="https://github.com/liambutterworth" target="_blank" rel="noopener noreferrer"><Icon svg={githubSvg} /></a></li>
+                <li><a href="http://twitter.com/wbbutterworth" target="_blank" rel="noopener noreferrer"><Icon svg={twitterSvg} /></a></li>
               </ul>
             </li>
           </ul>
