@@ -71,13 +71,13 @@ class Header extends React.Component {
         </div>
 
         <nav className="header-links">
-          <ul>
+          <ul className="header-sections">
             <li><a href="#about">About</a></li>
             <li><a href="#work">Work</a></li>
             <li><a href="#contact">Contact</a></li>
 
             <li>
-              <ul>
+              <ul className="header-social">
                 <li><a href="mailto:liambutterworth@gmail.com"><Icon svg={envelopeSvg} /></a></li>
                 <li><a href="#resume" target="_blank" rel="noopener noreferrer"><Icon svg={fileSvg} /></a></li>
                 <li><a href="https://github.com/liambutterworth" target="_blank" rel="noopener noreferrer"><Icon svg={githubSvg} /></a></li>

@@ -75,7 +75,10 @@
       height: lines(1.5);
       margin: 0 0 -2px 1px;
       width: 1px;
-      .banner--resting & { animation: blink 2s infinite; }
+
+      .banner--resting & {
+        animation: blink 2s infinite;
+      }
     }
   }
 }

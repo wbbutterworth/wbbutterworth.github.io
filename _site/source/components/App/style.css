@@ -5,12 +5,12 @@
   font-size: 100%;
   font-style: normal;
   font-weight: normal;
-}
 
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
+  &,
+  &::before,
+  &::after {
+    box-sizing: border-box;
+  }
 }
 
 nav,

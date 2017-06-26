@@ -1,6 +1,6 @@
 const CleanWebpackPlugin = require('clean-webpack-plugin');
-const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const path = require('path');
 
 module.exports = {
@@ -39,7 +39,7 @@ module.exports = {
         use: ['css-loader', 'postcss-loader'],
       }),
     }, {
-      test: /\.(jpe?g|png|gif)$/,
+      test: /\.(jpe?g|png)$/,
       exclude: /node_modules/,
       use: 'url-loader?limit=8192&name=[path][name].[hash].[ext]',
     }, {

@@ -3,6 +3,7 @@ import Banner from 'components/Banner';
 import Wrapper from 'components/Wrapper';
 import Header from 'components/Header';
 import Footer from 'components/Footer';
+import { Row, Column } from 'components/Grid';
 import backgroundImg from 'assets/images/mic-stand.jpg';
 
 const Home = () => (
@@ -20,6 +21,18 @@ const Home = () => (
     />
 
     <Wrapper>
+      <Row>
+        <Column small="6" medium="4" large="3">This is a column</Column>
+        <Column small="3" medium="4" large="3">This is a column</Column>
+        <Column small="3" medium="4" large="6">This is a column</Column>
+      </Row>
+
+      <Row>
+        <Column small="6" medium="4" large="3">This is a column</Column>
+        <Column small="3" medium="4" large="3">This is a column</Column>
+        <Column small="3" medium="4" large="6">This is a column</Column>
+      </Row>
+
       <p id="about">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur non lectus a sem pulvinar consequat a in turpis. Sed efficitur mauris lorem, sed aliquam augue placerat vel. Maecenas laoreet mauris vel risus gravida scelerisque. Mauris sollicitudin sed nisl dictum malesuada. Curabitur mattis vulputate sem, at lobortis massa suscipit vitae. Integer ut nibh sed nisl congue venenatis. Cras sed egestas nibh. Cras pretium, lectus in facilisis auctor, nisl ante placerat felis, a convallis ligula sapien ac erat. Ut pellentesque, metus pellentesque malesuada ultrices, ligula purus rhoncus nulla, nec condimentum nulla leo vel augue. Sed sit amet quam a purus rhoncus bibendum. Phasellus est ipsum, hendrerit at viverra vel, ultricies sit amet diam. Aliquam erat volutpat. Vivamus viverra sapien at nunc euismod laoreet.
         Vivamus pulvinar, ex ultrices vestibulum pharetra, purus odio maximus odio, nec commodo neque mauris sed urna. Phasellus at metus justo. Ut dignissim ipsum vitae ante consequat condimentum. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nulla pellentesque nisi ultrices ante laoreet, in viverra quam auctor. Aenean vitae diam aliquam, dapibus orci nec, ullamcorper sem. Fusce at urna diam. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Quisque et euismod mauris. Donec placerat sem id efficitur rutrum. Nam iaculis purus non tincidunt elementum. Nulla vitae tincidunt nulla. Curabitur suscipit tristique nibh, eget luctus nisl venenatis a. Duis nec ultrices diam. Suspendisse nec sem ac dolor malesuada vulputate id suscipit sem.

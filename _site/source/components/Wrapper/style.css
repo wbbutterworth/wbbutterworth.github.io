@@ -1,6 +1,6 @@
 .wrapper {
   margin: 0 auto;
-  max-width: span(12, rem);
+  max-width: $site-width;
 
   &::after {
     content: "";
