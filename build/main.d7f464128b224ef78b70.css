@@ -101,7 +101,7 @@
 }
 .wrapper {
   margin: 0 auto;
-  max-width: 64rem;
+  max-width: 1024px;
 }
 .wrapper::after {
   content: "";
@@ -436,83 +436,15 @@
   text-align: center;
   width: 100%;
 }
-.column {
-  padding: 0 0.75rem;
-}
-
-@media (min-width: 21.333333333333332rem) {
-
-  .column[class*=column-small] {
-    float: left;
-  }
-
-  .column.column-small-1 {
-    width: 8.333333333333334%;
-  }
-
-  .column.column-small-2 {
-    width: 16.666666666666668%;
-  }
-
-  .column.column-small-3 {
-    width: 25%;
-  }
-
-  .column.column-small-4 {
-    width: 33.333333333333336%;
-  }
-
-  .column.column-small-5 {
-    width: 41.66666666666667%;
-  }
-
-  .column.column-small-6 {
-    width: 50%;
-  }
-
-  .column.column-small-7 {
-    width: 58.333333333333336%;
-  }
-
-  .column.column-small-8 {
-    width: 66.66666666666667%;
-  }
-
-  .column.column-small-9 {
-    width: 75%;
-  }
-
-  .column.column-small-10 {
-    width: 83.33333333333334%;
-  }
-
-  .column.column-small-11 {
-    width: 91.66666666666667%;
-  }
-
-  .column.column-small-12 {
-    width: 100%;
-  }
-}
-.row {
-  margin-left: -0.75rem;
-  margin-right: -0.75rem;
-}
-.row + .row {
-  margin-top: 1.5rem;
-}
-.row::after {
-  content: "";
-  clear: both;
-  display: table;
+.section {
+  font-size: 1.6875rem;
+  font-weight: 200;
+  line-height: 1.6875rem;
 }
 * {
   border: 0;
   margin: 0;
   padding: 0;
-  font-size: 100%;
-  font-style: normal;
-  font-weight: normal;
 }
 
 *,
@@ -557,41 +489,42 @@ em {
 body {
   background: #fcfcfc;
   color: #030303;
-  font-size: NaNrem;
-  line-height: NaN;
+  font-family: 'Source Sans Pro', serif;
+  font-size: 1rem;
+  line-height: 1.5;
 }
 
 h1 {
-  font-size: NaNrem;
-  line-height: NaN;
+  font-size: 1.75rem;
+  line-height: 1.7142857142857142;
 }
 
 h2 {
-  font-size: NaNrem;
-  line-height: NaN;
+  font-size: 1.625rem;
+  line-height: 1.8461538461538463;
 }
 
 h3 {
-  font-size: NaNrem;
-  line-height: NaN;
+  font-size: 1.5rem;
+  line-height: 2;
 }
 
 h4 {
-  font-size: NaNrem;
-  line-height: NaN;
+  font-size: 1.375rem;
+  line-height: 2.1818181818181817;
 }
 
 h5 {
-  font-size: NaNrem;
-  line-height: NaN;
+  font-size: 1.25rem;
+  line-height: 2.4;
 }
 
 h6 {
-  font-size: NaNrem;
-  line-height: NaN;
+  font-size: 1.125rem;
+  line-height: 2.6666666666666665;
 }
 
 small {
-  font-size: NaNrem;
-  line-height: NaN;
+  font-size: 0.875rem;
+  line-height: 1.7142857142857142;
 }

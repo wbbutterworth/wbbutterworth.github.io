@@ -21,9 +21,8 @@ const functions = {
   fontsize(targetPx) {
     const base = parseInt(variables['base-font-size'], 10);
     const target = parseInt(targetPx, 10);
-    const measure = target / base;
 
-    return `${measure}rem`;
+    return `${target / base}rem`;
   },
 
   lineheight(targetPx) {
@@ -32,6 +31,9 @@ const functions = {
     const height = variables['base-line-height'];
     const multiplier = Math.ceil(target / base);
 
+    // const size = target / base;
+    // return (size / height) * (height / size);
+    // return (target / base) * height;
     return ((height * multiplier) * base) / target;
   },
 
