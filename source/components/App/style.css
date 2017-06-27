@@ -85,3 +85,12 @@ small {
   font-size: fontsize($small-font-size);
   line-height: lineheight($small-font-size);
 }
+
+a {
+  text-decoration: none;
+  color: $highlight-color;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}

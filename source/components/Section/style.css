@@ -1,5 +1,5 @@
 .section {
   font-size: fontsize(27px);
   font-weight: 200;
-  line-height: fontsize(27px);
+  line-height: lineheight(27px);
 }

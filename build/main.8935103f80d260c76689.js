@@ -12924,7 +12924,7 @@ module.exports = getIteratorFn;
 /* 171 */
 /***/ (function(module, exports) {
 
-module.exports = "<svg id=\"Layer_1\" data-name=\"Layer 1\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 80 80\"><title>Portfolio Icons</title><rect x=\"10\" width=\"60\" height=\"80\" rx=\"2\" ry=\"2\"></rect><line x1=\"15\" y1=\"15\" x2=\"65\" y2=\"15\" style=\"fill:none;stroke:#fff;stroke-miterlimit:10;stroke-width:4px\"></line><line x1=\"15\" y1=\"30\" x2=\"65\" y2=\"30\" style=\"fill:none;stroke:#fff;stroke-miterlimit:10;stroke-width:4px\"></line><line x1=\"15\" y1=\"45\" x2=\"65\" y2=\"45\" style=\"fill:none;stroke:#fff;stroke-miterlimit:10;stroke-width:4px\"></line><line x1=\"15\" y1=\"60\" x2=\"50\" y2=\"60\" style=\"fill:none;stroke:#fff;stroke-miterlimit:10;stroke-width:4px\"></line></svg>"
+module.exports = "<svg id=\"Layer_1\" data-name=\"Layer 1\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 80 80\"><defs><style>.cls-1{fill:none;stroke:#fff;stroke-miterlimit:10;stroke-width:4px;}</style></defs><title>Portfolio Icons</title><rect x=\"10\" width=\"60\" height=\"80\" rx=\"2\" ry=\"2\"></rect><line class=\"cls-1\" x1=\"20\" y1=\"15\" x2=\"60\" y2=\"15\"></line><line class=\"cls-1\" x1=\"20\" y1=\"45\" x2=\"60\" y2=\"45\"></line><line class=\"cls-1\" x1=\"20\" y1=\"60\" x2=\"50\" y2=\"60\"></line><line class=\"cls-1\" x1=\"20\" y1=\"30\" x2=\"60\" y2=\"30\"></line></svg>"
 
 /***/ }),
 /* 172 */

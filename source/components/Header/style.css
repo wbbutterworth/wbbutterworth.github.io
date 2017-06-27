@@ -22,7 +22,6 @@ $breakpoint: span(6, rem);
   }
 
   &::after {
-    transition: bottom 300ms;
     background: $background-color;
     opacity: 1;
     bottom: 0;
@@ -56,7 +55,7 @@ $breakpoint: span(6, rem);
   font-size: fontsize(20px);
   font-weight: 200;
   line-height: lines(3);
-  text-decoration: none;
+  text-decoration: none !important;
   transition: all 300ms 300ms, border-color 300ms;
 
   span {
@@ -75,12 +74,12 @@ $breakpoint: span(6, rem);
   @media screen and (min-width: span(6, rem)) {
     font-size: fontsize(30px);
 
-    .header--open & {
-      font-size: fontsize(40px);
-    }
-
     .header--scrolled & {
       font-size: fontsize(20px);
+    }
+
+    .header--open & {
+      font-size: fontsize(40px);
     }
   }
 }
@@ -110,16 +109,16 @@ $breakpoint: span(6, rem);
     width: lines(2);
     margin-top: lines(0.5);
 
-    .header--open & {
-      height: lines(2.5);
-      width: lines(2.5);
-      margin-top: lines(0.25);
-    }
-
     .header--scrolled & {
       height: lines(1.5);
       width: lines(1.5);
       margin-top: lines(0.75);
+    }
+
+    .header--open & {
+      height: lines(2.5);
+      width: lines(2.5);
+      margin-top: lines(0.25);
     }
   }
 
