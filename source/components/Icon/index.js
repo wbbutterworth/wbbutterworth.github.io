@@ -1,14 +1,14 @@
-import React from 'react';
+import React     from 'react';
 import PropTypes from 'prop-types';
 
-require('./style.css');
+require( './style.css' );
 
 const Icon = props => (
-  <i className="icon" dangerouslySetInnerHTML={{ __html: props.svg }} />
+	<i className="icon" dangerouslySetInnerHTML={{ __html: props.svg }} />
 );
 
 Icon.propTypes = {
-  svg: PropTypes.string.isRequired,
+	svg: PropTypes.string.isRequired,
 };
 
 export default Icon;

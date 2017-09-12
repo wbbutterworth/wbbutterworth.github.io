@@ -1,13 +1,13 @@
 * {
-  border: 0;
-  margin: 0;
-  padding: 0;
+	border: 0;
+	margin: 0;
+	padding: 0;
 
-  &,
-  &::before,
-  &::after {
-    box-sizing: border-box;
-  }
+	&,
+	&::before,
+	&::after {
+		box-sizing: border-box;
+	}
 }
 
 nav,
@@ -21,76 +21,76 @@ section,
 summary,
 figure,
 figcaption {
-  display: block;
+	display: block;
 }
 
 ol,
 ul {
-  list-style: none;
+	list-style: none;
 }
 
 hr {
-  border-top: 1px solid $foreground-color;
-  height: 1px;
-  margin: lines(1) 0 lines(1, 1px);
+	border-top: 1px solid $foreground-color;
+	height: 1px;
+	margin: lines( 1 ) 0 lines( 1, 1px );
 }
 
 strong {
-  font-weight: bold;
+	font-weight: bold;
 }
 
 em {
-  font-style: italic;
+	font-style: italic;
 }
 
 body {
-  background: $background-color;
-  color: $foreground-color;
-  font-family: 'Source Sans Pro', serif;
-  font-size: fontsize($base-font-size);
-  line-height: lineheight($base-font-size);
+	background: $background-color;
+	color: $foreground-color;
+	font-family: 'Source Sans Pro', serif;
+	font-size: fontsize( $base-font-size );
+	line-height: lineheight( $base-font-size );
 }
 
 h1 {
-  font-size: fontsize($h1-font-size);
-  line-height: lineheight($h1-font-size);
+	font-size: fontsize( $h1-font-size );
+	line-height: lineheight( $h1-font-size );
 }
 
 h2 {
-  font-size: fontsize($h2-font-size);
-  line-height: lineheight($h2-font-size);
+	font-size: fontsize( $h2-font-size );
+	line-height: lineheight( $h2-font-size );
 }
 
 h3 {
-  font-size: fontsize($h3-font-size);
-  line-height: lineheight($h3-font-size);
+	font-size: fontsize( $h3-font-size );
+	line-height: lineheight( $h3-font-size );
 }
 
 h4 {
-  font-size: fontsize($h4-font-size);
-  line-height: lineheight($h4-font-size);
+	font-size: fontsize( $h4-font-size );
+	line-height: lineheight( $h4-font-size );
 }
 
 h5 {
-  font-size: fontsize($h5-font-size);
-  line-height: lineheight($h5-font-size);
+	font-size: fontsize( $h5-font-size );
+	line-height: lineheight( $h5-font-size );
 }
 
 h6 {
-  font-size: fontsize($h6-font-size);
-  line-height: lineheight($h6-font-size);
+	font-size: fontsize( $h6-font-size );
+	line-height: lineheight( $h6-font-size );
 }
 
 small {
-  font-size: fontsize($small-font-size);
-  line-height: lineheight($small-font-size);
+	font-size: fontsize( $small-font-size );
+	line-height: lineheight( $small-font-size );
 }
 
 a {
-  text-decoration: none;
-  color: $highlight-color;
+	text-decoration: none;
+	color: $highlight-color;
 
-  &:hover {
-    text-decoration: underline;
-  }
+	&:hover {
+		text-decoration: underline;
+	}
 }

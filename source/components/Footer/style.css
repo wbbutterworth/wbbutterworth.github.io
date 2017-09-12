@@ -1,16 +1,16 @@
 .footer {
-  height: lines(10);
-  position: relative;
-  overflow: hidden;
+	height: lines( 10 );
+	position: relative;
+	overflow: hidden;
 
-  ul li a {
-    height: lines(2);
-  }
+	ul li a {
+		height: lines( 2 );
+	}
 }
 
 .footer-inner {
-  bottom: 0;
-  position: fixed;
-  text-align: center;
-  width: 100%;
+	bottom: 0;
+	position: fixed;
+	text-align: center;
+	width: 100%;
 }

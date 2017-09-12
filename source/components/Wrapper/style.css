@@ -1,10 +1,10 @@
 .wrapper {
-  margin: 0 auto;
-  max-width: $site-width;
+	margin: 0 auto;
+	max-width: $site-width;
 
-  &::after {
-    content: "";
-    clear: both;
-    display: table;
-  }
+	&::after {
+		content: "";
+		clear: both;
+		display: table;
+	}
 }

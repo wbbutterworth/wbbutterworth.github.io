@@ -18,49 +18,49 @@ const variables = {
 };
 
 const functions = {
-	fontsize(targetPx) {
-		const baseFontSize   = parseInt(variables['base-font-size'], 10);
-		const targetFontSize = parseInt(targetPx, 10);
+	fontsize( targetPx ) {
+		const baseFontSize   = parseInt( variables['base-font-size'], 10 );
+		const targetFontSize = parseInt( targetPx, 10 );
 
-		return `${targetFontSize / baseFontSize}rem`;
+		return `${ targetFontSize / baseFontSize }rem`;
 	},
 
-	lineheight(targetPx) {
-		const baseFontSize   = parseInt(variables['base-font-size'], 10);
+	lineheight( targetPx ) {
+		const baseFontSize   = parseInt( variables['base-font-size'], 10 );
 		const baseLineHeight = variables['base-line-height'];
-		const targetFontSize = parseInt(targetPx, 10);
-		const lineMultiplier = Math.ceil(targetFontSize / baseFontSize);
+		const targetFontSize = parseInt( targetPx, 10 );
+		const lineMultiplier = Math.ceil( targetFontSize / baseFontSize );
 
-		return ((baseLineHeight * lineMultiplier) * baseFontSize) / targetFontSize;
+		return ( ( baseLineHeight * lineMultiplier ) * baseFontSize ) / targetFontSize;
 	},
 
-	lines(count, subtractPx) {
-		const baseFontSize     = parseInt(variables['base-font-size'], 10);
+	lines( count, subtractPx ) {
+		const baseFontSize     = parseInt( variables['base-font-size'], 10 );
 		const baseLineHeight   = variables['base-line-height'];
-		const pixelsToSubtract = subtractPx ? (parseInt(subtractPx, 10) / baseFontSize) : 0;
+		const pixelsToSubtract = subtractPx ? ( parseInt( subtractPx, 10 ) / baseFontSize ) : 0;
 
-		return `${(count * ((baseFontSize * baseLineHeight) / baseFontSize)) - pixelsToSubtract}rem`;
+		return `${ ( count * ( ( baseFontSize * baseLineHeight ) / baseFontSize ) ) - pixelsToSubtract }rem`;
 	},
 
-	span(spanCount, unit) {
-		const baseFontSize = parseInt(variables['base-font-size'], 10);
-		const columnCount  = parseInt(variables['column-count'], 10);
-		const siteWidth    = parseInt(variables['wrapper-width'], 10);
+	span( spanCount, unit ) {
+		const baseFontSize = parseInt( variables['base-font-size'], 10 );
+		const columnCount  = parseInt( variables['column-count'], 10 );
+		const siteWidth    = parseInt( variables['wrapper-width'], 10 );
 
 		let measurement;
 
-		switch (unit) {
+		switch ( unit ) {
 		case 'px':
-			measurement = `${(siteWidth / columnCount) * spanCount}px`;
+			measurement = `${ ( siteWidth / columnCount ) * spanCount }px`;
 			break;
 
 		case 'rem':
-			measurement = `${((siteWidth / columnCount) * spanCount) / baseFontSize}rem`;
+			measurement = `${ ( ( siteWidth / columnCount ) * spanCount ) / baseFontSize }rem`;
 			break;
 
 		default:
 		case '%':
-			measurement = `${(100 / columnCount) * spanCount}%`;
+			measurement = `${ ( 100 / columnCount ) * spanCount }%`;
 			break;
 		}
 
