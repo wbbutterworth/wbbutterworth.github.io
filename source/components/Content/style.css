@@ -1,5 +1,9 @@
 .content {
 	background: $background-color;
+	font-size: fontsize( 24px );
+	font-weight: 200;
+	line-height: lineheight( 24px );
+	padding: lines( 5 ) 0;
 	position: relative;
 	z-index: 1;
 }
