@@ -1,0 +1,5 @@
+.content {
+	background: $background-color;
+	position: relative;
+	z-index: 1;
+}

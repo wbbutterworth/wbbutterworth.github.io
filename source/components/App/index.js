@@ -4,7 +4,9 @@ import PropTypes from 'prop-types';
 require( './style.css' );
 
 const App = props => (
-	<div id="app">{ props.children }</div>
+	<div id="app">
+		{ props.children }
+	</div>
 );
 
 App.propTypes = {

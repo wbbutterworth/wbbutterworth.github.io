@@ -1,8 +1,8 @@
 .icon {
-  display: inline-block;
+	display: inline-block;
 
-  svg {
-    fill: $foreground-color;
-    height: 100%;
-  }
+	svg {
+		fill: $foreground-color;
+		height: 100%;
+	}
 }

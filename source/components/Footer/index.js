@@ -7,7 +7,7 @@ import twitterSVG from 'assets/icons/twitter.svg';
 require( './style.css' );
 
 const Footer = () => (
-	<section className="footer">
+	<footer className="footer">
 		<div className="footer-inner">
 			<h1>Get in touch with <a href="mailto:liambutterworth@gmail.com">liambutterworth@gmail.com</a></h1>
 
@@ -17,7 +17,7 @@ const Footer = () => (
 				<li><a href="http://twitter.com/wbbutterworth" target="_blank" rel="noopener noreferrer"><Icon svg={ twitterSVG } /></a></li>
 			</ul>
 		</div>
-	</section>
+	</footer>
 );
 
 export default Footer;

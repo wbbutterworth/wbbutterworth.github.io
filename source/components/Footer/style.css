@@ -1,7 +1,22 @@
 .footer {
+	background: url( ../../assets/images/bricks.jpg ) fixed;
+	background-size: cover;
 	height: lines( 10 );
 	position: relative;
 	overflow: hidden;
+	z-index: -1;
+
+	&::after {
+		background: $foreground-color;
+		opacity: 0.8;
+		bottom: 0;
+		content: "";
+		left: 0;
+		position: absolute;
+		z-index: -1;
+		right: 0;
+		top: 0;
+	}
 
 	ul li a {
 		height: lines( 2 );

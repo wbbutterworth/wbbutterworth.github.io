@@ -1,11 +1,11 @@
 import React        from 'react';
 import classNames   from 'classnames';
-import smoothScroll from 'smooth-scroll';
+import SmoothScroll from 'smooth-scroll';
 import Icon         from 'components/Icon';
-import envelopeSvg  from 'assets/icons/envelope.svg';
 import fileSvg      from 'assets/icons/file.svg';
 import githubSvg    from 'assets/icons/github.svg';
 import twitterSvg   from 'assets/icons/twitter.svg';
+import envelopeSvg  from 'assets/icons/envelope.svg';
 
 require( './style.css' );
 
@@ -27,11 +27,10 @@ class Header extends React.Component {
 	componentDidMount() {
 		setInterval( this.toggleScrolled, 200 );
 
-		smoothScroll.init({
-			before:   this.close,
-			easing:   'easeInOutQuad',
-			selector: '.header a',
-			speed:    800,
+		new SmoothScroll('.header a', {
+			before: this.close,
+			easing: 'easeInOutQuad',
+			speed:  800,
 		});
 	}
 

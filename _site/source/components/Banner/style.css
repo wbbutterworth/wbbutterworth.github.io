@@ -1,92 +1,92 @@
 .banner {
-  height: 100vh;
-  overflow: hidden;
-  position: relative;
-  width: 100vw;
+	height: 100vh;
+	overflow: hidden;
+	position: relative;
+	width: 100vw;
 }
 
 .banner-background {
-  bottom: 0;
-  height: 200%;
-  left: -50%;
-  position: absolute;
-  right: 0;
-  top: -50%;
-  width: 200%;
-  z-index: 1;
+	bottom: 0;
+	height: 200%;
+	left: -50%;
+	position: absolute;
+	right: 0;
+	top: -50%;
+	width: 200%;
+	z-index: 1;
 
-  img {
-    bottom: 0;
-    left: 0;
-    margin: auto;
-    min-height: 50%;
-    min-width: 50%;
-    position: absolute;
-    right: 0;
-    top: 0;
-    width: 1024px;
-    z-index: 1;
-  }
+	img {
+		bottom: 0;
+		left: 0;
+		margin: auto;
+		min-height: 50%;
+		min-width: 50%;
+		position: absolute;
+		right: 0;
+		top: 0;
+		width: 1024px;
+		z-index: 1;
+	}
 }
 
 .banner-overlay {
-  background: $foreground-color;
-  bottom: 0;
-  left: 0;
-  opacity: 0.8;
-  position: absolute;
-  right: 0;
-  top: 0;
-  z-index: 2;
+	background: $foreground-color;
+	bottom: 0;
+	left: 0;
+	opacity: 0.8;
+	position: absolute;
+	right: 0;
+	top: 0;
+	z-index: 2;
 }
 
 .banner-text {
-  top: 50%;
-  margin-top: lines(-2.5);
-  color: $background-color;
-  font-family: 'Source Sans Pro', sans-serif;
-  padding: lines(2);
-  position: absolute;
-  white-space: pre-wrap;
-  z-index: 3;
-  width: 100%;
-  text-align: center;
+	top: 50%;
+	margin-top: lines( -2.5 );
+	color: $background-color;
+	font-family: 'Source Sans Pro', sans-serif;
+	padding: lines( 2 );
+	position: absolute;
+	white-space: pre-wrap;
+	z-index: 3;
+	width: 100%;
+	text-align: center;
 
-  h1 {
-    font-size: fontsize(60px);
-    font-weight: 900;
-    line-height: 1;
-  }
+	h1 {
+		font-size: fontsize( 60px );
+		font-weight: 900;
+		line-height: 1;
+	}
 
-  hr {
-    border-color: $highlight-color;
-    max-width: span(6.5, rem);
-    margin: lines(0.5) auto lines(0.125, 1px);
-  }
+	hr {
+		border-color: $highlight-color;
+		max-width: span( 6.5, rem );
+		margin: lines( 0.5 ) auto lines( 0.125, 1px );
+	}
 
-  p {
-    font-size: fontsize(40px);
-    font-weight: 200;
+	p {
+		font-size: fontsize( 40px );
+		font-weight: 200;
 
-    &::after {
-      background-color: $background-color;
-      content: "";
-      display: inline-block;
-      height: lines(1.5);
-      margin: 0 0 -2px 1px;
-      width: 1px;
+		&::after {
+			background-color: $background-color;
+			content: "";
+			display: inline-block;
+			height: lines( 1.5 );
+			margin: 0 0 -2px 1px;
+			width: 1px;
 
-      .banner--resting & {
-        animation: blink 2s infinite;
-      }
-    }
-  }
+			.banner--resting & {
+				animation: blink 2s infinite;
+			}
+		}
+	}
 }
 
 @keyframes blink {
-  0% { opacity: 1; }
-  25% { opacity: 0; }
-  50% { opacity: 1; }
-  75% { opacity: 0; }
-  100% { opacity: 1; }
+	0%   { opacity: 1; }
+	25%  { opacity: 0; }
+	50%  { opacity: 1; }
+	75%  { opacity: 0; }
+	100% { opacity: 1; }
 }
