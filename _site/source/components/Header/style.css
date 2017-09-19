@@ -92,9 +92,9 @@ $breakpoint: span( 6, rem );
 	position: relative;
 	transition: all 300ms 300ms;
 	z-index: 100;
-	height: lines(1.5);
-	width: lines(1.5);
-	margin-top: lines(0.75);
+	height: lines( 1.5 );
+	width: lines( 1.5 );
+	margin-top: lines( 0.75 );
 
 	&:focus {
 		outline: none;
@@ -163,12 +163,12 @@ $breakpoint: span( 6, rem );
 }
 
 .header-links {
-	pointer-events: none;
 	height: calc( 100vh - lines( 3 ) );
 	position: fixed;
+	pointer-events: none;
 	bottom: 0;
 	left: 0;
-	width: 100vw;
+	width: 100%;
 
 	.header--open & {
 		pointer-events: auto;
@@ -177,15 +177,15 @@ $breakpoint: span( 6, rem );
 
 .header-sections {
 	width: 100%;
+	padding: 0 0 lines( 1 );
 	position: absolute;
-	bottom: 50%;
-	margin-bottom: lines( -5 );
+	bottom: 0;
 	text-align: center;
 
 	@media ( min-width: $breakpoint ) {
-		text-align: right;
 		bottom: 0;
 		margin-bottom: 0;
+		text-align: right;
 	}
 
 	> li {
@@ -193,7 +193,6 @@ $breakpoint: span( 6, rem );
 		transition: all 600ms ease-out;
 		max-width: $site-width;
 		box-sizing: content-box;
-		padding: 0 lines( 1 );
 		margin: 0 auto;
 
 		.header--open & { transform: translate( 0, 0 ); }
@@ -209,10 +208,9 @@ $breakpoint: span( 6, rem );
 			font-size: fontsize( 70px );
 			font-weight: 900;
 			text-decoration: none;
-			line-height: lines( 2.25 );
-			margin-bottom: lines( 0.75 );
 			text-transform: uppercase;
 			transition: all 300ms;
+			padding: 0 lines( 1 ) 0 0;
 
 			&:hover {
 				color: $highlight-color;
@@ -220,8 +218,7 @@ $breakpoint: span( 6, rem );
 
 			@media ( min-width: $breakpoint ) {
 				font-size: fontsize( 120px );
-				line-height: lines( 3.75 );
-				margin-bottom: lines( 0.25 );
+				line-height: 1;
 			}
 		}
 	}
@@ -231,6 +228,7 @@ $breakpoint: span( 6, rem );
 	box-sizing: content-box;
 	margin: 0 auto;
 	max-width: $site-width;
+	padding: lines( 1 ) lines( 1 ) lines( 1 ) 0;
 
 	> li {
 		display: inline-block;
@@ -240,7 +238,7 @@ $breakpoint: span( 6, rem );
 		}
 
 		> a {
-			display: block;
+			display: inline-block;
 			height: lines( 2 );
 
 			@media ( min-width: $breakpoint ) {

@@ -1,31 +1,57 @@
+$footer-height: lines( 10 );
+
 .footer {
 	background: url( ../../assets/images/bricks.jpg ) fixed;
 	background-size: cover;
-	height: lines( 10 );
+	color: $background-color;
+	height: $footer-height;
 	position: relative;
 	overflow: hidden;
-	z-index: -1;
+	z-index: 1;
 
 	&::after {
 		background: $foreground-color;
-		opacity: 0.8;
+		opacity: 0.9;
 		bottom: 0;
 		content: "";
 		left: 0;
 		position: absolute;
-		z-index: -1;
 		right: 0;
 		top: 0;
+		z-index: 1;
 	}
 
-	ul li a {
+	.footer-text {
+		font-size: fontsize( 36px );
+		font-weight: 200;
+		padding: 0 0 lines( 1 );
+	}
+
+	.footer-links a {
+		display: inline-block;
 		height: lines( 2 );
+		margin-right: lines( 1 );
+
+		&:last-child {
+			margin-right: 0;
+		}
+
+		svg {
+			fill: $background-color;
+
+			&:hover {
+				fill: $highlight-color;
+			}
+		}
 	}
 }
 
 .footer-inner {
 	bottom: 0;
+	height: $footer-height;
+	padding: lines( 2 ) 0 0;
 	position: fixed;
 	text-align: center;
 	width: 100%;
+	z-index: 2;
 }
