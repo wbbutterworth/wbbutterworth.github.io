@@ -29327,7 +29327,7 @@ var Home = function Home() {
 					null,
 					_react2.default.createElement(
 						'h1',
-						null,
+						{ id: 'about' },
 						'About'
 					),
 					_react2.default.createElement(
@@ -29369,7 +29369,7 @@ var Home = function Home() {
 				null,
 				_react2.default.createElement(
 					'h1',
-					null,
+					{ id: 'work' },
 					'Work'
 				),
 				_react2.default.createElement(
@@ -29586,11 +29586,11 @@ var Header = function (_React$Component) {
 		key: 'componentDidMount',
 		value: function componentDidMount() {
 			setInterval(this.toggleScrolled, 200);
+			this.smoothScroll = new _smoothScroll2.default('.header-logo');
 
-			new _smoothScroll2.default('.header a', {
-				before: this.close,
-				easing: 'easeInOutQuad',
-				speed: 800
+			this.smoothScroll.init({
+				speed: 800,
+				easing: 'easeInOutCubic'
 			});
 		}
 	}, {
@@ -29630,7 +29630,7 @@ var Header = function (_React$Component) {
 					{ className: 'header-interface' },
 					_react2.default.createElement(
 						'a',
-						{ href: '#top', className: 'header-logo' },
+						{ href: '#top', className: 'header-logo', onClick: this.close },
 						'Liam',
 						_react2.default.createElement(
 							'span',
@@ -29657,7 +29657,7 @@ var Header = function (_React$Component) {
 							null,
 							_react2.default.createElement(
 								'a',
-								{ href: '#about' },
+								{ href: '#about', onClick: this.close },
 								'About'
 							)
 						),
@@ -29666,7 +29666,7 @@ var Header = function (_React$Component) {
 							null,
 							_react2.default.createElement(
 								'a',
-								{ href: '#work' },
+								{ href: '#work', onClick: this.close },
 								'Work'
 							)
 						),
@@ -29675,7 +29675,7 @@ var Header = function (_React$Component) {
 							null,
 							_react2.default.createElement(
 								'a',
-								{ href: '#contact' },
+								{ href: '#contact', onClick: this.close },
 								'Contact'
 							)
 						),
@@ -29842,7 +29842,7 @@ __webpack_require__(413);
 var Footer = function Footer() {
 	return _react2.default.createElement(
 		'footer',
-		{ className: 'footer' },
+		{ id: 'contact', className: 'footer' },
 		_react2.default.createElement(
 			'div',
 			{ className: 'footer-inner' },

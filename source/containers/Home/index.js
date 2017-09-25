@@ -24,7 +24,7 @@ const Home = () => (
 		<Content>
 			<Wrapper>
 				<section>
-					<h1>About</h1>
+					<h1 id="about">About</h1>
 
 					<p>
 						Hi, my name is Liam. Well, actually it’s William, but no one but paychecks and angry relatives call me that anymore. I’m a twenty-something year old web developer from Tuscaloosa, AL. I enjoy loud music, creative problem solving, and unhealthy amounts of chips and salsa.
@@ -41,7 +41,7 @@ const Home = () => (
 			</Wrapper>
 
 			<section>
-				<h1>Work</h1>
+				<h1 id="work">Work</h1>
 
 				<Grid>
 					<Row>

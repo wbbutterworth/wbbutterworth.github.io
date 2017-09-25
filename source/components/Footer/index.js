@@ -7,7 +7,7 @@ import twitterSVG from 'assets/icons/twitter.svg';
 require( './style.css' );
 
 const Footer = () => (
-	<footer className="footer">
+	<footer id="contact" className="footer">
 		<div className="footer-inner">
 			<h1 className="footer-text">Say <a href="mailto:hello@liambutterworth.com">hello@liambutterworth.com</a></h1>
 
