@@ -1,4 +1,4 @@
-const CleanWebpackPlugin = require( 'clean-webpack-plugin' );
+// const CleanWebpackPlugin = require( 'clean-webpack-plugin' );
 const HtmlWebpackPlugin  = require( 'html-webpack-plugin' );
 const ExtractTextPlugin  = require( 'extract-text-webpack-plugin' );
 const path               = require( 'path' );
@@ -50,7 +50,7 @@ module.exports = {
 	},
 
 	plugins: [
-		new CleanWebpackPlugin([ 'build' ]),
+		// new CleanWebpackPlugin([ 'build' ]),
 		new ExtractTextPlugin( '[name].[hash].css' ),
 
 		new HtmlWebpackPlugin({

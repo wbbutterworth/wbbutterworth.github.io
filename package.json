@@ -6,7 +6,8 @@
   "scripts": {
     "serve": "bundle exec jekyll serve",
     "watch": "webpack --progress --colors --watch",
-    "build": "webpack --progress --colors"
+    "build": "npm run clean && webpack --progress --colors",
+    "clean": "rm -rf build"
   },
   "repository": {
     "type": "git",
