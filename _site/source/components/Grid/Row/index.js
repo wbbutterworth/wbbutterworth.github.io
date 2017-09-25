@@ -4,7 +4,9 @@ import PropTypes from 'prop-types';
 require( './style.css' );
 
 const Row = props => (
-	<div className="row">{ props.children }</div>
+	<div className="grid-row">
+		{ props.children }
+	</div>
 );
 
 Row.propTypes = {

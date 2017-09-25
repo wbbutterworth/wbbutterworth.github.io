@@ -1,12 +1,12 @@
-import React                      from 'react';
-import Wrapper                    from 'components/Wrapper';
-import Header                     from 'components/Header';
-import Content                    from 'components/Content';
-import Footer                     from 'components/Footer';
-import Banner                     from 'components/Banner';
-import { Container, Row, Column } from 'components/Grid';
-import Thumbnail                  from 'components/Thumbnail';
-import backgroundImg              from 'assets/images/mic-stand.jpg';
+import React                 from 'react';
+import Wrapper               from 'components/Wrapper';
+import Header                from 'components/Header';
+import Content               from 'components/Content';
+import Footer                from 'components/Footer';
+import Banner                from 'components/Banner';
+import Grid, { Row, Column } from 'components/Grid';
+import Thumbnail             from 'components/Thumbnail';
+import backgroundImg         from 'assets/images/mic-stand.jpg';
 
 const staticText = "Hi, I'm Liam and I";
 
@@ -24,7 +24,7 @@ const Home = () => (
 		<Content>
 			<Wrapper>
 				<section>
-					<header>About</header>
+					<h1>About</h1>
 
 					<p>
 						Hi, my name is Liam. Well, actually it’s William, but no one but paychecks and angry relatives call me that anymore. I’m a twenty-something year old web developer from Tuscaloosa, AL. I enjoy loud music, creative problem solving, and unhealthy amounts of chips and salsa.
@@ -40,19 +40,21 @@ const Home = () => (
 				</section>
 			</Wrapper>
 
-			<header>Work</header>
+			<section>
+				<h1>Work</h1>
 
-			<Container>
-				<Row>
-					<Column span="6">
-						<Thumbnail title="Baseline" text="This is a sample sentence that will describe the project linked in this thumbnai." />
-					</Column>
+				<Grid>
+					<Row>
+						<Column span="6">
+							<Thumbnail title="Baseline" text="This is a sample sentence that will describe the project linked in this thumbnai." />
+						</Column>
 
-					<Column span="6">
-						<Thumbnail title="Keyboard" text="This is a sample sentence that will describe the project linked in this thumbnai." />
-					</Column>
-				</Row>
-			</Container>
+						<Column span="6">
+							<Thumbnail title="Keyboard" text="This is a sample sentence that will describe the project linked in this thumbnai." />
+						</Column>
+					</Row>
+				</Grid>
+			</section>
 		</Content>
 
 		<Footer />

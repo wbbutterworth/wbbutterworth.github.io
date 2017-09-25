@@ -6,15 +6,17 @@ require( './style.css' );
 
 const Column = ( props ) => {
 	const classes = ClassNames({
-		column:                               true,
-		[`column--span-${ props.span }`]:     props.span,
-		[`column--small-${ props.small }`]:   props.small,
-		[`column--medium-${ props.medium }`]: props.medium,
-		[`column--large-${ props.large }`]:   props.large,
+		'grid-column':                             true,
+		[`grid-column--span-${ props.span }`]:     props.span,
+		[`grid-column--small-${ props.small }`]:   props.small,
+		[`grid-column--medium-${ props.medium }`]: props.medium,
+		[`grid-column--large-${ props.large }`]:   props.large,
 	});
 
 	return (
-		<div className={ classes }>{ props.children }</div>
+		<div className={ classes }>
+			{ props.children }
+		</div>
 	);
 };
 

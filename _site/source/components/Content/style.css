@@ -7,10 +7,16 @@
 	z-index: 2;
 
 	section {
-		padding: lines( 5 ) 0;
-	}
+		padding: lines( 3 ) 0 0;
 
-	header {
-		text-align: center;
+		h1,
+		h2,
+		h3,
+		h4,
+		h5,
+		h6 {
+			padding: 0 0 lines( 1 );
+			text-align: center;
+		}
 	}
 }

@@ -1,7 +1,7 @@
-.row {
+.grid-row {
 	margin: 0 lines( -0.25 );
 
-	& + .row {
+	& + .grid-row {
 		margin-top: lines( 1 );
 	}
 

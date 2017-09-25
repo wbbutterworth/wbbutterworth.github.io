@@ -3,19 +3,16 @@ import PropTypes from 'prop-types';
 
 require( './style.css' );
 
-class Thumbnail extends React.Component {
-	render() {
-		return (
-			<div className="thumbnail">
-				<h1 className="thumbnail-title">{ this.props.title }</h1>
-				<p className="thumbnail-text">{ this.props.text }</p>
-			</div>
-		);
-	}
-}
+const Thumbnail = ( props ) => (
+	<div className="thumbnail">
+		<h1 className="thumbnail-title">{ props.title }</h1>
+		<p className="thumbnail-text">{ props.text }</p>
+	</div>
+);
 
 Thumbnail.propTypes = {
-	children: PropTypes.node.isRequired,
+	title: PropTypes.string.isRequired,
+	text:  PropTypes.string.isRequired,
 };
 
 export default Thumbnail;
