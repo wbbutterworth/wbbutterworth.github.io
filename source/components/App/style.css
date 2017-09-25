@@ -46,7 +46,7 @@ em {
 body {
 	background: $background-color;
 	color: $foreground-color;
-	font-family: 'Source Sans Pro', serif;
+	font-family: 'Montserrat', serif;
 	font-size: fontsize( $base-font-size );
 	line-height: lineheight( $base-font-size );
 }

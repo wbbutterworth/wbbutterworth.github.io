@@ -3,7 +3,8 @@ $medium-breakpoint: span( 8, rem );
 $large-breakpoint:  span( 12, rem );
 
 .column {
-	padding: 0 lines( 0.5 );
+	padding: 0 lines( 0.25 );
+	margin: lines( 0.5 ) 0;
 
 	&[class*=column--span] {
 		float: left;

@@ -1,5 +1,5 @@
 .row {
-	margin: 0 lines( -0.5 );
+	margin: 0 lines( -0.25 );
 
 	& + .row {
 		margin-top: lines( 1 );

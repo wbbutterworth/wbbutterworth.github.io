@@ -44,7 +44,6 @@
 	top: 50%;
 	margin-top: lines( -2.5 );
 	color: $background-color;
-	font-family: 'Source Sans Pro', sans-serif;
 	padding: lines( 2 );
 	position: absolute;
 	white-space: pre-wrap;
@@ -54,7 +53,7 @@
 
 	h1 {
 		font-size: fontsize( 60px );
-		font-weight: 900;
+		font-weight: 800;
 		line-height: 1;
 	}
 
@@ -66,7 +65,7 @@
 
 	p {
 		font-size: fontsize( 40px );
-		font-weight: 200;
+		font-weight: 100;
 
 		&::after {
 			background-color: $background-color;

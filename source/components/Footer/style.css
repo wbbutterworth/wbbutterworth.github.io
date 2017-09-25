@@ -1,4 +1,5 @@
 $footer-height: lines( 10 );
+$breakpoint: span( 6, rem );
 
 .footer {
 	background: url( ../../assets/images/bricks.jpg ) fixed;
@@ -22,15 +23,33 @@ $footer-height: lines( 10 );
 	}
 
 	.footer-text {
-		font-size: fontsize( 36px );
 		font-weight: 200;
 		padding: 0 0 lines( 1 );
+
+		a {
+			display: inline-block;
+			text-decoration: none;
+			transition: 200ms all;
+
+			&:hover {
+				background: $background-color;
+			}
+		}
+
+		@media ( min-width: $breakpoint ) {
+			font-size: fontsize( 36px );
+		}
 	}
 
 	.footer-links a {
 		display: inline-block;
-		height: lines( 2 );
+		height: lines( 1.5 );
 		margin-right: lines( 1 );
+
+		@media ( min-width: $breakpoint ) {
+			height: lines( 2 );
+			margin-right: lines( 2 );
+		}
 
 		&:last-child {
 			margin-right: 0;
@@ -49,9 +68,13 @@ $footer-height: lines( 10 );
 .footer-inner {
 	bottom: 0;
 	height: $footer-height;
-	padding: lines( 2 ) 0 0;
+	padding: lines( 3 ) 0 0;
 	position: fixed;
 	text-align: center;
 	width: 100%;
 	z-index: 2;
+
+	@media ( min-width: $breakpoint ) {
+		padding: lines( 2 ) 0 0;
+	}
 }

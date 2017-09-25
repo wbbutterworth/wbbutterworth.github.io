@@ -19,10 +19,10 @@ const Column = ( props ) => {
 };
 
 Column.defaultProps = {
-	span:   false,
-	small:  false,
-	medium: false,
-	large:  false,
+	span:   "",
+	small:  "",
+	medium: "",
+	large:  "",
 };
 
 Column.propTypes = {

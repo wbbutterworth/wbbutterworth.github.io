@@ -1,7 +1,6 @@
 $breakpoint: span( 6, rem );
 
 .header {
-	font-family: 'Source Sans Pro', serif;
 	position: fixed;
 	height: 0;
 	top: 0;
@@ -52,14 +51,14 @@ $breakpoint: span( 6, rem );
 	color: $background-color;
 	display: block;
 	float: left;
-	font-size: fontsize( 20px );
-	font-weight: 200;
+	font-size: fontsize( 24px );
+	font-weight: 100;
 	line-height: lines( 3 );
 	text-decoration: none !important;
 	transition: all 300ms 300ms, border-color 300ms;
 
 	span {
-		font-weight: 900;
+		font-weight: 800;
 	}
 
 	.header--open &,
@@ -71,7 +70,7 @@ $breakpoint: span( 6, rem );
 		transition: all 300ms;
 	}
 
-	@media screen and ( min-width: span( 6, rem ) ) {
+	@media ( min-width: $breakpoint ) {
 		font-size: fontsize( 30px );
 
 		.header--scrolled & {
@@ -210,7 +209,6 @@ $breakpoint: span( 6, rem );
 			text-decoration: none;
 			text-transform: uppercase;
 			transition: all 300ms;
-			padding: 0 lines( 1 ) 0 0;
 
 			&:hover {
 				color: $highlight-color;
@@ -219,6 +217,7 @@ $breakpoint: span( 6, rem );
 			@media ( min-width: $breakpoint ) {
 				font-size: fontsize( 120px );
 				line-height: 1;
+				padding: 0 lines( 1 ) 0 0;
 			}
 		}
 	}
@@ -226,9 +225,14 @@ $breakpoint: span( 6, rem );
 
 .header-social {
 	box-sizing: content-box;
+	padding-bottom: lines( 1 );
+	padding-top: lines( 1 );
 	margin: 0 auto;
 	max-width: $site-width;
-	padding: lines( 1 ) lines( 1 ) lines( 1 ) 0;
+
+	@media ( min-width: $breakpoint ) {
+		padding-right: lines( 1 );
+	}
 
 	> li {
 		display: inline-block;

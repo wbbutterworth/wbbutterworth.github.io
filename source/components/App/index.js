@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
 require( './style.css' );
 
-const App = props => (
+const App = ( props ) => (
 	<div id="app">
 		{ props.children }
 	</div>

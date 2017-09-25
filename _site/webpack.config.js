@@ -50,7 +50,7 @@ module.exports = {
 	},
 
 	plugins: [
-		new CleanWebpackPlugin('build'),
+		new CleanWebpackPlugin([ 'build' ], { watch: true }),
 		new ExtractTextPlugin('[name].[hash].css'),
 
 		new HtmlWebpackPlugin({

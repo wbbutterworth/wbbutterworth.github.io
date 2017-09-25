@@ -1,0 +1,71 @@
+.thumbnail {
+	background: url( ../../assets/images/bricks.jpg );
+	background-size: cover;
+	background-attachment: fixed;
+	color: $background-color;
+	padding: lines( 5 ) lines( 2.5 );
+	position: relative;
+	text-align: center;
+	transition: 200ms all;
+	cursor: pointer;
+
+	.thumbnail-title,
+	.thumbnail-text {
+		position: relative;
+		z-index: 2;
+	}
+
+	.thumbnail-title {
+		font-family: 'Montserrat', sans-serif;
+		font-size: fontsize( 54px );
+		font-weight: 800;
+		line-height: lineheight( 54px );
+	}
+
+	&::before {
+		background: $foreground-color;
+		content: "";
+		height: 100%;
+		left: 0;
+		opacity: 0.9;
+		position: absolute;
+		transition: 200ms all;
+		top: 0;
+		width: 100%;
+		z-index: 1;
+	}
+
+	&:hover::before {
+		background: $highlight-color;
+	}
+
+	/* &::before, */
+	/* &::after { */
+	/* 	content: ""; */
+	/* 	height: 100%; */
+	/* 	left: 0; */
+	/* 	opacity: 0; */
+	/* 	position: absolute; */
+	/* 	transition: 200ms all; */
+	/* 	top: 0; */
+	/* 	width: 100%; */
+	/* } */
+
+	/* &::before { */
+	/* 	background: url( ../../assets/images/bricks.jpg ); */
+	/* 	z-index: 1; */
+	/* } */
+
+	/* &:hover::before { */
+	/* 	opacity: 1; */
+	/* } */
+
+	/* &::after { */
+	/* 	background: $highlight-color; */
+	/* 	z-index: 2; */
+	/* } */
+
+	/* &:hover::after { */
+	/* 	opacity: 0.9; */
+	/* } */
+}
