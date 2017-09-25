@@ -93,7 +93,7 @@ class Banner extends React.Component {
 					<img
 						alt="Banner background"
 						src={ this.props.image }
-						ref={ background => ( this.background = background ) }
+						ref={ ( background ) => ( this.background = background ) }
 					/>
 				</div>
 
