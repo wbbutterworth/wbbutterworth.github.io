@@ -24,15 +24,22 @@ $breakpoint: span( 6, rem );
 
 	.footer-text {
 		font-weight: 200;
+		font-size: fontsize( 24px );
 		padding: 0 0 lines( 1 );
 
 		a {
-			display: inline-block;
+			display: block;
 			text-decoration: none;
 			transition: 200ms all;
+			margin-top: lines( 0.5 );
 
 			&:hover {
 				background: $background-color;
+			}
+
+			@media ( min-width: $breakpoint ) {
+				display: inline-block;
+				margin-top: 0;
 			}
 		}
 
@@ -68,13 +75,9 @@ $breakpoint: span( 6, rem );
 .footer-inner {
 	bottom: 0;
 	height: $footer-height;
-	padding: lines( 3 ) 0 0;
+	padding: lines( 2 ) 0 0;
 	position: fixed;
 	text-align: center;
 	width: 100%;
 	z-index: 2;
-
-	@media ( min-width: $breakpoint ) {
-		padding: lines( 2 ) 0 0;
-	}
 }

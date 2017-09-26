@@ -47,43 +47,18 @@ body {
 	background: $background-color;
 	color: $foreground-color;
 	font-family: 'Montserrat', serif;
-	font-size: fontsize( $base-font-size );
-	line-height: lineheight( $base-font-size );
+	font-size: fontsize( 18px );
+	line-height: lineheight( 18px );
 }
 
 h1 {
-	font-size: fontsize( $h1-font-size );
-	line-height: lineheight( $h1-font-size );
-}
-
-h2 {
-	font-size: fontsize( $h2-font-size );
-	line-height: lineheight( $h2-font-size );
-}
-
-h3 {
-	font-size: fontsize( $h3-font-size );
-	line-height: lineheight( $h3-font-size );
-}
-
-h4 {
-	font-size: fontsize( $h4-font-size );
-	line-height: lineheight( $h4-font-size );
-}
-
-h5 {
-	font-size: fontsize( $h5-font-size );
-	line-height: lineheight( $h5-font-size );
-}
-
-h6 {
-	font-size: fontsize( $h6-font-size );
-	line-height: lineheight( $h6-font-size );
+	font-size: fontsize( 48px );
+	line-height: lineheight( 48px );
 }
 
 small {
-	font-size: fontsize( $small-font-size );
-	line-height: lineheight( $small-font-size );
+	font-size: fontsize( 16px );
+	line-height: lineheight( 16px );
 }
 
 a {

@@ -6,7 +6,7 @@ const variables = {
 	'foreground-color': '#030303',
 	'highlight-color':  '#941b0c',
 	'border-color':     '#d6d6d6',
-	'base-line-height': '1.5',
+	'base-line-height': '1.25',
 	'base-font-size':   '16px',
 	'small-font-size':  '14px',
 	'h6-font-size':     '18px',

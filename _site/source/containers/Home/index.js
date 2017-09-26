@@ -45,11 +45,11 @@ const Home = () => (
 
 				<Grid>
 					<Row>
-						<Column span="6">
+						<Column large="6">
 							<Thumbnail title="Baseline" text="This is a sample sentence that will describe the project linked in this thumbnai." />
 						</Column>
 
-						<Column span="6">
+						<Column large="6">
 							<Thumbnail title="Keyboard" text="This is a sample sentence that will describe the project linked in this thumbnai." />
 						</Column>
 					</Row>

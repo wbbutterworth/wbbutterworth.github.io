@@ -29380,12 +29380,12 @@ var Home = function Home() {
 						null,
 						_react2.default.createElement(
 							_Grid.Column,
-							{ span: '6' },
+							{ large: '6' },
 							_react2.default.createElement(_Thumbnail2.default, { title: 'Baseline', text: 'This is a sample sentence that will describe the project linked in this thumbnai.' })
 						),
 						_react2.default.createElement(
 							_Grid.Column,
-							{ span: '6' },
+							{ large: '6' },
 							_react2.default.createElement(_Thumbnail2.default, { title: 'Keyboard', text: 'This is a sample sentence that will describe the project linked in this thumbnai.' })
 						)
 					)

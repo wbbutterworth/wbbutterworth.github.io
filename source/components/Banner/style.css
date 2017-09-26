@@ -1,3 +1,5 @@
+$breakpoint: span( 6, rem );
+
 .banner {
 	height: 100vh;
 	overflow: hidden;
@@ -42,31 +44,45 @@
 }
 
 .banner-text {
-	top: 50%;
-	margin-top: lines( -2.5 );
 	color: $background-color;
 	padding: lines( 2 );
-	position: absolute;
+	position: relative;
 	white-space: pre-wrap;
 	z-index: 3;
 	width: 100%;
 	text-align: center;
+	position: absolute;
+	top: lines( 15 );
+
+	@media ( min-width: $breakpoint ) {
+		margin-top: lines( -2.5 );
+		top: 50%;
+	}
 
 	h1 {
-		font-size: fontsize( 60px );
-		font-weight: 800;
+		font-width: 800;
+		font-size: fontsize( 40px );
 		line-height: 1;
+
+		@media ( min-width: $breakpoint ) {
+			font-size: fontsize( 60px );
+		}
 	}
 
 	hr {
 		border-color: $highlight-color;
 		max-width: span( 6.5, rem );
-		margin: lines( 0.5 ) auto lines( 0.125, 1px );
+		margin: lines( 1 ) auto lines( 0.5, 1px );
 	}
 
 	p {
-		font-size: fontsize( 40px );
+		font-size: fontsize( 25px );
+		line-height: lineheight( 25px );
 		font-weight: 100;
+
+		@media ( min-width: $breakpoint ) {
+			font-size: fontsize( 40px );
+		}
 
 		&::after {
 			background-color: $background-color;
