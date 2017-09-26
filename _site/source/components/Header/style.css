@@ -91,9 +91,9 @@ $breakpoint: span( 6, rem );
 	position: relative;
 	transition: all 300ms 300ms;
 	z-index: 100;
-	height: lines( 1.5 );
-	width: lines( 1.5 );
-	margin-top: lines( 0.75 );
+	height: lines( 1.6 );
+	width: lines( 1.6 );
+	margin-top: lines( 0.6 );
 
 	&:focus {
 		outline: none;

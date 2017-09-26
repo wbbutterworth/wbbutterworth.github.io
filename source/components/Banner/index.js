@@ -1,6 +1,7 @@
 import React      from 'react';
 import PropTypes  from 'prop-types';
 import ClassNames from 'classnames';
+import { functions } from 'style';
 
 require( './style.css' );
 
@@ -11,6 +12,8 @@ class Banner extends React.Component {
 		this.animate           = this.animate.bind( this );
 		this.addDynamicText    = this.addDynamicText.bind( this );
 		this.removeDynamicText = this.removeDynamicText.bind( this );
+		this.mediaQuery        = window.matchMedia( `( min-width: ${ functions.span( 10, 'rem' ) } )` );
+		console.log( this.mediaQuery.matches );
 
 		this.state = {
 			text:      '',
@@ -25,12 +28,14 @@ class Banner extends React.Component {
 	}
 
 	animate() {
-		window.requestAnimationFrame( () => {
-			if ( this.lastScrollY !== window.scrollY ) {
-				this.background.style.transform = `translate3d(0, ${ window.scrollY * 0.25 }px, 0)`;
-				this.lastScrollY                = window.scrollY;
-			}
-		});
+		if ( this.mediaQuery.matches ) {
+			window.requestAnimationFrame( () => {
+				if ( this.lastScrollY !== window.scrollY ) {
+					this.background.style.transform = `translate3d(0, ${ window.scrollY * 0.25 }px, 0)`;
+					this.lastScrollY                = window.scrollY;
+				}
+			});
+		}
 	}
 
 	type( text, callback ) {

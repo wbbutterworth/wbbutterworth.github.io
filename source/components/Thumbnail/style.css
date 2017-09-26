@@ -1,13 +1,19 @@
+$breakpoint: span( 10, rem );
+
 .thumbnail {
 	background: url( ../../assets/images/bricks.jpg );
-	background-size: cover;
-	background-attachment: fixed;
+	background-size: 200%;
 	color: $background-color;
 	padding: lines( 2.5 ) lines( 2.5 );
 	position: relative;
 	text-align: center;
 	transition: 200ms all;
 	cursor: pointer;
+
+	@media ( min-width: $breakpoint ) {
+		background-attachment: fixed;
+		background-size: cover;
+	}
 
 	.thumbnail-title,
 	.thumbnail-text {
@@ -38,34 +44,4 @@
 	&:hover::before {
 		background: $highlight-color;
 	}
-
-	/* &::before, */
-	/* &::after { */
-	/* 	content: ""; */
-	/* 	height: 100%; */
-	/* 	left: 0; */
-	/* 	opacity: 0; */
-	/* 	position: absolute; */
-	/* 	transition: 200ms all; */
-	/* 	top: 0; */
-	/* 	width: 100%; */
-	/* } */
-
-	/* &::before { */
-	/* 	background: url( ../../assets/images/bricks.jpg ); */
-	/* 	z-index: 1; */
-	/* } */
-
-	/* &:hover::before { */
-	/* 	opacity: 1; */
-	/* } */
-
-	/* &::after { */
-	/* 	background: $highlight-color; */
-	/* 	z-index: 2; */
-	/* } */
-
-	/* &:hover::after { */
-	/* 	opacity: 0.9; */
-	/* } */
 }
