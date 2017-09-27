@@ -1,0 +1,68 @@
+$breakpoint: span( 12, rem );
+
+.project {
+	overflow: hidden;
+
+	@media ( min-width: $breakpoint ) {
+		.project-thumbnail,
+		.project-description {
+			width: 50%;
+			float: left;
+		}
+
+		&:nth-child( odd ) .project-thumbnail {
+			float: right;
+		}
+	}
+
+	.project-thumbnail {
+		background: url( ../../assets/images/bricks.jpg );
+		background-size: 200%;
+		color: $background-color;
+		display: block;
+		padding: lines( 2.5 );
+		position: relative;
+		text-decoration: none;
+		text-align: center;
+
+		@media ( min-width: $breakpoint ) {
+			background-attachment: fixed;
+			background-size: cover;
+			padding: lines( 7.5 ) lines( 2.5 );
+		}
+
+		&::before {
+			background: $foreground-color;
+			content: "";
+			height: 100%;
+			left: 0;
+			opacity: 0.9;
+			position: absolute;
+			transition: 200ms all;
+			top: 0;
+			width: 100%;
+			z-index: 1;
+		}
+
+		&:hover::before {
+			background: $highlight-color;
+		}
+
+		.project-title,
+		.project-tagline {
+			position: relative;
+			z-index: 2;
+		}
+
+		.project-title {
+			font-family: 'Montserrat', sans-serif;
+			font-size: fontsize( 54px );
+			font-weight: 800;
+			line-height: lineheight( 54px );
+		}
+	}
+
+	.project-description {
+		padding: lines( 2.5 );
+	}
+}

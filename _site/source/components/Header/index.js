@@ -26,10 +26,11 @@ class Header extends React.Component {
 
 	componentDidMount() {
 		setInterval( this.toggleScrolled, 200 );
-		this.smoothScroll = new SmoothScroll( '.header-logo' );
+		this.smoothScroll = new SmoothScroll( '.header a' );
 
 		this.smoothScroll.init({
 			speed:  800,
+			offset: 120, // h1 height in pixels
 			easing: 'easeInOutCubic',
 		});
 	}
@@ -62,7 +63,7 @@ class Header extends React.Component {
 				<div className="header-interface">
 					<a href="#top" className="header-logo" onClick={ this.close }>Liam<span>Butterworth</span></a>
 
-					<button className="header-button" onClick={ this.toggleOpen }>
+					<button className="header-button" onClick={ this.toggleOpen } aria-label="Toggle navigation">
 						<span />
 						<span />
 						<span />
@@ -73,7 +74,7 @@ class Header extends React.Component {
 					<ul className="header-sections">
 						<li><a href="#about" onClick={ this.close }>About</a></li>
 						<li><a href="#work" onClick={ this.close }>Work</a></li>
-						<li><a href="#contact" onClick={ this.close }>Contact</a></li>
+						<li><a href="#projects" onClick={ this.close }>Projects</a></li>
 
 						<li>
 							<ul className="header-social">

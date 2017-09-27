@@ -13,7 +13,6 @@ class Banner extends React.Component {
 		this.addDynamicText    = this.addDynamicText.bind( this );
 		this.removeDynamicText = this.removeDynamicText.bind( this );
 		this.mediaQuery        = window.matchMedia( `( min-width: ${ functions.span( 10, 'rem' ) } )` );
-		console.log( this.mediaQuery.matches );
 
 		this.state = {
 			text:      '',

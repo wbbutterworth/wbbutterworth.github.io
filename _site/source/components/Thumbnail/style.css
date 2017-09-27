@@ -4,7 +4,7 @@ $breakpoint: span( 10, rem );
 	background: url( ../../assets/images/bricks.jpg );
 	background-size: 200%;
 	color: $background-color;
-	padding: lines( 2.5 ) lines( 2.5 );
+	padding: lines( 7.5 ) lines( 2.5 );
 	position: relative;
 	text-align: center;
 	transition: 200ms all;

@@ -1,21 +1,23 @@
 .content {
 	background: $background-color;
-	/* font-size: fontsize( 24px ); */
 	font-weight: 200;
-	/* line-height: lineheight( 24px ); */
 	position: relative;
 	z-index: 2;
 
 	section {
-		padding: lines( 3 ) 0 0;
+		margin: lines( 3 ) 0;
 
-		h1,
-		h2,
-		h3,
-		h4,
-		h5,
-		h6 {
-			padding: 0 0 lines( 1 );
+		&:first-child {
+			margin-top: 0;
+			padding-top: lines( 3 );
+		}
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+
+		header {
+			padding: 0 0 lines( 3 );
 			text-align: center;
 		}
 	}
