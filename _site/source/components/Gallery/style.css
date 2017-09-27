@@ -1,9 +1,0 @@
-.gallery {
-	margin: 0 lines( -0.5 );
-
-	&::after {
-		content: "";
-		clear: both;
-		display: table;
-	}
-}
