@@ -29,6 +29,10 @@ $breakpoint: span( 6, rem );
 		top: 0;
 		width: 1024px;
 		z-index: 1;
+
+		@media ( max-width: $breakpoint ) {
+			transform: translate3d( 0, 0, 0 );
+		}
 	}
 }
 

@@ -5,7 +5,7 @@ require( './style.css' );
 
 const Project = ( props ) => (
 	<div className="project">
-		<a className="project-thumbnail" href={ props.link } target="_blank">
+		<a className="project-thumbnail" href={ props.link } target="_blank" rel="noopener">
 			<h1 className="project-title">{ props.title }</h1>
 			<p className="project-tagline">{ props.tagline }</p>
 		</a>
