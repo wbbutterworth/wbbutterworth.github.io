@@ -3,6 +3,8 @@
 	margin: 0 auto;
 	max-width: $site-width;
 	padding: 0 lines( 1 );
+	position: relative;
+	z-index: 1;
 
 	&::after {
 		content: "";

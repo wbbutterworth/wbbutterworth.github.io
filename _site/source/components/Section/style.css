@@ -1,0 +1,17 @@
+.section {
+	margin: lines( 3 ) 0;
+
+	&:first-child {
+		margin-top: 0;
+		padding-top: lines( 3 );
+	}
+
+	&:last-child {
+		margin-bottom: 0;
+	}
+
+	header {
+		padding: 0 0 lines( 3 );
+		text-align: center;
+	}
+}

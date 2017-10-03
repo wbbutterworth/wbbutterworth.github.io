@@ -354,96 +354,6 @@
 			padding: 0 0 3.75rem;
 			text-align: center;
 		}
-.footer {
-	background: url(/build/assets/images/bricks.04ab40e2e1c3073e0829f717edfb7af0.jpg) fixed;
-	background-size: cover;
-	color: #fcfcfc;
-	height: 12.5rem;
-	position: relative;
-	overflow: hidden;
-	z-index: 1;
-}
-
-.footer::after {
-		background: #030303;
-		opacity: 0.9;
-		bottom: 0;
-		content: "";
-		left: 0;
-		position: absolute;
-		right: 0;
-		top: 0;
-		z-index: 1;
-	}
-
-.footer .footer-text {
-		font-weight: 200;
-		font-size: 1.5rem;
-		padding: 0 0 1.25rem;
-	}
-
-.footer .footer-text a {
-			display: block;
-			text-decoration: none;
-			-webkit-transition: 200ms all;
-			transition: 200ms all;
-			margin-top: 0.625rem;
-		}
-
-.footer .footer-text a:hover {
-				background: #fcfcfc;
-			}
-
-@media ( min-width: 32rem ) {
-
-.footer .footer-text a {
-				display: inline-block;
-				margin-top: 0
-		}
-			}
-
-@media ( min-width: 32rem ) {
-
-.footer .footer-text {
-			font-size: 2.25rem
-	}
-		}
-
-.footer .footer-links a {
-		display: inline-block;
-		height: 1.875rem;
-		margin-right: 1.25rem;
-	}
-
-@media ( min-width: 32rem ) {
-
-.footer .footer-links a {
-			height: 2.5rem;
-			margin-right: 2.5rem
-	}
-		}
-
-.footer .footer-links a:last-child {
-			margin-right: 0;
-		}
-
-.footer .footer-links a svg {
-			fill: #fcfcfc;
-		}
-
-.footer .footer-links a svg:hover {
-				fill: #941b0c;
-			}
-
-.footer-inner {
-	bottom: 0;
-	height: 12.5rem;
-	padding: 2.5rem 0 0;
-	position: fixed;
-	text-align: center;
-	width: 100%;
-	z-index: 2;
-}
 .banner {
 	height: 100vh;
 	overflow: hidden;
@@ -475,6 +385,14 @@
 		width: 1024px;
 		z-index: 1;
 	}
+
+@media ( max-width: 32rem ) {
+
+.banner-background img {
+			-webkit-transform: translate3d( 0, 0, 0 );
+			        transform: translate3d( 0, 0, 0 )
+	}
+		}
 
 .banner-overlay {
 	background: #030303;
