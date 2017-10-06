@@ -21,6 +21,7 @@
   "homepage": "https://github.com/wbbutterworth/liambutterworth.github.io#readme",
   "dependencies": {
     "classnames": "^2.2.5",
+    "google-map-react": "^0.24.0",
     "prop-types": "^15.5.10",
     "react": "^15.6.1",
     "react-dom": "^15.6.1",

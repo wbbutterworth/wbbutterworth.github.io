@@ -20,7 +20,7 @@
 		"arrow-parens":           [ "warn", "always" ],
 
 		"space-in-parens": [ "warn", "always", {
-			exceptions: [ "{}", "[]" ],
+			exceptions: [ "{}" ],
 		}],
 
 		"array-bracket-spacing": [ "warn", "always", {
@@ -44,8 +44,11 @@
 		"react/jsx-indent-props": [ "error", "tab" ],
 
 		"react/jsx-curly-spacing": [ "warn", {
-			"when":           "always",
-			"objectLiterals": "never"
+			"when": "always",
+
+			"spacing": {
+				"objectLiterals": "never"
+			}
 		}],
 
 		"react/jsx-filename-extension": [ "error", {

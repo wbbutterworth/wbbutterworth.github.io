@@ -1,7 +1,7 @@
 import React         from 'react';
 import Wrapper       from 'components/Wrapper';
 import Header        from 'components/Header';
-import Content       from 'components/Content';
+import Map           from 'components/Map';
 import Section       from 'components/Section';
 import Footer        from 'components/Footer';
 import Banner        from 'components/Banner';
@@ -54,6 +54,8 @@ const Home = () => (
 				</Project>
 			</Section>
 		</main>
+
+		<Map center={{ lat: 33.28709, lng: -87.5921952 }} />
 
 		<Footer />
 	</div>
