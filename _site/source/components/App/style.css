@@ -51,6 +51,12 @@ body {
 	line-height: lineheight( 18px );
 }
 
+main {
+	background: $background-color;
+	position: relative;
+	z-index: 2;
+}
+
 h1 {
 	font-size: fontsize( 48px );
 	line-height: lineheight( 48px );

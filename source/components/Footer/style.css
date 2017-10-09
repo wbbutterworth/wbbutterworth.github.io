@@ -1,11 +1,11 @@
-/* $footer-height: lines( 10 ); */
+$footer-height: lines( 15 );
 $breakpoint: span( 6, rem );
 
 .footer {
 	background: url( ../../assets/images/bricks.jpg ) fixed;
 	background-size: cover;
 	color: $background-color;
-	height: 100vh;
+	height: $footer-height;
 	padding-top: lines( 3 );
 	position: relative;
 	overflow: hidden;
@@ -51,7 +51,7 @@ $breakpoint: span( 6, rem );
 
 	.footer-links a {
 		display: inline-block;
-		height: lines( 1.5 );
+		height: lines( 2 );
 		margin-right: lines( 1 );
 
 		@media ( min-width: $breakpoint ) {
@@ -75,8 +75,8 @@ $breakpoint: span( 6, rem );
 
 .footer-inner {
 	bottom: 0;
-	/* height: $footer-height; */
-	padding: lines( 2 ) 0 0;
+	height: $footer-height;
+	padding: lines( 5 ) 0 0;
 	position: fixed;
 	text-align: center;
 	width: 100%;

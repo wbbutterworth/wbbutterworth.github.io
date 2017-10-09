@@ -53,9 +53,9 @@ const Home = () => (
 					Lipsum dolor sit amet, consectetur adipiscing elit. Cras rutrum enim ac justo tempus, laoreet tempor tortor ullamcorper. Vivamus elementum posuere ligula, et tincidunt tortor aliquet ac. Aliquam sagittis sem sapien, eu aliquam magna rhoncus in. Donec sit amet egestas arcu. Donec sodales nisl ut nibh aliquet vulputate. Curabitur non odio tristique, accumsan leo in, condimentum tellus. Fusce et augue ornare, facilisis nibh sit amet, vehicula erat. Mauris finibus nulla vel ante tempus, a luctus felis tristique.
 				</Project>
 			</Section>
-		</main>
 
-		<Map center={{ lat: 33.28709, lng: -87.5921952 }} />
+			<Map center={{ lat: 33.28709, lng: -87.5921952 }} marker={{ lat: 33.28709, lng: -87.5921952 }} />
+		</main>
 
 		<Footer />
 	</div>

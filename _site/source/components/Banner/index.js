@@ -1,7 +1,7 @@
 import React      from 'react';
 import PropTypes  from 'prop-types';
 import ClassNames from 'classnames';
-import { functions } from 'style';
+import style      from 'style';
 
 require( './style.css' );
 
@@ -12,7 +12,7 @@ class Banner extends React.Component {
 		this.animate           = this.animate.bind( this );
 		this.addDynamicText    = this.addDynamicText.bind( this );
 		this.removeDynamicText = this.removeDynamicText.bind( this );
-		this.mediaQuery        = window.matchMedia( `( min-width: ${ functions.span( 10, 'rem' ) } )` );
+		this.mediaQuery        = window.matchMedia( `( min-width: ${ style.functions.span( 10, 'rem' ) } )` );
 
 		this.state = {
 			text:      '',
