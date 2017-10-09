@@ -55,7 +55,7 @@ const styles = [{
 
 	stylers: [
 		{ color: style.variables['foreground-color'] },
-		{ lightness: 10 },
+		{ lightness: 7 },
 	],
 }, {
 	featureType: 'poi',
@@ -71,7 +71,7 @@ const styles = [{
 
 	stylers: [
 		{ color: style.variables['foreground-color'] },
-		{ lightness: 20 }
+		{ lightness: 20 },
 	],
 }, {
 	featureType: 'road.highway',
@@ -79,7 +79,7 @@ const styles = [{
 
 	stylers: [
 		{ color: style.variables['foreground-color'] },
-		{ lightness: 30 },
+		{ lightness: 26 },
 		{ weight: 0.4 },
 	],
 }, {
@@ -88,7 +88,7 @@ const styles = [{
 
 	stylers: [
 		{ color: style.variables['foreground-color'] },
-		{ lightness: 25 },
+		{ lightness: 24 },
 	],
 }, {
 	featureType: 'road.local',
@@ -96,7 +96,7 @@ const styles = [{
 
 	stylers: [
 		{ color: style.variables['foreground-color'] },
-		{ lightness: 20 },
+		{ lightness: 22 },
 	],
 }, {
 	featureType: 'transit',
@@ -104,45 +104,38 @@ const styles = [{
 
 	stylers: [
 		{ color: style.variables['foreground-color'] },
-		{ lightness: 15 },
+		{ lightness: 20 },
 	],
 }, {
 	featureType: 'water',
 	elementType: 'geometry',
 
 	stylers: [
-		// { color: style.variables['foreground-color'] },
-		{ color: '#030404' },
-		{ lightness: 20 },
+		{ color: style.variables['foreground-color'] },
+		{ lightness: 12 },
 	],
 }];
 
-const Map = ( props ) => {
-	function openInMaps( event ) {
-		console.log( event.target );
-	}
-
-	return (
-		<div className="map">
-			<GoogleMap
-				bootstrapURLKeys={{ key: API_KEY }}
-				defaultCenter={ props.center }
-				defaultZoom={ props.zoom }
-				options={{ styles }}
+const Map = ( props ) => (
+	<div className="map">
+		<GoogleMap
+			bootstrapURLKeys={{ key: API_KEY }}
+			defaultCenter={ props.center }
+			defaultZoom={ props.zoom }
+			options={{ styles }}
+		>
+			<a
+				className="map-marker"
+				lat={ props.marker.lat }
+				lng={ props.marker.lng }
+				href={ `http://maps.google.com?q=${ props.marker.lat },${ props.marker.lng }` }
+				target="_blank"
 			>
-				<a
-					className="map-marker"
-					lat={ props.marker.lat }
-					lng={ props.marker.lng }
-					href={ `http://maps.google.com?q=${ props.marker.lat },${ props.marker.lng }` }
-					target="_blank"
-				>
-					My Location
-				</a>
-			</GoogleMap>
-		</div>
-	);
-};
+				My Location
+			</a>
+		</GoogleMap>
+	</div>
+);
 
 Map.defaultProps = {
 	zoom: 11,

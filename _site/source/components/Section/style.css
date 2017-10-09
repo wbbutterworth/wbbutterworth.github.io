@@ -1,8 +1,8 @@
 .section {
-	padding: lines( 3 ) 0 0;
+	padding: lines( 4 ) 0 0;
 
 	header {
-		padding: 0 0 lines( 3 );
+		padding: 0 0 lines( 4 );
 		text-align: center;
 	}
 }

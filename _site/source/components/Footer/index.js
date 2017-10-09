@@ -3,13 +3,11 @@ import Icon       from 'components/Icon';
 import fileSVG    from 'assets/icons/file.svg';
 import githubSVG  from 'assets/icons/github.svg';
 import twitterSVG from 'assets/icons/twitter.svg';
-import Wrapper    from 'components/Wrapper';
-import Section    from 'components/Section';
 
 require( './style.css' );
 
 const Footer = () => (
-	<footer className="footer">
+	<footer id="contact" className="footer">
 		<div className="footer-inner">
 			<h1 className="footer-text">Say <a href="mailto:hello@liambutterworth.com">hello@liambutterworth.com</a></h1>
 

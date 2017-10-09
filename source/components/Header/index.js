@@ -76,7 +76,6 @@ class Header extends React.Component {
 						<li><a href="#work" onClick={ this.close }>Work</a></li>
 						<li><a href="#contact" onClick={ this.close }>Contact</a></li>
 
-						{/*
 						<li>
 							<ul className="header-social">
 								<li><a href="mailto:liambutterworth@gmail.com"><Icon svg={ envelopeSvg } /></a></li>
@@ -85,9 +84,7 @@ class Header extends React.Component {
 								<li><a href="http://twitter.com/wbbutterworth" target="_blank" rel="noopener noreferrer"><Icon svg={ twitterSvg } /></a></li>
 							</ul>
 						</li>
-						*/}
 					</ul>
-
 				</nav>
 			</header>
 		);
