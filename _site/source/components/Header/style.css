@@ -206,6 +206,7 @@ $breakpoint: span( 6, rem );
 			font-family: 'Source Sans Pro', serif;
 			font-size: fontsize( 70px );
 			font-weight: 900;
+			line-height: 1.5;
 			text-decoration: none;
 			text-transform: uppercase;
 			transition: all 300ms;
@@ -243,10 +244,10 @@ $breakpoint: span( 6, rem );
 
 		> a {
 			display: inline-block;
-			height: lines( 2 );
+			height: lines( 3 );
 
 			@media ( min-width: $breakpoint ) {
-				height: lines( 3 );
+				height: lines( 4 );
 			}
 
 			.icon {
