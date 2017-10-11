@@ -51,7 +51,6 @@ $breakpoint: span( 6, rem );
 	color: $background-color;
 	padding: lines( 2 );
 	position: absolute;
-	text-align: center;
 	top: lines( 10 );
 	white-space: pre-wrap;
 	width: 100%;
@@ -64,10 +63,15 @@ $breakpoint: span( 6, rem );
 
 	h1 {
 		font-weight: 800;
-		font-size: fontsize( 40px );
+		font-size: fontsize( 21px );
 		line-height: 1;
 
-		@media ( min-width: $breakpoint ) {
+		@media ( min-width: span( 5, rem ) ) {
+			font-size: fontsize( 30px );
+			text-align: center;
+		}
+
+		@media ( min-width: span( 9, rem ) ) {
 			font-size: fontsize( 60px );
 		}
 	}
@@ -79,12 +83,18 @@ $breakpoint: span( 6, rem );
 	}
 
 	p {
-		font-size: fontsize( 25px );
-		line-height: lineheight( 25px );
+		font-size: fontsize( 18px );
 		font-weight: 100;
+		line-height: 2.45;
 
-		@media ( min-width: $breakpoint ) {
+		@media ( min-width: span( 5, rem ) ) {
+			font-size: fontsize( 25px );
+			text-align: center;
+		}
+
+		@media ( min-width: span( 9, rem ) ) {
 			font-size: fontsize( 40px );
+			text-align: center;
 		}
 
 		&::after {
