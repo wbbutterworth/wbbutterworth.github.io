@@ -1,12 +1,13 @@
-import React         from 'react';
-import Wrapper       from 'components/Wrapper';
-import Header        from 'components/Header';
-import Map           from 'components/Map';
-import Section       from 'components/Section';
-import Footer        from 'components/Footer';
-import Banner        from 'components/Banner';
-import Project       from 'components/Project';
-import backgroundImg from 'assets/images/mic-stand.jpg';
+import React      from 'react';
+import Wrapper    from 'components/Wrapper';
+import Header     from 'components/Header';
+import Map        from 'components/Map';
+import Section    from 'components/Section';
+import Footer     from 'components/Footer';
+import Banner     from 'components/Banner';
+import Project    from 'components/Project';
+import background from 'assets/images/mic-stand.jpg';
+import resume     from 'assets/files/liambutterworth.pdf';
 
 const text = {
 	static: "Hi, I'm Liam and I",
@@ -21,7 +22,7 @@ const text = {
 const Home = () => (
 	<div>
 		<Header />
-		<Banner image={ backgroundImg } staticText={ text.static } dynamicText={ text.dynamic } />
+		<Banner image={ background } staticText={ text.static } dynamicText={ text.dynamic } />
 
 		<main>
 			<Wrapper>
@@ -33,11 +34,11 @@ const Home = () => (
 					</p>
 
 					<p>
-						I became a web developer in 2008 when I was fortunate enough to land a student-worker position at the University of Alabama. I’ve been using my accumulated web development skills to avoid starvation ever since. Over the course of my career I’ve developed an expertise in Front-End Development using whatever tools the industry professionals are drooling over at the time. I enjoy what I do and the people I work with. So, if you have a project in mind feel free to <a href='mailto:liam.b.butterworth@gmail.com'>shoot me an email</a> or if you’re looking for someone full-time <a href='#'>check out my resume</a>
+						I became a web developer in 2008 when I was fortunate enough to land a student-worker position at the University of Alabama. I’ve been using my accumulated web development skills to avoid starvation ever since. Over the course of my career I’ve developed an expertise in Front-End Development using whatever tools the industry professionals are drooling over at the time. I enjoy what I do and the people I work with. So, if you have a project in mind feel free to <a href='mailto:wbbutterworth@gmail.com'>shoot me an email</a> or if you’re looking for someone full-time <a href='/liambutterworth.pdf'>check out my resume</a>
 					</p>
 
 					<p>
-						If you’re interested in viewing examples of my work here’s my <a href='https://github.com/liambutterworth'>GitHub Account</a>. I work with all the usual suspects and acronyms; responsive design, cross-browser compatibility, RESTful API.
+						If you’re interested in viewing examples of my work here’s my <a href='https://github.com/wbbutterworth'>GitHub Account</a>. I work with all the usual suspects and acronyms; responsive design, cross-browser compatibility, RESTful API.
 					</p>
 				</Section>
 			</Wrapper>
@@ -46,10 +47,6 @@ const Home = () => (
 				<header><h1 id="work">Work</h1></header>
 
 				<Project title="Baseline" tagline="This is a sample sentence that will describe the project linked in this thumbnail." link="http://github.com/wbbutterworth">
-					Lipsum dolor sit amet, consectetur adipiscing elit. Cras rutrum enim ac justo tempus, laoreet tempor tortor ullamcorper. Vivamus elementum posuere ligula, et tincidunt tortor aliquet ac. Aliquam sagittis sem sapien, eu aliquam magna rhoncus in. Donec sit amet egestas arcu. Donec sodales nisl ut nibh aliquet vulputate. Curabitur non odio tristique, accumsan leo in, condimentum tellus. Fusce et augue ornare, facilisis nibh sit amet, vehicula erat. Mauris finibus nulla vel ante tempus, a luctus felis tristique.
-				</Project>
-
-				<Project title="Keyboard" tagline="This is a sample sentence that will describe the project linked in this thumbnail." link="http://github.com/wbbutterworth">
 					Lipsum dolor sit amet, consectetur adipiscing elit. Cras rutrum enim ac justo tempus, laoreet tempor tortor ullamcorper. Vivamus elementum posuere ligula, et tincidunt tortor aliquet ac. Aliquam sagittis sem sapien, eu aliquam magna rhoncus in. Donec sit amet egestas arcu. Donec sodales nisl ut nibh aliquet vulputate. Curabitur non odio tristique, accumsan leo in, condimentum tellus. Fusce et augue ornare, facilisis nibh sit amet, vehicula erat. Mauris finibus nulla vel ante tempus, a luctus felis tristique.
 				</Project>
 			</Section>

@@ -5,4 +5,8 @@
 		padding: 0 0 lines( 4 );
 		text-align: center;
 	}
+
+	p + p {
+		margin-top: lines( 1 );
+	}
 }
