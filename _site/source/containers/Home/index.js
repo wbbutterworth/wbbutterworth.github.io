@@ -7,7 +7,6 @@ import Footer     from 'components/Footer';
 import Banner     from 'components/Banner';
 import Project    from 'components/Project';
 import background from 'assets/images/mic-stand.jpg';
-import resume     from 'assets/files/liambutterworth.pdf';
 
 const text = {
 	static: "Hi, I'm Liam and I",
@@ -51,7 +50,10 @@ const Home = () => (
 				</Project>
 			</Section>
 
-			<Map center={{ lat: 33.28709, lng: -87.5921952 }} marker={{ lat: 33.28709, lng: -87.5921952 }} />
+			<Map
+				center={{ lat: 33.28709, lng: -87.5921952 }}
+				marker={{ lat: 33.28709, lng: -87.5921952 }}
+			/>
 		</main>
 
 		<Footer />
