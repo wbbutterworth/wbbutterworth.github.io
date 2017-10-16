@@ -46,9 +46,9 @@ em {
 body {
 	background: $background-color;
 	color: $foreground-color;
-	font-family: 'Montserrat', serif;
-	font-size: fontsize( 18px );
-	line-height: lineheight( 18px );
+	font-family: 'Montserrat', sans-serif;
+	font-size: font-size( 18px );
+	line-height: line-height( 18px );
 }
 
 main {
@@ -58,13 +58,13 @@ main {
 }
 
 h1 {
-	font-size: fontsize( 48px );
-	line-height: lineheight( 48px );
+	font-size: font-size( 48px );
+	line-height: line-height( 48px );
 }
 
 small {
-	font-size: fontsize( 16px );
-	line-height: lineheight( 16px );
+	font-size: font-size( 16px );
+	line-height: line-height( 16px );
 }
 
 a {

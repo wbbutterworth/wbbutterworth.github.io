@@ -6,7 +6,7 @@ const theme = [{
 
 	stylers: [
 		{ saturation: 36 },
-		{ color: style.variables['background-color'] },
+		{ color: style['background-color'] },
 		{ lightness: 40 },
 	],
 }, {
@@ -15,7 +15,7 @@ const theme = [{
 
 	stylers: [
 		{ visibility: 'on' },
-		{ color: style.variables['foreground-color'] },
+		{ color: style['foreground-color'] },
 		{ lightness: 20 },
 	],
 }, {
@@ -30,7 +30,7 @@ const theme = [{
 	elementType: 'geometry.fill',
 
 	stylers: [
-		{ color: style.variables['foreground-color'] },
+		{ color: style['foreground-color'] },
 		{ lightness: 10 },
 	],
 }, {
@@ -38,7 +38,7 @@ const theme = [{
 	elementType: 'geometry.stroke',
 
 	stylers: [
-		{ color: style.variables['foreground-color'] },
+		{ color: style['foreground-color'] },
 		{ lightness: 10 },
 		{ weight: 1.2 },
 	],
@@ -47,7 +47,7 @@ const theme = [{
 	elementType: 'geometry',
 
 	stylers: [
-		{ color: style.variables['foreground-color'] },
+		{ color: style['foreground-color'] },
 		{ lightness: 7 },
 	],
 }, {
@@ -55,7 +55,7 @@ const theme = [{
 	elementType: 'geometry',
 
 	stylers: [
-		{ color: style.variables['foreground-color'] },
+		{ color: style['foreground-color'] },
 		{ lightness: 12 },
 	],
 }, {
@@ -63,7 +63,7 @@ const theme = [{
 	elementType: 'geometry.fill',
 
 	stylers: [
-		{ color: style.variables['foreground-color'] },
+		{ color: style['foreground-color'] },
 		{ lightness: 20 },
 	],
 }, {
@@ -71,7 +71,7 @@ const theme = [{
 	elementType: 'geometry.stroke',
 
 	stylers: [
-		{ color: style.variables['foreground-color'] },
+		{ color: style['foreground-color'] },
 		{ lightness: 26 },
 		{ weight: 0.4 },
 	],
@@ -80,7 +80,7 @@ const theme = [{
 	elementType: 'geometry',
 
 	stylers: [
-		{ color: style.variables['foreground-color'] },
+		{ color: style['foreground-color'] },
 		{ lightness: 24 },
 	],
 }, {
@@ -88,7 +88,7 @@ const theme = [{
 	elementType: 'geometry',
 
 	stylers: [
-		{ color: style.variables['foreground-color'] },
+		{ color: style['foreground-color'] },
 		{ lightness: 22 },
 	],
 }, {
@@ -96,7 +96,7 @@ const theme = [{
 	elementType: 'geometry',
 
 	stylers: [
-		{ color: style.variables['foreground-color'] },
+		{ color: style['foreground-color'] },
 		{ lightness: 20 },
 	],
 }, {
@@ -104,7 +104,7 @@ const theme = [{
 	elementType: 'geometry',
 
 	stylers: [
-		{ color: style.variables['foreground-color'] },
+		{ color: style['foreground-color'] },
 		{ lightness: 12 },
 	],
 }];

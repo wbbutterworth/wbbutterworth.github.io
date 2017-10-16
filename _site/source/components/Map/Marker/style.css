@@ -1,0 +1,35 @@
+.map-marker {
+	cursor: pointer;
+	position: absolute;
+	height: 0;
+	width: 0;
+	left: 0;
+	top: 0;
+	transition: 200ms all;
+	border-left: lines( 1 ) solid transparent;
+	border-right: lines( 1 ) solid transparent;
+	border-top: lines( 2 ) solid $highlight-color;
+	text-indent: -9999px;
+
+	&:hover {
+		border-top-color: $background-color;
+	}
+
+	&::before {
+		content: "";
+		display: block;
+		position: absolute;
+		height: lines( 1 );
+		width: lines( 1 );
+		top: lines( -3 );
+		width: lines( 2 );
+		left: lines( -1 );
+		background: $highlight-color;
+		border-radius: 60px 60px 0 0;
+		transition: 200ms all;
+	}
+
+	&:hover::before {
+		background: $background-color;
+	}
+}
