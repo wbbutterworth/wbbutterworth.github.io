@@ -1,3 +1,5 @@
+$breakpoint: 768px;
+
 .header {
 	position: fixed;
 	height: 0;
@@ -68,7 +70,7 @@
 		transition: all 300ms;
 	}
 
-	@media ( min-width: 512px ) {
+	@media ( min-width: $breakpoint ) {
 		font-size: font-size( 30px );
 
 		.header--scrolled & {
@@ -101,7 +103,7 @@
 		transition: all 300ms;
 	}
 
-	@media ( min-width: 512px ) {
+	@media ( min-width: $breakpoint ) {
 		height: lines( 2 );
 		width: lines( 2 );
 		margin-top: lines( 0.5 );
@@ -179,7 +181,7 @@
 	bottom: 0;
 	text-align: center;
 
-	@media ( min-width: 512px ) {
+	@media ( min-width: $breakpoint ) {
 		bottom: 0;
 		margin-bottom: 0;
 		padding: 0 0 lines( 1 );
@@ -219,7 +221,7 @@
 				color: $highlight-color;
 			}
 
-			@media ( min-width: 512px ) {
+			@media ( min-width: $breakpoint ) {
 				font-size: font-size( 120px );
 				line-height: 1;
 			}
@@ -234,7 +236,7 @@
 	margin: 0 auto;
 	max-width: $site-width;
 
-	@media ( min-width: 512px ) {
+	@media ( min-width: $breakpoint ) {
 		padding-right: lines( 1 );
 	}
 
@@ -249,7 +251,7 @@
 			display: inline-block;
 			height: lines( 3 );
 
-			@media ( min-width: 512px ) {
+			@media ( min-width: $breakpoint ) {
 				height: lines( 4 );
 			}
 

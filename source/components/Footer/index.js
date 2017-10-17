@@ -9,7 +9,7 @@ require( './style.css' );
 const Footer = () => (
 	<footer id="contact" className="footer">
 		<div className="footer-inner">
-			<h1 className="footer-text">Say hello, <a href="mailto:wbbutterworth@gmail.com">wbbutterworth@gmail.com</a></h1>
+			<h1 className="footer-text">Say hello,<br /><a href="mailto:wbbutterworth@gmail.com">wbbutterworth@gmail.com</a></h1>
 
 			<div className="footer-links">
 				<a href="/liambutterworth.pdf" target="_blank" rel="noopener noreferrer"><Icon svg={ fileSVG } /></a>

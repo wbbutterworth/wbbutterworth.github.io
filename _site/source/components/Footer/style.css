@@ -1,3 +1,4 @@
+$breakpoint: 512px;
 $footer-height: lines( 15 );
 
 .footer {
@@ -5,7 +6,6 @@ $footer-height: lines( 15 );
 	background-size: cover;
 	color: $background-color;
 	height: $footer-height;
-	padding-top: lines( 3 );
 	position: relative;
 	overflow: hidden;
 	z-index: 1;
@@ -26,25 +26,21 @@ $footer-height: lines( 15 );
 		font-weight: 200;
 		font-size: font-size( 24px );
 		padding: 0 0 lines( 1 );
+		line-height: line-height( 24px );
 
 		a {
-			display: block;
+			display: inline-block;
 			text-decoration: none;
 			transition: 200ms all;
-			margin-top: lines( 0.5 );
 
 			&:hover {
 				background: $background-color;
 			}
-
-			@media ( min-width: 512px ) {
-				display: inline-block;
-				margin-top: 0;
-			}
 		}
 
-		@media ( min-width: 512px ) {
+		@media ( min-width: $breakpoint ) {
 			font-size: font-size( 36px );
+			line-height: line-height( 36px );
 		}
 	}
 
@@ -53,9 +49,9 @@ $footer-height: lines( 15 );
 		height: lines( 2 );
 		margin-right: lines( 1 );
 
-		@media ( min-width: 512px ) {
-			height: lines( 2 );
-			margin-right: lines( 2 );
+		@media ( min-width: $breakpoint ) {
+			height: lines( 2.5 );
+			margin-right: lines( 1.5 );
 		}
 
 		&:last-child {
@@ -75,7 +71,7 @@ $footer-height: lines( 15 );
 .footer-inner {
 	bottom: 0;
 	height: $footer-height;
-	padding: lines( 5 ) 0 0;
+	padding: lines( 2.5 ) 0 0;
 	position: fixed;
 	text-align: center;
 	width: 100%;
