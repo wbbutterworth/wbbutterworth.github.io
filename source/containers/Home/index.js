@@ -37,7 +37,7 @@ const Home = () => (
 					</p>
 
 					<p>
-						If you’re interested in viewing examples of my work here’s my <a href='https://github.com/wbbutterworth'>GitHub Account</a>. I work with all the usual suspects and acronyms; responsive design, cross-browser compatibility, RESTful API.
+						If you’re interested in viewing examples of my work here’s my <a href='https://github.com/wbbutterworth'>GitHub account</a>. I work with all the usual suspects and acronyms; responsive design, cross-browser compatibility, RESTful API.
 					</p>
 				</Section>
 			</Wrapper>

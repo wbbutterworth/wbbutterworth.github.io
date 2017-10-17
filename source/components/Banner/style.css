@@ -49,21 +49,35 @@
 	color: $background-color;
 	padding: lines( 2 );
 	position: absolute;
-	top: lines( 10 );
+	top: 50%;
+	margin-top: lines( -5 );
 	white-space: pre-wrap;
 	width: 100%;
 	z-index: 3;
 
-	@media ( min-width: 512px ) {
-		margin-top: lines( -2.5 );
-		top: 50%;
+	.banner-text-role {
+		display: none;
 	}
 
 	h1 {
 		font-weight: 800;
-		font-size: font-size( 40px );
+		font-size: font-size( 32px );
 		line-height: 1;
 		text-align: center;
+
+		.banner-text-role {
+			display: none;
+		}
+
+		@media ( min-width: 512px ) {
+			.banner-text-role {
+				display: inline;
+			}
+
+			.banner-text-role-abbr {
+				display: none;
+			}
+		}
 
 		@media ( min-width: 768px ) {
 			font-size: font-size( 60px );

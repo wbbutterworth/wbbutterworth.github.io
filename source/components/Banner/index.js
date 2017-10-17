@@ -101,7 +101,12 @@ class Banner extends React.Component {
 				</div>
 
 				<div className="banner-text">
-					<h1>Front-End Developer</h1>
+					<h1>
+						Front-End&nbsp;
+						<span className="banner-text-role">Developer</span>
+						<span className="banner-text-role-abbr">Dev</span>
+					</h1>
+
 					<hr />
 					<p>{ this.state.text }</p>
 				</div>
