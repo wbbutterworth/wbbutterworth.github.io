@@ -209,7 +209,7 @@ $breakpoint: 768px;
 		> a {
 			color: $foreground-color;
 			display: block;
-			font-family: 'Source Sans Pro', serif;
+			font-family: 'Montserrat', sans-serif;
 			font-size: font-size( 70px );
 			font-weight: 900;
 			line-height: 1.125;

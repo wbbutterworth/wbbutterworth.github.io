@@ -1,12 +1,18 @@
+$padding: lines( 2.5 );
+
 .section {
-	padding: lines( 4 ) 0 0;
+	padding: $padding 0 0;
 
 	header {
-		padding: 0 0 lines( 4 );
+		padding: 0 0 $padding;
 		text-align: center;
 	}
 
 	p + p {
 		margin-top: lines( 1 );
+	}
+
+	a {
+		font-weight: 400;
 	}
 }

@@ -58,6 +58,10 @@
 			font-weight: 800;
 			line-height: line-height( 54px );
 		}
+
+		.project-tagline {
+			font-weight: 200;
+		}
 	}
 
 	.project-description {

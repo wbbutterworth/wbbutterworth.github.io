@@ -47,7 +47,8 @@ body {
 	background: $background-color;
 	color: $foreground-color;
 	font-family: 'Montserrat', sans-serif;
-	font-size: font-size( 18px );
+	font-size: font-size( 20px );
+	font-weight: 300;
 	line-height: line-height( 18px );
 }
 
@@ -68,8 +69,8 @@ small {
 }
 
 a {
-	text-decoration: none;
 	color: $highlight-color;
+	text-decoration: none;
 
 	&:hover {
 		text-decoration: underline;

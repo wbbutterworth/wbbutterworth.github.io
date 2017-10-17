@@ -46,7 +46,7 @@ const Home = () => (
 				<header><h1 id="work">Work</h1></header>
 
 				<Project title="Baseline" tagline="This is a sample sentence that will describe the project linked in this thumbnail." link="http://github.com/wbbutterworth">
-					Lipsum dolor sit amet, consectetur adipiscing elit. Cras rutrum enim ac justo tempus, laoreet tempor tortor ullamcorper. Vivamus elementum posuere ligula, et tincidunt tortor aliquet ac. Aliquam sagittis sem sapien, eu aliquam magna rhoncus in. Donec sit amet egestas arcu. Donec sodales nisl ut nibh aliquet vulputate. Curabitur non odio tristique, accumsan leo in, condimentum tellus. Fusce et augue ornare, facilisis nibh sit amet, vehicula erat. Mauris finibus nulla vel ante tempus, a luctus felis tristique.
+					Lipsum dolor sit amet, consectetur adipiscing elit. Cras rutrum enim ac justo tempus, laoreet tempor tortor ullamcorper. Vivamus elementum posuere ligula, et tincidunt tortor aliquet ac. Aliquam sagittis sem sapien, eu aliquam magna rhoncus in. Donec sit amet egestas arcu. Donec sodales nisl ut nibh aliquet vulputate. Curabitur non odio tristique, accumsan leo in, condimentum tellus.
 				</Project>
 			</Section>
 
