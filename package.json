@@ -4,9 +4,11 @@
   "description": "My portfolio site",
   "main": "index.js",
   "scripts": {
+		"start": "npm run serve & npm run watch",
     "serve": "bundle exec jekyll serve",
-    "watch": "webpack --progress --colors --w",
-    "build": "webpack --progress --colors -p"
+    "watch": "npm run clean && webpack --progress --colors --w",
+    "build": "npm run clean && webpack --progress --colors -p",
+		"clean": "rm -rf build && mkdir build"
   },
   "repository": {
     "type": "git",

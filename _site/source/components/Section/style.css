@@ -1,4 +1,4 @@
-$padding: lines( 2.5 );
+$padding: lines( 4 );
 
 .section {
 	padding: $padding 0 0;
@@ -6,6 +6,11 @@ $padding: lines( 2.5 );
 	header {
 		padding: 0 0 $padding;
 		text-align: center;
+
+		h1 {
+			font-size: font-size( 72px );
+			line-height: line-height( 72px );
+		}
 	}
 
 	p + p {

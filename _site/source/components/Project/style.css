@@ -29,6 +29,10 @@
 			padding: lines( 7.5 ) lines( 2.5 );
 		}
 
+		@media( min-width: 1280px ) {
+			padding: lines( 10 ) lines( 2.5 );
+		}
+
 		&::before {
 			background: $foreground-color;
 			content: "";
