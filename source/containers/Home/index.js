@@ -45,7 +45,7 @@ const Home = () => (
 			<Section>
 				<header><h1 id="work">Work</h1></header>
 
-				<Project title="Baseline" tagline="A PostCSS plugin for managing vertical rhythm." link="http://github.com/wbbutterworth">
+				<Project title="Bassline" tagline="A PostCSS plugin for managing vertical rhythm." link="http://github.com/wbbutterworth">
 					I wrote this plugin to make managing vertical rhythm on a website much simpler by abstracting the math needed for the font-size and line-height properties. With it you can pass a pixel value reference to the font-size() function and it will spit back the correct rem value relative to the base font size.
 				</Project>
 			</Section>
