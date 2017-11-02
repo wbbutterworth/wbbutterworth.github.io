@@ -10,7 +10,9 @@ const Project = ( props ) => (
 			<p className="project-tagline">{ props.tagline }</p>
 		</a>
 
-		<div className="project-description">{ props.children }</div>
+		<div className="project-description">
+			<p>{ props.children }</p>
+		</div>
 	</div>
 );
 

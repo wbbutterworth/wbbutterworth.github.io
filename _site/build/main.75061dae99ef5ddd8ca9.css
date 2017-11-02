@@ -610,6 +610,8 @@
 }
 .project {
 	overflow: hidden;
+	background: #030303;
+	color: #fcfcfc;
 }
 
 	@media ( min-width: 1024px ) {
@@ -687,7 +689,7 @@
 		}
 
 	.project .project-description {
-		padding:  2.5rem ;
+		padding:  1rem ;
 	}
 * {
 	border: 0;

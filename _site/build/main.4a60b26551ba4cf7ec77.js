@@ -29646,7 +29646,7 @@ var Home = function Home() {
 				),
 				_react2.default.createElement(
 					_Project2.default,
-					{ title: 'Baseline', tagline: 'A PostCSS plugin for managing vertical rhythm.', link: 'http://github.com/wbbutterworth' },
+					{ title: 'Bassline', tagline: 'A PostCSS plugin for managing vertical rhythm.', link: 'http://github.com/wbbutterworth' },
 					'I wrote this plugin to make managing vertical rhythm on a website much simpler by abstracting the math needed for the font-size and line-height properties. With it you can pass a pixel value reference to the font-size() function and it will spit back the correct rem value relative to the base font size.'
 				)
 			),
@@ -33103,7 +33103,11 @@ var Project = function Project(props) {
 		_react2.default.createElement(
 			'div',
 			{ className: 'project-description' },
-			props.children
+			_react2.default.createElement(
+				'p',
+				null,
+				props.children
+			)
 		)
 	);
 };

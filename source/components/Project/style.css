@@ -1,5 +1,7 @@
 .project {
 	overflow: hidden;
+	background: color( $foreground-color blend( $background-color 10% ) );
+	color: color( $background-color blend( $foreground-color 20% ) );
 
 	@media ( min-width: 1024px ) {
 		.project-thumbnail,
@@ -18,6 +20,7 @@
 		background-size: 200%;
 		color: $background-color;
 		display: block;
+		overflow: hidden;
 		padding: lines( 2.5 );
 		position: relative;
 		text-decoration: none;
@@ -42,7 +45,7 @@
 			position: absolute;
 			transition: 200ms all;
 			top: 0;
-			width: 100%;
+			width: 101%;
 			z-index: 1;
 		}
 
@@ -69,6 +72,6 @@
 	}
 
 	.project-description {
-		padding: lines( 1 );
+		padding: lines( 2.5 );
 	}
 }

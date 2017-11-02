@@ -610,6 +610,7 @@
 }
 .project {
 	overflow: hidden;
+	background: #333;
 }
 
 	@media ( min-width: 1024px ) {
@@ -661,7 +662,7 @@
 			-webkit-transition: 200ms all;
 			transition: 200ms all;
 			top: 0;
-			width: 100%;
+			width: 101%;
 			z-index: 1;
 		}
 
@@ -687,7 +688,7 @@
 		}
 
 	.project .project-description {
-		padding:  2.5rem ;
+		padding: 0  1rem ;
 	}
 * {
 	border: 0;
