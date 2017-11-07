@@ -3,9 +3,10 @@ import classNames   from 'classnames';
 import SmoothScroll from 'smooth-scroll';
 import Icon         from 'components/Icon';
 import fileSvg      from 'assets/icons/file.svg';
+import envelopeSvg  from 'assets/icons/envelope.svg';
 import githubSvg    from 'assets/icons/github.svg';
 import twitterSvg   from 'assets/icons/twitter.svg';
-import envelopeSvg  from 'assets/icons/envelope.svg';
+import linkedinSvg  from 'assets/icons/linkedin.svg';
 
 require( './style.css' );
 
@@ -81,7 +82,7 @@ class Header extends React.Component {
 								<li><a href="mailto:wbbutterworth@gmail.com"><Icon svg={ envelopeSvg } /></a></li>
 								<li><a href="/liambutterworth.pdf" target="_blank" rel="noopener noreferrer"><Icon svg={ fileSvg } /></a></li>
 								<li><a href="https://github.com/wbbutterworth" target="_blank" rel="noopener noreferrer"><Icon svg={ githubSvg } /></a></li>
-								{/*<li><a href="http://twitter.com/wbbutterworth" target="_blank" rel="noopener noreferrer"><Icon svg={ twitterSvg } /></a></li>*/}
+								<li><a href="https://linkedin.com/in/wbbutterworth" target="_blank" rel="noopener noreferrer"><Icon svg={ linkedinSvg } /></a></li>
 							</ul>
 						</li>
 					</ul>
