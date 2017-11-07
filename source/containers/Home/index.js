@@ -40,20 +40,15 @@ const Home = () => (
 						If you’re interested in viewing examples of my work here’s my <a href='https://github.com/wbbutterworth'>GitHub account</a>. I work with all the usual suspects and acronyms; responsive design, cross-browser compatibility, RESTful API.
 					</p>
 				</Section>
+
+				<Section>
+					<header><h1 id="work">Work</h1></header>
+
+					<Project title="Bassline" link="http://github.com/wbbutterworth/postcss-bassline.git" icon="npm">
+						I wrote this plugin to make managing vertical rhythm on a website much simpler by abstracting the math needed for the font-size and line-height properties. With it you can pass a pixel value reference to the font-size() function and it will spit back the correct rem value relative to the base font size.
+					</Project>
+				</Section>
 			</Wrapper>
-
-			<Section>
-				<header><h1 id="work">Work</h1></header>
-
-				<Project title="Bassline" tagline="A PostCSS plugin for managing vertical rhythm." link="http://github.com/wbbutterworth">
-					I wrote this plugin to make managing vertical rhythm on a website much simpler by abstracting the math needed for the font-size and line-height properties. With it you can pass a pixel value reference to the font-size() function and it will spit back the correct rem value relative to the base font size.
-				</Project>
-			</Section>
-
-			<Map
-				center={{ lat: 33.28709, lng: -87.5921952 }}
-				marker={{ lat: 33.28709, lng: -87.5921952 }}
-			/>
 		</main>
 
 		<Footer />

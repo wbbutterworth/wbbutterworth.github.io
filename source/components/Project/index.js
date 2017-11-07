@@ -1,25 +1,34 @@
 import React     from 'react';
 import PropTypes from 'prop-types';
+import Icon      from 'components/Icon';
 
 require( './style.css' );
 
-const Project = ( props ) => (
-	<div className="project">
-		<a className="project-thumbnail" href={ props.link } target="_blank" rel="noopener">
-			<h1 className="project-title">{ props.title }</h1>
-			<p className="project-tagline">{ props.tagline }</p>
-		</a>
+const Project = ( props ) => {
+	const icon = require( `assets/icons/${ props.icon }.svg` );
 
-		<div className="project-description">
-			<p>{ props.children }</p>
+	return (
+		<div className="project">
+			<div className="project-aside">
+				<a href={ props.link } target="_blank" rel="noopener">
+					<Icon svg={ icon } />
+				</a>
+			</div>
+
+			<div className="project-content">
+				<a href={ props.link } target="_blank" rel="noopener">
+					{ props.title }
+				</a>
+
+				<p>{ props.children }</p>
+			</div>
 		</div>
-	</div>
-);
+	);
+};
 
 Project.propTypes = {
 	link:     PropTypes.string.isRequired,
 	title:    PropTypes.string.isRequired,
-	tagline:  PropTypes.string.isRequired,
 	children: PropTypes.node.isRequired,
 };
 

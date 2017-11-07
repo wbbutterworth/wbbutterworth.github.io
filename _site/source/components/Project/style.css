@@ -1,77 +1,35 @@
 .project {
-	overflow: hidden;
-	background: color( $foreground-color blend( $background-color 10% ) );
-	color: color( $background-color blend( $foreground-color 20% ) );
+	padding-bottom: lines( 5 );
 
-	@media ( min-width: 1024px ) {
-		.project-thumbnail,
-		.project-description {
-			width: 50%;
+	.project-aside {
+		width: 250px;
+		margin: 0 auto;
+
+		svg {
+			height: auto;
+			width: 100%;
+		}
+
+		@media ( min-width: 768px ) {
 			float: left;
-		}
-
-		&:nth-child( odd ) .project-thumbnail {
-			float: right;
+			margin: 0 lines( 2 ) 0 0;
 		}
 	}
 
-	.project-thumbnail {
-		background: url( ../../assets/images/bricks.jpg );
-		background-size: 200%;
-		color: $background-color;
-		display: block;
+	.project-content {
 		overflow: hidden;
-		padding: lines( 2.5 );
-		position: relative;
-		text-decoration: none;
-		text-align: center;
+		
+		a {
+			color: $foreground-color;
+			font-size: font-size( 48px );
+			line-height: line-height( 48px );
+			font-weight: 700;
+			text-decoration: none;
 
-		@media ( min-width: 1024px ) {
-			background-attachment: fixed;
-			background-size: cover;
-			padding: lines( 7.5 ) lines( 2.5 );
+			&:hover {
+				color: $highlight-color;
+				transition: all 200ms;
+			}
 		}
-
-		@media( min-width: 1280px ) {
-			padding: lines( 10 ) lines( 2.5 );
-		}
-
-		&::before {
-			background: $foreground-color;
-			content: "";
-			height: 100%;
-			left: 0;
-			opacity: 0.9;
-			position: absolute;
-			transition: 200ms all;
-			top: 0;
-			width: 101%;
-			z-index: 1;
-		}
-
-		&:hover::before {
-			background: $highlight-color;
-		}
-
-		.project-title,
-		.project-tagline {
-			position: relative;
-			z-index: 2;
-		}
-
-		.project-title {
-			font-family: 'Montserrat', sans-serif;
-			font-size: font-size( 54px );
-			font-weight: 800;
-			line-height: line-height( 54px );
-		}
-
-		.project-tagline {
-			font-weight: 200;
-		}
-	}
-
-	.project-description {
-		padding: lines( 2.5 );
 	}
 }
