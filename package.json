@@ -4,11 +4,11 @@
   "description": "My portfolio site",
   "main": "index.js",
   "scripts": {
-		"start": "npm run serve & npm run watch",
+    "start": "npm run serve & npm run watch",
     "serve": "bundle exec jekyll serve",
     "watch": "npm run clean && webpack --progress --colors --w",
     "build": "npm run clean && webpack --progress --colors -p",
-		"clean": "rm -rf build && mkdir build"
+    "clean": "rm -rf build && mkdir build"
   },
   "repository": {
     "type": "git",
@@ -27,6 +27,7 @@
     "react": "^15.6.1",
     "react-dom": "^15.6.1",
     "react-router-dom": "^4.1.1",
+    "shortid": "^2.2.8",
     "smooth-scroll": "^12.1.5"
   },
   "devDependencies": {

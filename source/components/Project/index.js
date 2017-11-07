@@ -1,11 +1,13 @@
 import React     from 'react';
 import PropTypes from 'prop-types';
 import Icon      from 'components/Icon';
+import ShortID   from 'shortid';
 
 require( './style.css' );
 
 const Project = ( props ) => {
 	const icon = require( `assets/icons/${ props.icon }.svg` );
+	const tags = props.tags.split( ',' );
 
 	return (
 		<div className="project">
@@ -21,6 +23,12 @@ const Project = ( props ) => {
 				</a>
 
 				<p>{ props.children }</p>
+
+				<ul className="project-tags">
+					{ tags.map( ( tag ) => (
+						<li key={ ShortID.generate() }>{ tag }</li>
+					) ) }
+				</ul>
 			</div>
 		</div>
 	);

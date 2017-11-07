@@ -1,4 +1,4 @@
-$padding: lines( 4 );
+$padding: lines( 5 );
 
 .section {
 	padding: $padding 0 0;
