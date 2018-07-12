@@ -1,4 +1,4 @@
 .DS_Store
 .tags
-npm-debug.log
+*.log.*
 node_modules
