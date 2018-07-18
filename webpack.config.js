@@ -1,66 +1,42 @@
 const HtmlWebpackPlugin  = require( 'html-webpack-plugin' );
-const ExtractTextPlugin  = require( 'extract-text-webpack-plugin' );
-// const CleanWebpackPlugin = require( 'clean-webpack-plugin' );
-const path               = require( 'path' );
+const CleanWebpackPlugin = require( 'clean-webpack-plugin' );
 
 module.exports = {
-	context: `${ __dirname }/source/`,
-
-	entry: [
-		'babel-polyfill',
-		'./index.js',
+	plugins: [
+		new CleanWebpackPlugin([ 'dist' ], { watch: true }),
+		new HtmlWebpackPlugin({ template: 'src/index.html', filename: 'index.html' }),
 	],
 
 	output: {
-		path:       `${ __dirname }/build/`,
-		filename:   '[name].[hash].js',
-		publicPath: '/build/',
+		filename: '[name].[hash].js',
 	},
 
 	resolve: {
-		extensions: [ '.js', '.jsx', '.json' ],
-
-		modules: [
-			path.resolve( './source' ),
-			path.resolve( './node_modules' ),
-		],
+		alias: {
+			modules:    `${ __dirname }/node_modules`,
+			assets:     `${ __dirname }/src/assets`,
+			containers: `${ __dirname }/src/containers`,
+			components: `${ __dirname }/src/components`,
+		},
 	},
 
 	module: {
-		loaders: [{
+		rules: [{
 			test:    /\.js$/,
 			exclude: /node_modules/,
 			use:     'babel-loader',
 		}, {
 			test:    /\.css$/,
 			exclude: /node_modules/,
-
-			use: ExtractTextPlugin.extract({
-				use: [ 'css-loader', 'postcss-loader' ],
-			}),
+			use:     [ 'style-loader', 'css-loader', 'sass-loader?includePaths[]=src' ],
 		}, {
 			test:    /\.(jpe?g|png)$/,
 			exclude: /node_modules/,
-			use:     'url-loader?limit=8192&name=[path][name].[hash].[ext]',
+			use:     `url-loader?limit=8192&context=${ __dirname }/src&name=[path][name].[hash].[ext]`,
 		}, {
 			test:    /\.svg$/,
 			exclude: /node_modules/,
 			use:     'svg-inline-loader',
 		}],
 	},
-
-	plugins: [
-		new ExtractTextPlugin( '[name].[hash].css' ),
-
-		new HtmlWebpackPlugin({
-			template: 'index.html',
-			filename: '../index.html',
-		}),
-
-		// new CleanWebpackPlugin([ 'build' ], {
-		// 	root:    __dirname,
-		// 	verbose: true,
-		// 	watch:   true,
-		// }),
-	],
 };

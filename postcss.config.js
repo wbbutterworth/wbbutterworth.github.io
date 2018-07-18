@@ -1,4 +1,4 @@
-const style        = require( './source/style.js' );
+const style        = require( './src/style.js' );
 const autoprefixer = require( 'autoprefixer' );
 const nested       = require( 'postcss-nested' );
 const color        = require( 'postcss-color-function' );

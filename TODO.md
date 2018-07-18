@@ -1,2 +1,2 @@
 #TODO
-- add tags to project component
+- replace postcss with sass
