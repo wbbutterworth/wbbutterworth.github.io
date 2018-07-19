@@ -2,14 +2,14 @@ const HtmlWebpackPlugin  = require( 'html-webpack-plugin' );
 const CleanWebpackPlugin = require( 'clean-webpack-plugin' );
 
 module.exports = {
+	output: {
+		filename: '[name].[hash].js',
+	},
+
 	plugins: [
 		new CleanWebpackPlugin([ 'dist' ], { watch: true }),
 		new HtmlWebpackPlugin({ template: 'src/index.html', filename: 'index.html' }),
 	],
-
-	output: {
-		filename: '[name].[hash].js',
-	},
 
 	resolve: {
 		alias: {

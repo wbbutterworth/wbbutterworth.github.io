@@ -58,8 +58,6 @@
     "postcss-simple-vars": "^4.1.0",
     "sass-loader": "^7.0.3",
     "style-loader": "^0.21.0",
-    "stylelint": "^8.1.1",
-    "stylelint-config-standard": "^17.0.0",
     "svg-inline-loader": "^0.8.0",
     "url-loader": "^0.5.9",
     "webpack": "^4.16.0",
