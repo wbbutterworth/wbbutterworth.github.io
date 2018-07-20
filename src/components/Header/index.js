@@ -5,7 +5,6 @@ import Icon         from 'components/Icon';
 import fileSvg      from 'assets/icons/file.svg';
 import envelopeSvg  from 'assets/icons/envelope.svg';
 import githubSvg    from 'assets/icons/github.svg';
-import twitterSvg   from 'assets/icons/twitter.svg';
 import linkedinSvg  from 'assets/icons/linkedin.svg';
 
 require( './style.css' );

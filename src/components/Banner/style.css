@@ -67,7 +67,7 @@
 
 	h1 {
 		font-weight: 800;
-		font-size: font-size( 32px );
+		font-size: font-size( 36px );
 		line-height: 1;
 		text-align: center;
 
@@ -97,7 +97,7 @@
 	}
 
 	p {
-		font-size: font-size( 27px );
+		font-size: font-size( 24px );
 		font-weight: 100;
 
 		@media ( min-width: 428px ) {
@@ -105,7 +105,7 @@
 		}
 
 		@media ( min-width: 768px ) {
-			font-size: font-size( 40px );
+			font-size: font-size( 32px );
 		}
 
 		&::after {

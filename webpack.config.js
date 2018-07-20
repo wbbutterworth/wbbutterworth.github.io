@@ -7,8 +7,8 @@ module.exports = {
 	},
 
 	plugins: [
-		new CleanWebpackPlugin([ 'dist' ], { watch: true }),
 		new HtmlWebpackPlugin({ template: 'src/index.html', filename: 'index.html' }),
+		new CleanWebpackPlugin([ 'dist' ]),
 	],
 
 	resolve: {

@@ -36,6 +36,7 @@ $footer-height: lines( 15 );
 
 		a {
 			display: inline-block;
+			margin: lines( 0.25 ) 0 0;
 			padding: 0 lines( 0.25 );
 			text-decoration: none;
 			transition: 200ms all;

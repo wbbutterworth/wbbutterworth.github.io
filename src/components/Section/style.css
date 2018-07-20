@@ -24,6 +24,7 @@ $padding: lines( 5 );
 	}
 
 	a {
-		font-weight: 400;
+		text-decoration: underline;
+		&:hover { text-decoration: none; }
 	}
 }

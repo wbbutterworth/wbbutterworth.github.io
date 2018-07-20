@@ -2,7 +2,6 @@ import React       from 'react';
 import Icon        from 'components/Icon';
 import fileSVG     from 'assets/icons/file.svg';
 import githubSVG   from 'assets/icons/github.svg';
-import twitterSVG  from 'assets/icons/twitter.svg';
 import linkedinSvg from 'assets/icons/linkedin.svg';
 
 require( './style.css' );
