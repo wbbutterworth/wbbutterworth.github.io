@@ -1,0 +1,85 @@
+/**
+ * App
+ */
+
+@import 'global';
+
+* {
+	border: 0;
+	margin: 0;
+	padding: 0;
+
+	&,
+	&::before,
+	&::after {
+		box-sizing: border-box;
+	}
+}
+
+nav,
+aside,
+article,
+details,
+header,
+hgroup,
+footer,
+section,
+summary,
+figure,
+figcaption {
+	display: block;
+}
+
+ol,
+ul {
+	list-style: none;
+}
+
+hr {
+	border-top: 1px solid $color-dark;
+	height: 1px;
+	margin: lines( 1 ) 0 lines( 1, 1px );
+}
+
+strong {
+	font-weight: bold;
+}
+
+em {
+	font-style: italic;
+}
+
+body {
+	background: $color-light;
+	color: $color-dark;
+	/* font-family: 'Montserrat', sans-serif; */
+	font-family: 'Roboto', sans-serif;
+	font-size: font-size( 20px );
+	font-weight: 300;
+	line-height: line-height( 18px );
+}
+
+main {
+	background: $color-light;
+	position: relative;
+	z-index: 2;
+}
+
+h1 {
+	font-size: font-size( 48px );
+	line-height: line-height( 48px );
+}
+
+small {
+	font-size: font-size( 16px );
+	line-height: line-height( 16px );
+}
+
+a {
+	color: $color-primary;
+	text-decoration: none;
+
+	&:hover {
+		text-decoration: underline;
+	}
+}
