@@ -35,14 +35,15 @@ $footer-height: lines( 15 );
 		line-height: line-height( 24px );
 
 		a {
+			color: $color-light;
 			display: inline-block;
 			margin: lines( 0.25 ) 0 0;
-			padding: 0 lines( 0.25 );
 			text-decoration: none;
 			transition: 200ms all;
 
 			&:hover {
-				background: $color-light;
+				background: $color-primary;
+				padding: 0 lines( 0.5 );
 			}
 		}
 
@@ -79,7 +80,8 @@ $footer-height: lines( 15 );
 .footer-inner {
 	bottom: 0;
 	height: $footer-height;
-	padding: lines( 2.5 ) 0 0;
+	/* padding: lines( 2.5 ) 0 0; */
+	padding: lines( 4 ) 0 0;
 	position: fixed;
 	text-align: center;
 	width: 100%;

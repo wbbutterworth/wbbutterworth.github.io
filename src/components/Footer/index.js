@@ -9,13 +9,12 @@ require( './style.css' );
 const Footer = () => (
 	<footer id="contact" className="footer">
 		<div className="footer-inner">
-			<h1 className="footer-text">Say hello,<br /><a href="mailto:wbbutterworth@gmail.com">wbbutterworth@gmail.com</a></h1>
+			<h1 className="footer-text">Say <a href="mailto:hello@liambutterworth.me">hello@liambutterworth.me</a></h1>
 
 			<div className="footer-links">
 				<a href="/liambutterworth.pdf" target="_blank" rel="noopener noreferrer"><Icon svg={ fileSVG } /></a>
-				<a href="https://github.com/wbbutterworth" target="_blank" rel="noopener noreferrer"><Icon svg={ githubSVG } /></a>
-				<a href="https://linkedin.com/in/wbbutterworth" target="_blank" rel="noopener noreferrer"><Icon svg={ linkedinSvg } /></a>
-				{/*<a href="http://twitter.com/wbbutterworth" target="_blank" rel="noopener noreferrer"><Icon svg={ twitterSVG } /></a>*/}
+				<a href="https://github.com/liambutterworth" target="_blank" rel="noopener noreferrer"><Icon svg={ githubSVG } /></a>
+				<a href="https://linkedin.com/in/liam-butterworth" target="_blank" rel="noopener noreferrer"><Icon svg={ linkedinSvg } /></a>
 			</div>
 		</div>
 	</footer>
