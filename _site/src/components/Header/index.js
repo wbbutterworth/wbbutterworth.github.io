@@ -78,10 +78,10 @@ class Header extends React.Component {
 
 						<li>
 							<ul className="header-social">
-								<li><a href="mailto:wbbutterworth@gmail.com"><Icon svg={ envelopeSvg } /></a></li>
+								<li><a href="mailto:contact@liambutterworth.me"><Icon svg={ envelopeSvg } /></a></li>
 								<li><a href="/liambutterworth.pdf" target="_blank" rel="noopener noreferrer"><Icon svg={ fileSvg } /></a></li>
-								<li><a href="https://github.com/wbbutterworth" target="_blank" rel="noopener noreferrer"><Icon svg={ githubSvg } /></a></li>
-								<li><a href="https://linkedin.com/in/wbbutterworth" target="_blank" rel="noopener noreferrer"><Icon svg={ linkedinSvg } /></a></li>
+								<li><a href="https://github.com/liambutterworth" target="_blank" rel="noopener noreferrer"><Icon svg={ githubSvg } /></a></li>
+								<li><a href="https://linkedin.com/in/liam-butterworth" target="_blank" rel="noopener noreferrer"><Icon svg={ linkedinSvg } /></a></li>
 							</ul>
 						</li>
 					</ul>
