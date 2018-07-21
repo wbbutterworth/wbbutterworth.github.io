@@ -30,7 +30,7 @@ class Header extends React.Component {
 
 		this.smoothScroll.init({
 			speed:  800,
-			offset: 88, // computed section header height in pixels
+			offset: 88 + 62, // computed section header height in pixels
 			easing: 'easeInOutCubic',
 		});
 	}

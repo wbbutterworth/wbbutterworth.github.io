@@ -40,7 +40,7 @@ const Home = () => (
 						since. Over the course of my career I’ve developed an expertise in Front-End Development using whatever
 						tools the industry professionals are drooling over at the time. I enjoy what I do and the people I work
 						with. So, if you have a project in mind feel free to&nbsp;
-						<a href="mailto:wbbutterworth@gmail.com">shoot me an email</a>
+						<a href="mailto:contact@liambutterworth.me">shoot me an email</a>
 						&nbsp;or if you’re looking for someone full-time&nbsp;
 						<a href="/liambutterworth.pdf">check out my resume</a>.
 					</p>
@@ -57,9 +57,18 @@ const Home = () => (
 					<header><h1 id="work">Work</h1></header>
 
 					<Project
+						icon="laptop"
+						title="Keyboard"
+						link="https://liambutterworth.me/keyboard"
+						tags="JavaScript,React"
+					>
+						Lorem ipsum delor sit amet
+					</Project>
+
+					<Project
 						icon="npm"
 						title="Bassline"
-						link="http://github.com/wbbutterworth/postcss-bassline.git"
+						link="http://github.com/liambutterworth/postcss-bassline.git"
 						tags="JavaScript,PostCSS,Node Module,Mocha"
 					>
 						I wrote this plugin to make managing vertical rhythm on a website much simpler by abstracting the
