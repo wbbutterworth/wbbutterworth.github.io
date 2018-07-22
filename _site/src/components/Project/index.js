@@ -18,9 +18,11 @@ const Project = ( props ) => {
 			</div>
 
 			<div className="project-content">
-				<a href={ props.link } target="_blank" rel="noopener">
-					{ props.title }
-				</a>
+				<header>
+					<a href={ props.link } target="_blank" rel="noopener">
+						{ props.title }
+					</a>
+				</header>
 
 				<p>{ props.children }</p>
 
