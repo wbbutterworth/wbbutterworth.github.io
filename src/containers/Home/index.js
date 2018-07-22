@@ -14,7 +14,6 @@ const text = {
 		'make things.',
 		'create websites.',
 		'play loud music.',
-		'drink way too much coffee.',
 	],
 };
 
@@ -27,42 +26,37 @@ const Home = () => (
 			<Wrapper>
 				<Section>
 					<header><h1 id="about">About</h1></header>
+					<hr />
 
 					<p>
-						Hi, my name is Liam. Well, actually it’s William, but no one but paychecks and angry
-						relatives call me that anymore. I’m a twenty-something year old web developer from
-						Tuscaloosa, AL. I enjoy loud music, creative problem solving, and unhealthy amounts of chips and salsa.
+						Hi, my name is Liam. I&#39;m a web developer currently based in Tuscaloosa, AL. I enjoy loud music, creative problem solving and often both at the same time.
 					</p>
 
 					<p>
-						I became a web developer in 2008 when I was fortunate enough to land a student-worker position at the
-						University of Alabama. I’ve been using my accumulated web development skills to avoid starvation ever
-						since. Over the course of my career I’ve developed an expertise in Front-End Development using whatever
-						tools the industry professionals are drooling over at the time. I enjoy what I do and the people I work
-						with. So, if you have a project in mind feel free to&nbsp;
-						<a href="mailto:contact@liambutterworth.me">shoot me an email</a>
-						&nbsp;or if you’re looking for someone full-time&nbsp;
-						<a href="/liambutterworth.pdf">check out my resume</a>.
+						I became a web developer in 2008 when I was fortunate enough to land a student-worker position at the University of Alabama. I&#39;ve been working ever since with clients and employers
+						to craft solutions that met their needs. Over the course of my career I&#39;ve developed an expertise in Front-End development using whatever tools the industry professional are drooling
+						over at the time. I enjoy what I do and the people I work with. So, if you have a project in mind feel free to <a href="mailto:contact@liambutterworth.me">shoot me an email</a>&nbsp;
+						or if you&#39;re looking for someone full-time take a look at <a href="/liambutterworth.pdf">my resume</a>.
 					</p>
 
 					<p>
-						If you’re interested in viewing examples of my work here’s my&nbsp;
-						<a href="https://github.com/wbbutterworth">GitHub account</a>.
-						I work with all the usual suspects and acronyms; responsive design, cross-browser compatibility,
-						RESTful APIs, HTML, CSS, etc.
+						If you&#39;re interested in viewing examples of my work here&#39;s my Github. I use all the expected buzzwords and acronyms: responsive design, cross-browser compatibility, RESTful APIs,
+						HTML, CSS, JS, etc.
 					</p>
 				</Section>
 
 				<Section>
 					<header><h1 id="work">Work</h1></header>
+					<hr />
 
 					<Project
 						icon="laptop"
 						title="Keyboard"
 						link="https://liambutterworth.me/keyboard"
-						tags="JavaScript,React"
+						tags="HTML,CSS,Sass,JavaScript,Webpack,React,Web Audio API"
 					>
-						Lorem ipsum delor sit amet
+						This is a fun pet project I started to familiarize myself with the finer points of React, the Web Audio API and an attempt at integrating music theory with an interactive synthesizer.
+						I plan to expand on this application to make it a great method for learning how music theory works on a keyboard as well as a tool for recording and layering music compositions.
 					</Project>
 
 					<Project
@@ -71,9 +65,9 @@ const Home = () => (
 						link="http://github.com/liambutterworth/postcss-bassline.git"
 						tags="JavaScript,PostCSS,Node Module,Mocha"
 					>
-						I wrote this plugin to make managing vertical rhythm on a website much simpler by abstracting the
+						I wrote this PostCSS plugin to make managing vertical rhythm on a website much simpler by abstracting the
 						math needed for the font-size and line-height properties. With it you can pass a pixel value reference
-						to the font-size() function and it will spit back the correct rem value relative to the base font size.
+						to the font-size() function and it will output the correct rem value relative to the base font size.
 					</Project>
 				</Section>
 			</Wrapper>

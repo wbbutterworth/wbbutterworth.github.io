@@ -24,7 +24,7 @@
 		"no-param-reassign":            0,
 		"no-tabs":                      0,
 		"default-case":                 0,
-		"max-len":                      [ "warn", 192 ],
+		"max-len":                      [ "warn", 256 ],
 		"no-return-assign":             [ "error", "except-parens" ],
 		"template-curly-spacing":       [ "warn", "always" ],
 		"arrow-parens":                 [ "warn", "always" ],

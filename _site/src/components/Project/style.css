@@ -5,7 +5,9 @@
 @import 'global';
 
 .project {
-	padding-bottom: lines( 5 );
+	padding-bottom: lines( 2 );
+
+	&:last-child { padding-bottom: lines( 3 ); }
 
 	.project-aside {
 		width: 250px;

@@ -30,33 +30,28 @@ figcaption {
 	display: block;
 }
 
-ol,
-ul {
-	list-style: none;
-}
+ol, ul { list-style: none; }
 
 hr {
-	border-top: 1px solid $color-dark;
+	background: $color-dark;
+	background: -webkit-linear-gradient( left, $color-light, $color-dark, $color-light );
+	background: -moz-linear-gradient( left, $color-light, $color-secondary, $color-light );
+	background: -o-linear-gradient( left, $color-light, $color-dark, $color-light );
+	background: linear-gradient( left, $color-light, $color-dark, $color-light );
 	height: 1px;
-	margin: lines( 1 ) 0 lines( 1, 1px );
+	margin: lines( 1 ) auto;
+	max-width: 768px;
 }
 
-strong {
-	font-weight: bold;
-}
-
-em {
-	font-style: italic;
-}
+strong { font-weight: bold; }
+em { font-style: italic; }
 
 body {
+	@include font-size( 20px );
 	background: $color-light;
 	color: $color-dark;
-	/* font-family: 'Montserrat', sans-serif; */
 	font-family: 'Roboto', sans-serif;
-	font-size: font-size( 20px );
 	font-weight: 300;
-	line-height: line-height( 18px );
 }
 
 main {
@@ -65,21 +60,11 @@ main {
 	z-index: 2;
 }
 
-h1 {
-	font-size: font-size( 48px );
-	line-height: line-height( 48px );
-}
-
-small {
-	font-size: font-size( 16px );
-	line-height: line-height( 16px );
-}
+h1 { @include font-size( 48px ); }
+small { @include font-size( 16px ); }
 
 a {
 	color: $color-primary;
 	text-decoration: none;
-
-	&:hover {
-		text-decoration: underline;
-	}
+	&:hover { text-decoration: underline; }
 }
