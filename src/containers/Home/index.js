@@ -36,12 +36,12 @@ const Home = () => (
 						I became a web developer in 2008 when I was fortunate enough to land a student-worker position at the University of Alabama. I&#39;ve been working ever since with clients and employers
 						to craft solutions that met their needs. Over the course of my career I&#39;ve developed an expertise in Front-End development using whatever tools the industry professional are drooling
 						over at the time. I enjoy what I do and the people I work with. So, if you have a project in mind feel free to <a href="mailto:contact@liambutterworth.me">shoot me an email</a>&nbsp;
-						or if you&#39;re looking for someone full-time take a look at <a href="/liambutterworth.pdf">my resume</a>.
+						or if you&#39;re looking for someone full-time take a look at <a target="_blank" href="/liambutterworth.pdf">my resume</a>.
 					</p>
 
 					<p>
-						If you&#39;re interested in viewing examples of my work here&#39;s my Github. I use all the expected buzzwords and acronyms: responsive design, cross-browser compatibility, RESTful APIs,
-						HTML, CSS, JS, etc.
+						If you&#39;re interested in viewing examples of my work here&#39;s my <a target="_blank" href="https://github.com/liambutterworth">Github</a>. I use all the expected buzzwords and acronyms: responsive
+						design, cross-browser compatibility, RESTful APIs, HTML, CSS, JS, etc.
 					</p>
 				</Section>
 
