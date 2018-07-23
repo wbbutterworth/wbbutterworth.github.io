@@ -8,7 +8,6 @@ $breakpoint: 768px;
 
 .project {
 	padding-bottom: lines( 2 );
-
 	&:last-child { padding-bottom: lines( 3 ); }
 
 	.project-aside {
@@ -38,9 +37,8 @@ $breakpoint: 768px;
 		}
 
 		a {
+			@include font-size( 60px );
 			color: $color-dark;
-			font-size: font-size( 60px );
-			line-height: line-height( 60px );
 			font-weight: 700;
 			text-decoration: none;
 

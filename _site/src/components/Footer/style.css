@@ -14,7 +14,6 @@ $footer-height: lines( 15 );
 	height: $footer-height;
 	position: relative;
 	overflow: hidden;
-	z-index: 1;
 
 	&::after {
 		background: $color-dark;
@@ -25,18 +24,15 @@ $footer-height: lines( 15 );
 		position: absolute;
 		right: 0;
 		top: 0;
-		z-index: 0;
 	}
 
 	.footer-text {
-		font-weight: 200;
-		font-size: font-size( 24px );
+		@include font-size( 24px );
+		font-weight: 300;
 		padding: 0 0 lines( 1 );
-		line-height: line-height( 24px );
 
 		a {
 			color: $color-light;
-			display: inline-block;
 			padding: lines( 0.5 ) 0;
 			text-decoration: none;
 			transition: 200ms all;
@@ -48,8 +44,7 @@ $footer-height: lines( 15 );
 		}
 
 		@media ( min-width: $breakpoint ) {
-			font-size: font-size( 36px );
-			line-height: line-height( 36px );
+			@include font-size( 36px );
 		}
 	}
 
@@ -57,32 +52,32 @@ $footer-height: lines( 15 );
 		display: inline-block;
 		height: lines( 2 );
 		margin-right: lines( 1 );
+		&:last-child { margin-right: 0; }
 
 		@media ( min-width: $breakpoint ) {
 			height: lines( 2.5 );
 			margin-right: lines( 1.5 );
 		}
 
-		&:last-child {
-			margin-right: 0;
-		}
-
 		svg {
 			fill: $color-light;
-
-			&:hover {
-				fill: $color-primary;
-			}
+			&:hover { fill: $color-primary; }
 		}
 	}
 }
 
 .footer-inner {
-	bottom: 0;
-	height: $footer-height;
-	padding: lines( 4 ) 0 0;
-	position: fixed;
+	display: flex;
+	align-items: center;
 	text-align: center;
+	height: $footer-height;
 	width: 100%;
-	z-index: 2;
+	position: fixed;
+	bottom: 0;
+	z-index: 1;
+
+	section {
+		position: relative;
+		width: 100%;
+	}
 }

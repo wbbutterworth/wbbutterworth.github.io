@@ -62,9 +62,7 @@
 	width: 100%;
 	z-index: 3;
 
-	.banner-text-role {
-		display: none;
-	}
+	.banner-text-role { display: none; }
 
 	h1 {
 		font-weight: 800;
@@ -72,18 +70,11 @@
 		line-height: 1;
 		text-align: center;
 
-		.banner-text-role {
-			display: none;
-		}
+		.banner-text-role { display: none; }
 
 		@media ( min-width: 512px ) {
-			.banner-text-role {
-				display: inline;
-			}
-
-			.banner-text-role-abbr {
-				display: none;
-			}
+			.banner-text-role { display: inline; }
+			.banner-text-role-abbr { display: none; }
 		}
 
 		@media ( min-width: 768px ) {
@@ -122,9 +113,7 @@
 			margin: 0 0 -2px 1px;
 			width: 1px;
 
-			.banner--resting & {
-				animation: blink 2s infinite;
-			}
+			.banner--resting & { animation: blink 2s infinite; }
 		}
 	}
 }

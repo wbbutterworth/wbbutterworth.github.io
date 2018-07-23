@@ -30,7 +30,10 @@ figcaption {
 	display: block;
 }
 
-ol, ul { list-style: none; }
+ol,
+ul {
+	list-style: none;
+}
 
 hr {
 	background: $color-dark;
