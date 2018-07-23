@@ -38,6 +38,7 @@ const Project = ( props ) => {
 
 Project.propTypes = {
 	tags:     PropTypes.string.isRequired,
+	icon:     PropTypes.string.isRequired,
 	link:     PropTypes.string.isRequired,
 	title:    PropTypes.string.isRequired,
 	children: PropTypes.node.isRequired,

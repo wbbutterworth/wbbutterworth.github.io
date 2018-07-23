@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
 require( './style.css' );
 
-const Wrapper = props => (
+const Wrapper = ( props ) => (
 	<div className="wrapper">{ props.children }</div>
 );
 
