@@ -160,7 +160,7 @@ $breakpoint: 980px;
 .header-sections {
 	flex: none;
 	width: 100%;
-	margin-top: lines( 3 );
+	margin-top: lines( 3 ); // account for navbar height
 	text-align: center;
 
 	> li {

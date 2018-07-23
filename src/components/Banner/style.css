@@ -5,6 +5,8 @@
 @import 'global';
 
 .banner {
+	display: flex;
+	align-items: center;
 	height: 100vh;
 	overflow: hidden;
 	position: relative;
@@ -52,11 +54,10 @@
 }
 
 .banner-text {
+	flex: none;
 	color: $color-light;
 	padding: lines( 2 );
-	position: absolute;
-	top: 50%;
-	margin-top: lines( -5 );
+	margin-top: lines( 3 ); // account for navbar height
 	white-space: pre-wrap;
 	width: 100%;
 	z-index: 3;
