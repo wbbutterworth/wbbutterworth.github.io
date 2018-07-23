@@ -30,7 +30,7 @@ class Header extends React.Component {
 
 		this.smoothScroll.init({
 			speed:  800,
-			offset: 100,
+			offset: 80,
 			easing: 'easeInOutCubic',
 		});
 	}
