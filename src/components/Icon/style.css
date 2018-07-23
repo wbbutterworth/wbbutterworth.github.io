@@ -7,10 +7,16 @@
 .icon {
 	display: inline-block;
 	height: 100%;
+	position: relative;
+	width: 100%;
 
 	svg {
 		fill: $color-dark;
 		height: 100%;
 		transition: fill 300ms;
+		position: absolute;
+		width: 100%;
+		top: 0;
+		left: 0;
 	}
 }

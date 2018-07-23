@@ -7,8 +7,12 @@ module.exports = {
 	},
 
 	plugins: [
-		new HtmlWebpackPlugin({ template: 'src/index.html', filename: '../index.html' }),
 		new CleanWebpackPlugin([ 'dist' ]),
+
+		new HtmlWebpackPlugin({
+			template: 'src/index.html',
+			filename: '../index.html',
+		}),
 	],
 
 	resolve: {

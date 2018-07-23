@@ -192,14 +192,15 @@
 		> a {
 			display: inline-block;
 			height: lines( 1.25 );
+			width: lines( 1.25 );
 
 			@include breakpoint( medium ) {
 				height: lines( 2 );
+				width: lines( 2 );
 			}
 
-			.icon {
-				height: 100%;
-				svg { transition: fill 300ms; }
+			.icon svg {
+				transition: fill 300ms;
 			}
 
 			&:hover .icon svg { fill: $color-primary; }

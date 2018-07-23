@@ -38,7 +38,8 @@ $footer-height: lines( 15 );
 
 			&:hover {
 				background: $color-primary;
-				padding: lines( 0.5 );
+				padding-left: lines( 0.25 );
+				padding-right: lines( 0.25 );
 			}
 		}
 
@@ -50,6 +51,7 @@ $footer-height: lines( 15 );
 	.footer-links a {
 		display: inline-block;
 		height: lines( 2 );
+		width: lines( 2 );
 		margin-right: lines( 1 );
 		&:last-child { margin-right: 0; }
 

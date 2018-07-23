@@ -25,8 +25,8 @@ class Header extends React.Component {
 	}
 
 	componentDidMount() {
-		setInterval( this.toggleScrolled, 200 );
 		this.smoothScroll = new SmoothScroll( '.header a' );
+		setInterval( this.toggleScrolled, 200 );
 
 		this.smoothScroll.init({
 			speed:  800,
@@ -36,7 +36,7 @@ class Header extends React.Component {
 	}
 
 	toggleScrolled() {
-		this.setState({ isScrolled: window.scrollY > 0 });
+		this.setState({ isScrolled: navigator.userAgent.match( /Trident|rv:11/ ) ? true : window.scrollY > 0 });
 	}
 
 	toggleOpen() {

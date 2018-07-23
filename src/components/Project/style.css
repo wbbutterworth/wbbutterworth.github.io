@@ -9,13 +9,9 @@
 	&:last-child { padding-bottom: lines( 3 ); }
 
 	.project-aside {
+		height: 250px;
 		width: 250px;
 		margin: 0 auto;
-
-		svg {
-			height: auto;
-			width: 100%;
-		}
 
 		@include breakpoint( medium ) {
 			float: left;
