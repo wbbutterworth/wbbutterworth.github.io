@@ -36,7 +36,7 @@
 		width: auto;
 		z-index: 1;
 
-		@media ( max-width: 512px ) {
+		@include breakpoint( small ) {
 			transform: translate3d( 0, 0, 0 );
 		}
 	}
@@ -57,7 +57,7 @@
 	flex: none;
 	color: $color-light;
 	padding: lines( 2 );
-	margin-top: lines( 3 ); // account for navbar height
+	margin-top: $navbar-height;
 	white-space: pre-wrap;
 	width: 100%;
 	z-index: 3;
@@ -72,12 +72,12 @@
 
 		.banner-text-role { display: none; }
 
-		@media ( min-width: 512px ) {
+		@include breakpoint( small ) {
 			.banner-text-role { display: inline; }
 			.banner-text-role-abbr { display: none; }
 		}
 
-		@media ( min-width: 768px ) {
+		@include breakpoint( medium ) {
 			font-size: font-size( 60px );
 		}
 	}
@@ -88,20 +88,20 @@
 		background: -moz-linear-gradient( left, $color-transparent, $color-primary, $color-transparent );
 		background: -o-linear-gradient( left, $color-transparent, $color-primary, $color-transparent );
 		background: linear-gradient( left, $color-transparent, $color-primary, $color-transparent );
-		max-width: 980px;
+		max-width: 768px;
 		height: 2px;
-		margin: lines( 1 ) auto lines( 0.5, 1px );
+		margin: lines( 0.75 ) auto lines( 0.75, 2px );
 	}
 
 	p {
 		font-size: font-size( 24px );
 		font-weight: 100;
 
-		@media ( min-width: 428px ) {
+		@include breakpoint( small ) {
 			text-align: center;
 		}
 
-		@media ( min-width: 768px ) {
+		@include breakpoint( medium ) {
 			font-size: font-size( 32px );
 		}
 

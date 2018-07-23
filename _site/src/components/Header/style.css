@@ -4,8 +4,6 @@
 
 @import 'global';
 
-$breakpoint: 980px;
-
 .header {
 	position: fixed;
 	height: 0;
@@ -17,7 +15,7 @@ $breakpoint: 980px;
 	background-size: cover;
 	border-bottom: 1px solid $color-secondary;
 
-	&.header--scrolled { height: lines( 3 ); }
+	&.header--scrolled { height: $navbar-height; }
 
 	&.header--open {
 		height: 100vh;
@@ -57,7 +55,7 @@ $breakpoint: 980px;
 	float: left;
 	font-size: font-size( 24px );
 	font-weight: 100;
-	line-height: lines( 3 );
+	line-height: $navbar-height;
 	text-decoration: none !important;
 	transition: all 300ms 300ms, border-color 300ms;
 
@@ -70,13 +68,15 @@ $breakpoint: 980px;
 
 	.header--open & { transition: all 300ms; }
 
-	@media ( min-width: $breakpoint ) {
+	@include breakpoint( large ) {
 		font-size: font-size( 30px );
 		.header--open & { font-size: font-size( 40px ); }
 	}
 }
 
 .header-button {
+	$diameter: lines( 1.5 );
+
 	background: none;
 	cursor: pointer;
 	display: block;
@@ -84,9 +84,9 @@ $breakpoint: 980px;
 	position: relative;
 	transition: all 300ms 300ms;
 	z-index: 100;
-	height: lines( 1.5 );
-	width: lines( 1.5 );
-	margin-top: lines( 0.75 );
+	height: $diameter;
+	width: $diameter;
+	margin-top: ( $navbar-height - $diameter ) / 2;
 	&:focus { outline: none; }
 
 	.header--open & { transition: all 300ms; }
@@ -94,7 +94,7 @@ $breakpoint: 980px;
 	span {
 		background: $color-light;
 		display: block;
-		height: 5%;
+		height: 6%;
 		left: 10%;
 		opacity: 1;
 		position: absolute;
@@ -146,7 +146,7 @@ $breakpoint: 980px;
 .header-sections {
 	flex: none;
 	width: 100%;
-	margin-top: lines( 3 ); // account for navbar height
+	margin-top: $navbar-height;
 	text-align: center;
 
 	> li {
@@ -173,7 +173,7 @@ $breakpoint: 980px;
 			transition: all 300ms;
 			&:hover { color: $color-primary; }
 
-			@media ( min-width: $breakpoint ) {
+			@include breakpoint( large ) {
 				@include font-size( 108px );
 			}
 		}
@@ -193,7 +193,9 @@ $breakpoint: 980px;
 			display: inline-block;
 			height: lines( 1.25 );
 
-			@media ( min-width: $breakpoint ) { height: lines( 2 ); }
+			@include breakpoint( large ) {
+				height: lines( 2 );
+			}
 
 			.icon {
 				height: 100%;

@@ -4,8 +4,6 @@
 
 @import 'global';
 
-$breakpoint: 768px;
-
 .project {
 	padding-bottom: lines( 2 );
 	&:last-child { padding-bottom: lines( 3 ); }
@@ -19,7 +17,7 @@ $breakpoint: 768px;
 			width: 100%;
 		}
 
-		@media ( min-width: $breakpoint ) {
+		@include breakpoint( medium ) {
 			float: left;
 			margin: 0 lines( 2 ) 0 0;
 		}
@@ -31,7 +29,7 @@ $breakpoint: 768px;
 		header {
 			text-align: center;
 
-			@media ( min-width: $breakpoint ) {
+			@include breakpoint( medium ) {
 				text-align: left;
 			}
 		}
@@ -55,7 +53,7 @@ $breakpoint: 768px;
 		overflow: hidden;
 		text-align: center;
 
-		@media ( min-width: $breakpoint ) {
+		@include breakpoint( medium ) {
 			text-align: left;
 		}
 

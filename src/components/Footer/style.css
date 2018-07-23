@@ -4,7 +4,6 @@
 
 @import 'global';
 
-$breakpoint: 512px;
 $footer-height: lines( 15 );
 
 .footer {
@@ -43,7 +42,7 @@ $footer-height: lines( 15 );
 			}
 		}
 
-		@media ( min-width: $breakpoint ) {
+		@include breakpoint( small ) {
 			@include font-size( 36px );
 		}
 	}
@@ -54,7 +53,7 @@ $footer-height: lines( 15 );
 		margin-right: lines( 1 );
 		&:last-child { margin-right: 0; }
 
-		@media ( min-width: $breakpoint ) {
+		@include breakpoint( small ) {
 			height: lines( 2.5 );
 			margin-right: lines( 1.5 );
 		}
@@ -75,7 +74,7 @@ $footer-height: lines( 15 );
 	position: fixed;
 	bottom: 0;
 	z-index: 1;
-
+	
 	section {
 		position: relative;
 		width: 100%;

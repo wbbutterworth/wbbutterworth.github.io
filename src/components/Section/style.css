@@ -7,8 +7,13 @@
 $margin: lines( 3 );
 
 .section {
-	header {
+	> header {
+		@include font-size( 72px );
+		/* background: $color-dark; */
+		/* color: $color-light; */
 		text-align: center;
+		font-weight: 700;
+		padding: lines( 2 ) 0;
 
 		h1 {
 			@include font-size( 72px );

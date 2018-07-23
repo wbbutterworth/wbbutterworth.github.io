@@ -25,16 +25,14 @@ const Home = () => (
 		<main>
 			<Wrapper>
 				<Section>
-					<header><h1 id="about">About</h1></header>
-					<hr />
+					<header id="about">About</header>
 					<p>Hi, my name is Liam. I&#39;m a web developer currently based in Tuscaloosa, AL. I enjoy loud music, creative problem solving and often both at the same time.</p>
-					<p>I became a web developer in 2008 when I was fortunate enough to land a student-worker position at the University of Alabama. I&#39;ve been working ever since with clients and employers to craft solutions that met their needs. Over the course of my career I&#39;ve developed an expertise in Front-End development using whatever tools the industry professional are drooling over at the time. I enjoy what I do and the people I work with. So, if you have a project in mind feel free to shoot me an <a href="mailto:contact@liambutterworth.me">email</a> or if you&#39;re looking for someone full-time take a look at my <a target="_blank" href="/liambutterworth.pdf">resume</a>.</p>
-					<p>If you&#39;re interested in viewing examples of my work here&#39;s my <a target="_blank" href="https://github.com/liambutterworth">Github</a>. I use all the expected buzzwords and acronyms: responsivedesign, cross-browser compatibility, RESTful APIs, HTML, CSS, JS, etc.</p>
+					<p>I became a web developer in 2008 when I was fortunate enough to land a student-worker position at the University of Alabama. I&#39;ve been working ever since with clients and employers to craft solutions that met their needs. Over the course of my career I&#39;ve developed an expertise in Front-End development using whatever tools the industry professional are drooling over at the time. I enjoy what I do and the people I work with. So, if you have a project in mind feel free to shoot me an <a href="mailto:contact@liambutterworth.me">email</a> or if you&#39;re looking for someone full-time take a look at my <a target="_blank" rel="noopener noreferrer" href="/liambutterworth.pdf">resume</a>.</p>
+					<p>If you&#39;re interested in viewing examples of my work here&#39;s my <a target="_blank" rel="noopener noreferrer" href="https://github.com/liambutterworth">Github</a>. I use all the expected buzzwords and acronyms: responsivedesign, cross-browser compatibility, RESTful APIs, HTML, CSS, JS, etc.</p>
 				</Section>
 
 				<Section>
-					<header><h1 id="work">Work</h1></header>
-					<hr />
+					<header id="work">Work</header>
 
 					<Project
 						icon="laptop"
