@@ -173,7 +173,7 @@
 			transition: all 300ms;
 			&:hover { color: $color-primary; }
 
-			@include breakpoint( large ) {
+			@include breakpoint( medium ) {
 				@include font-size( 108px );
 			}
 		}
@@ -193,7 +193,7 @@
 			display: inline-block;
 			height: lines( 1.25 );
 
-			@include breakpoint( large ) {
+			@include breakpoint( medium ) {
 				height: lines( 2 );
 			}
 
