@@ -199,10 +199,6 @@ $breakpoint: 980px;
 	margin: lines( 0.5 ) auto;
 	max-width: $site-width;
 
-	@media ( min-width: $breakpoint ) {
-		padding-right: lines( 0.5 );
-	}
-
 	> li {
 		display: inline-block;
 
