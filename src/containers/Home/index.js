@@ -28,7 +28,7 @@ const Home = () => (
 					<header id="about">About</header>
 					<p>Hi, my name is Liam. I&#39;m a web developer currently based in Tuscaloosa, AL. I enjoy loud music, creative problem solving and often both at the same time.</p>
 					<p>I became a web developer in 2008 when I was fortunate enough to land a student-worker position at the University of Alabama. I&#39;ve been working ever since with clients and employers to craft solutions that met their needs. Over the course of my career I&#39;ve developed an expertise in Front-End development using whatever tools the industry professional are drooling over at the time. I enjoy what I do and the people I work with. So, if you have a project in mind feel free to <a href="mailto:contact@liambutterworth.me">shoot me an email</a> or if you&#39;re looking for someone full-time take a look at <a target="_blank" rel="noopener noreferrer" href="/liambutterworth.pdf">my resume</a>.</p>
-					<p>If you&#39;re interested in viewing examples of my work here&#39;s <a target="_blank" rel="noopener noreferrer" href="https://github.com/liambutterworth">my Github</a>. I use all the expected buzzwords and acronyms: responsivedesign, cross-browser compatibility, RESTful APIs, HTML, CSS, JS, etc.</p>
+					<p>If you&#39;re interested in viewing examples of my work here&#39;s <a target="_blank" rel="noopener noreferrer" href="https://github.com/liambutterworth">my Github</a>. I use all the expected buzzwords and acronyms: responsive design, cross-browser compatibility, RESTful APIs, HTML, CSS, JS, etc.</p>
 				</Section>
 
 				<Section>
