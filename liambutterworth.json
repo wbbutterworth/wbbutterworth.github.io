@@ -1,0 +1,151 @@
+{
+  "selectedTemplate": 6,
+  "headings": {
+    "education": "",
+    "projects": "",
+    "awards": ""
+  },
+  "basics": {
+    "name": "Liam Butterworth",
+    "email": "contact@liambutterworth.me",
+    "phone": "(205) 913-3029",
+    "website": "https://liambutterworth.me"
+  },
+  "education": [
+    {
+      "institution": "University of Alabama",
+      "location": "Tuscaloosa, AL",
+      "area": "Management Information Systems",
+      "studyType": "Bachelor of Science",
+      "startDate": "Aug '07",
+      "endDate": "Dec '11"
+    }
+  ],
+  "work": [
+    {
+      "website": "",
+      "highlights": [
+        "Collaborated with a team to develop and maintain custom Wordpress solutions for clients across campus",
+        "Oversaw department-wide site overhaul for the Office of Research and Economic Development",
+        "Improved accssibility compliance for University websites as part of a campus-wide initiative",
+        "Worked on internal applications to improve project workflows including a media asset tool written in Laravel and a tool to manage branding assets written in Ruby on Rails and EmberJS"
+      ],
+      "company": "University of Alabama - Strategic Communications",
+      "location": "Tuscaloosa, AL",
+      "startDate": "Nov '15",
+      "endDate": "Jul '18",
+      "position": "Software Engineer"
+    },
+    {
+      "highlights": [
+        "Developed complex applications that implemented Backbone.js using Ruby on Rails as a consumable API",
+        "Worked with designers to create clean and intuitive interfaces for client websites",
+        "Created e-commerce sites taht utilized oAuth and Amazon Web Service to process payments and host product data"
+      ],
+      "company": "Nine Agency",
+      "position": "Web Developer",
+      "location": "Tuscaloosa, AL",
+      "startDate": "Jan '12",
+      "endDate": "Oct '15"
+    },
+    {
+      "highlights": [
+        "Created fully responsive websites using a mobile-first approach",
+        "Ensured cross-browser compatability for all division websites",
+        "Developed an admin system that was used for dat a reporting by department heads"
+      ],
+      "company": "University of Alabama - Student Affairs",
+      "position": "Web Developer",
+      "location": "Tuscaloosa, AL",
+      "startDate": "Aug '09",
+      "endDate": "Dec '11"
+    }
+  ],
+  "skills": [
+    {
+      "level": "",
+      "keywords": [
+        "HTML",
+        "CSS",
+        "Sass",
+        "PostCSS",
+        "JavaScript",
+        "React",
+        "Redux",
+        "jQuery",
+        "Bootstrap"
+      ],
+      "name": "Front-End"
+    },
+    {
+      "keywords": [
+        "Node",
+        "Ruby on Rails",
+        "PHP",
+        "Laravel",
+        "Wordpress",
+        "MySQL",
+        "PostgreSQL",
+        "MongoDB"
+      ],
+      "name": "Back-end"
+    },
+    {
+      "keywords": [
+        "Vim",
+        "Git",
+        "SVN",
+        "Docker",
+        "Webpack",
+        "Gulp",
+        "Grunt",
+        "ESLint",
+        "Jasmine",
+        "Mocha"
+      ],
+      "name": "Tools"
+    }
+  ],
+  "projects": [
+    {
+      "name": "Keyboard",
+      "keywords": [
+        "React",
+        "Node",
+        "Webpack",
+        "Babel",
+        "ESLint"
+      ],
+      "description": "A project I started to familiarize myself with the finer points of React, the Web Audio API and an attempt at integrating music theory with an interactive Synthesizer",
+      "url": "https://liambutterworth.me/keyboard"
+    },
+    {
+      "keywords": [
+        "JavaScript",
+        "PostCSS",
+        "Node",
+        "Mocha"
+      ],
+      "name": "Bassline",
+      "description": "I wrote this PostCSS plugin to make managing vertical rhythm on a website much simpler by abstracting the math needed for the font-size and line-height properties",
+      "url": "https://github.com/liambutterworth/postcss-bassline"
+    }
+  ],
+  "awards": [
+    {
+      "title": "",
+      "date": "",
+      "awarder": "",
+      "summary": ""
+    }
+  ],
+  "sections": [
+    "templates",
+    "profile",
+    "education",
+    "work",
+    "skills",
+    "projects",
+    "awards"
+  ]
+}
