@@ -48,7 +48,7 @@
     "file-loader": "^1.1.11",
     "html-webpack-plugin": "^3.1.0",
     "mini-css-extract-plugin": "0.2.0",
-    "node-sass": "^4.9.2",
+    "node-sass": "^4.13.1",
     "postcss-bassline": "^0.1.0",
     "postcss-color-function": "^4.0.0",
     "postcss-functions": "^3.0.0",
